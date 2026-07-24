@@ -1,24 +1,42 @@
-KK FLORIDA — NETLIFY WEBSITE WITH ADMIN EDITOR
-
-This package displays your products and includes an editor at /admin/.
-
-IMPORTANT: The editor needs the website connected to a GitHub repository. A drag-and-drop Netlify upload can display the website, but it cannot save editor changes.
-
-ONE-TIME SETUP
-1. Create a free GitHub account.
-2. Create a repository named kk-florida-website.
-3. Upload every file and folder from this package. index.html must be at the top level.
-4. In Netlify choose Add new project > Import an existing project > GitHub.
-5. Select the repository. Leave Build command empty. Set Publish directory to a single period: .
-6. Deploy.
-7. In Netlify open Project configuration > Identity and enable Identity.
-8. Keep registration Invite only.
-9. Enable Git Gateway under Identity services.
-10. Invite your own email address as an Identity user.
-11. Accept the invitation and create a password.
-12. Open https://YOUR-SITE.netlify.app/admin/ and sign in.
-
-ADDING A PRODUCT
-Open /admin/, choose Store Content, scroll to Products and Collections, add a product, upload the image, enter the exact Picfair or TeePublic buy link, and select Publish.
-
-The starter photographs are placeholders. Replace them with your own images before promoting the site.
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+collections:
+  - name: "website"
+    label: "Website"
+    files:
+      - name: "content"
+        label: "Website Content"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - label: "Site Information"
+            name: "site"
+            widget: "object"
+            fields:
+              - {label: "Brand", name: "brand", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Introduction", name: "intro", widget: "text"}
+              - {label: "About Text", name: "about", widget: "text"}
+              - {label: "Picfair URL", name: "picfairUrl", widget: "string"}
+              - {label: "TeePublic URL", name: "teepublicUrl", widget: "string"}
+              - {label: "Email", name: "email", widget: "string", required: false}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Category", name: "category", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Buy Link", name: "buyUrl", widget: "string"}
+              - {label: "Store", name: "store", widget: "select", options: ["Picfair","TeePublic"]}
+              - {label: "Featured", name: "featured", widget: "boolean", default: false}
+          - label: "Wildlife Guides"
+            name: "guides"
+            widget: "list"
+            fields:
+              - {label: "Guide Title", name: "title", widget: "string"}
+              - {label: "Guide Text", name: "text", widget: "text"}
