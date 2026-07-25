@@ -1,0 +1,32 @@
+KK FLORIDA CUSTOMIZED WEBSITE
+
+This version includes direct links to actual KK Florida TeePublic designs:
+- Dragon Wagon
+- Butterflies of Florida
+- Groovy Truckin'
+- Happy 250th USA Florida
+
+It also includes product names from the current TeePublic shop, plus the Picfair photography store.
+
+UPLOAD TO GITHUB
+1. Delete the old files in the kk-florida-website repository.
+2. Extract this ZIP.
+3. Upload all seven files to the repository root.
+4. Commit the changes.
+5. Cloudflare will redeploy automatically.
+
+FILES
+- index.html
+- contact.html
+- styles.css
+- app.js
+- robots.txt
+- sitemap.xml
+- CUSTOMIZE.txt
+
+REPLACING EXAMPLE IMAGES
+The site uses example nature backgrounds until your own photographs/design previews are uploaded.
+To use your own images:
+1. Upload the image to GitHub.
+2. Copy its file name.
+3. Replace the appropriate image URL inside styles.css or app.js with the file name.
