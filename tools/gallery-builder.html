@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KK Florida Gallery Builder</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;background:#f7f4ee;color:#17221b}
+h1{color:#0f3d2c}.panel{background:white;padding:24px;border-radius:16px;margin-bottom:20px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+label{display:block;font-weight:bold;margin-top:14px}input,textarea,select{width:100%;padding:10px;margin-top:6px;border:1px solid #bbb;border-radius:8px}
+button{padding:12px 18px;border:0;border-radius:999px;background:#ed8b32;font-weight:bold;cursor:pointer;margin:10px 8px 0 0}
+pre{white-space:pre-wrap;background:#102f23;color:white;padding:16px;border-radius:12px;max-height:360px;overflow:auto}
+.small{color:#59635d}
+</style></head>
+<body>
+<h1>KK Florida Gallery Builder</h1>
+<p class="small">This tool runs in your browser. It does not upload anything. It creates a new <strong>gallery.json</strong> file for you to download and then upload to GitHub.</p>
+
+<div class="panel">
+<label>Load your current gallery.json</label>
+<input id="fileInput" type="file" accept=".json">
+</div>
+
+<div class="panel">
+<h2>Add a new item</h2>
+<label>Title</label><input id="title">
+<label>Category</label><input id="category" placeholder="Birds">
+<label>Description</label><textarea id="description"></textarea>
+<label>Image path</label><input id="image" placeholder="images/birds/roseate-spoonbill.jpg">
+<label>Picfair or TeePublic link</label><input id="link" placeholder="https://...">
+<label>Store</label><select id="store"><option>Picfair</option><option>TeePublic</option></select>
+<button id="addBtn">Add Item</button>
+<button id="downloadBtn">Download gallery.json</button>
+</div>
+
+<div class="panel"><h2>Current gallery data</h2><pre id="preview">[]</pre></div>
+
+<script>
+let data=[];
+const preview=()=>document.getElementById("preview").textContent=JSON.stringify(data,null,2);
+document.getElementById("fileInput").addEventListener("change",async e=>{const f=e.target.files[0];if(!f)return;try{data=JSON.parse(await f.text());preview()}catch{alert("That file is not valid JSON.")}});
+document.getElementById("addBtn").addEventListener("click",()=>{const item={title:document.getElementById("title").value.trim(),category:document.getElementById("category").value.trim(),description:document.getElementById("description").value.trim(),image:document.getElementById("image").value.trim(),link:document.getElementById("link").value.trim(),store:document.getElementById("store").value};if(!item.title||!item.category||!item.image){alert("Title, category, and image path are required.");return}data.push(item);preview();["title","category","description","image","link"].forEach(id=>document.getElementById(id).value="")});
+document.getElementById("downloadBtn").addEventListener("click",()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="gallery.json";a.click();URL.revokeObjectURL(a.href)});
+preview();
+</script>
+</body></html>

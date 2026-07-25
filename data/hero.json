@@ -1,0 +1,18 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=2200&q=90",
+    "alt": "Florida coastal landscape"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=2200&q=90",
+    "alt": "Florida bird"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=2200&q=90",
+    "alt": "Butterfly"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2200&q=90",
+    "alt": "Florida sunset"
+  }
+]
