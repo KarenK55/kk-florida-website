@@ -1,110 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KK Florida wildlife photography, nature art, apparel, and gifts inspired by South Florida and the Everglades.">
-  <title>KK Florida | Wildlife Photography & Nature Art</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact KK Florida and browse the Picfair photography and TeePublic apparel stores.">
+<title>Contact | KK Florida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="logo" href="#home">KK <span>Florida</span></a>
-  <button class="menu-button" aria-label="Open navigation">☰</button>
-  <nav class="main-nav">
-    <a href="#home">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#photography">Photography</a>
-    <a href="#apparel">Apparel</a>
-    <a href="#about">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="site-header inner-header">
+  <a class="logo" href="index.html">KK <span>Florida</span></a>
+  <nav class="main-nav"><a href="index.html">Home</a><a href="index.html#portfolio">Portfolio</a></nav>
 </header>
-
 <main>
-<section class="hero" id="home">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <p class="eyebrow">South Florida • Everglades • Nature</p>
-    <h1>KK Florida</h1>
-    <p class="tagline">Florida Wildlife Photography • Nature Art • Apparel</p>
-    <p class="hero-intro">Original wildlife photography and Florida-inspired artwork from South Florida and the Everglades.</p>
+<section class="section white contact-page">
+  <div class="section-heading">
+    <p class="eyebrow">Contact KK Florida</p>
+    <h2>Photography, art, and apparel</h2>
+    <p>Use the store links below for product questions, orders, and availability.</p>
     <div class="button-row">
-      <a class="button primary" href="#portfolio">Explore Portfolio</a>
-      <a class="button secondary" href="https://flwildlife.picfair.com/" target="_blank" rel="noopener">Shop Photography</a>
+      <a class="button primary" href="https://flwildlife.picfair.com/" target="_blank" rel="noopener">Visit Picfair</a>
+      <a class="button primary" href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener">Visit TeePublic</a>
     </div>
   </div>
-</section>
-
-<section class="section white" id="portfolio">
-  <div class="section-heading">
-    <p class="eyebrow">Browse the portfolio</p>
-    <h2>Florida wildlife, art, and apparel</h2>
-    <p>Search or filter by category. Click any image for a larger preview and a direct shopping link.</p>
-  </div>
-  <div class="search-wrap">
-    <input id="searchBox" type="search" placeholder="Search birds, butterflies, sunsets, shirts...">
-  </div>
-  <div class="filters" id="filters"></div>
-  <div class="portfolio-grid" id="portfolioGrid"></div>
-</section>
-
-<section class="split-section" id="photography">
-  <div class="split-image photography-image"></div>
-  <div class="split-copy">
-    <p class="eyebrow">Original photography</p>
-    <h2>Florida through the lens</h2>
-    <p>Browse original wildlife photography, prints, and digital downloads through Picfair.</p>
-    <a class="button primary" href="https://flwildlife.picfair.com/" target="_blank" rel="noopener">Open Picfair Store</a>
-  </div>
-</section>
-
-<section class="split-section reverse" id="apparel">
-  <div class="split-image apparel-image"></div>
-  <div class="split-copy">
-    <p class="eyebrow">Nature-inspired products</p>
-    <h2>Florida apparel and gifts</h2>
-    <p>Shop shirts, stickers, mugs, and other products featuring original Florida-inspired artwork.</p>
-    <a class="button primary" href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener">Open TeePublic Store</a>
-  </div>
-</section>
-
-<section class="section white about-section" id="about">
-  <div>
-    <p class="eyebrow">About KK Florida</p>
-    <h2>Inspired by the wild side of Florida</h2>
-  </div>
-  <p>KK Florida celebrates the beauty, color, and personality of Florida wildlife through original photography and nature-inspired artwork. The website brings Picfair photography and TeePublic apparel together in one easy-to-browse place.</p>
 </section>
 </main>
-
-<div class="modal" id="imageModal" aria-hidden="true">
-  <button class="modal-close" id="modalClose" aria-label="Close preview">×</button>
-  <div class="modal-dialog">
-    <img id="modalImage" alt="">
-    <div class="modal-copy">
-      <span id="modalCategory" class="card-category"></span>
-      <h2 id="modalTitle"></h2>
-      <p id="modalDescription"></p>
-      <a id="modalLink" class="button primary" target="_blank" rel="noopener"></a>
-    </div>
-  </div>
-</div>
-
-<footer class="site-footer">
-  <strong>KK Florida</strong>
-  <p>Florida Wildlife Photography • Nature Art • Apparel</p>
-  <div class="footer-links">
-    <a href="#portfolio">Portfolio</a>
-    <a href="#photography">Photography</a>
-    <a href="#apparel">Apparel</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</footer>
-
-<script src="app.js"></script>
+<footer class="site-footer"><strong>KK Florida</strong></footer>
 </body>
 </html>

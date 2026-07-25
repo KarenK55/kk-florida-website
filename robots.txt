@@ -1,4 +1,26 @@
-User-agent: *
-Allow: /
+KK FLORIDA ORGANIZED LONG-TERM WEBSITE
 
-Sitemap: https://kkflorida.com/sitemap.xml
+UPLOAD
+1. Extract this ZIP.
+2. Upload every file and folder to the root of your GitHub repository.
+3. Keep the folder structure exactly as shown.
+4. Commit changes.
+5. Cloudflare redeploys automatically.
+
+ADDING PHOTOS
+1. Prepare a watermarked web-sized JPEG.
+2. Upload it to the matching category folder, such as:
+   images/birds/roseate-spoonbill.jpg
+3. Edit data/gallery.json and add:
+{
+  "title": "Roseate Spoonbill",
+  "category": "Birds",
+  "description": "Photographed in the Florida Everglades.",
+  "image": "images/birds/roseate-spoonbill.jpg",
+  "link": "https://YOUR-EXACT-PICFAIR-LINK",
+  "store": "Picfair"
+}
+
+WATERMARK
+Add it before uploading the website copy.
+Keep full-resolution unwatermarked originals for Picfair.
