@@ -1,1 +1,19 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/site.css"><title>Photography | KK Florida</title></head><body><header class="header"><a class="logo" href="index.html">KK <span>Florida</span></a><button class="menu" aria-label="Open menu">☰</button><nav><a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="photography.html">Photography</a><a href="apparel.html">Apparel & Gifts</a><a href="guides.html">Wildlife Guides</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></header><main><section class="page-hero photo-hero"><div><p class="eyebrow">Original photography</p><h1>Florida Wildlife Photography</h1><p>Birds, butterflies, dragonflies, flowers, sunsets, and Everglades wildlife.</p></div></section><section class="section white"><div class="heading"><p class="eyebrow">Shop prints and downloads</p><h2>Original photography on Picfair</h2><p>Choose available print formats and digital-download options through Picfair.</p><a id="picfairBtn" class="btn orange" target="_blank">Open Picfair Store</a></div></section><section class="section sand"><div class="heading"><h2>Photography collections</h2></div><div id="photoGrid" class="grid"></div></section></main><footer class="footer"><strong>KK Florida</strong><p>Florida Wildlife Photography • Nature Art • Apparel</p><div><a href="gallery.html">Gallery</a><a href="photography.html">Photography</a><a href="apparel.html">Apparel</a><a href="about.html">About</a></div></footer><script src="assets/js/site.js"></script></body></html>
+KKFLORIDA.COM VERSION 2
+
+UPLOAD
+1. Extract this ZIP.
+2. Open GitHub repository KarenK55/kk-florida-website.
+3. Upload every file and folder from this package to the repository root.
+4. Replace files with matching names.
+5. Commit changes.
+6. Cloudflare Pages will redeploy automatically.
+
+EDIT CONTENT
+Most text, links, featured items, gallery items, and guide text are in data/site.json.
+
+USE YOUR OWN PHOTOS
+1. Upload photos to assets/images.
+2. In data/site.json replace a temporary image URL with assets/images/your-photo.jpg.
+
+CHECKOUT
+Picfair and TeePublic continue to handle checkout, production, shipping, and returns.
