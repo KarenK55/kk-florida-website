@@ -1,97 +1,12 @@
-
-let items = [];
-let activeCategory = "All";
-
-const menuButton = document.querySelector(".menu-button");
-const navigation = document.querySelector(".main-nav");
-if (menuButton && navigation) {
-  menuButton.addEventListener("click", () => navigation.classList.toggle("open"));
-  navigation.querySelectorAll("a").forEach(link => link.addEventListener("click", () => navigation.classList.remove("open")));
-}
-
-function escapeHtml(value) {
-  return String(value).replace(/[&<>"']/g, char => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
-  })[char]);
-}
-
-function renderFilters() {
-  const filters = document.getElementById("filters");
-  const categories = ["All", ...new Set(items.map(item => item.category))];
-  filters.innerHTML = categories.map(category => `
-    <button class="filter-button ${category === activeCategory ? "active" : ""}" data-category="${escapeHtml(category)}">
-      ${escapeHtml(category)}
-    </button>
-  `).join("");
-  filters.querySelectorAll("button").forEach(button => {
-    button.addEventListener("click", () => {
-      activeCategory = button.dataset.category;
-      renderFilters();
-      renderPortfolio();
-    });
-  });
-}
-
-function renderPortfolio() {
-  const grid = document.getElementById("portfolioGrid");
-  const search = document.getElementById("searchBox").value.trim().toLowerCase();
-  const filtered = items.filter(item => {
-    const categoryMatch = activeCategory === "All" || item.category === activeCategory;
-    const text = `${item.title} ${item.category} ${item.description} ${item.store}`.toLowerCase();
-    return categoryMatch && text.includes(search);
-  });
-
-  grid.innerHTML = filtered.map((item, index) => `
-    <article class="portfolio-card" data-index="${items.indexOf(item)}">
-      <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy">
-      <div class="portfolio-copy">
-        <span class="card-category">${escapeHtml(item.category)} • ${escapeHtml(item.store)}</span>
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(item.description)}</p>
-      </div>
-    </article>
-  `).join("");
-
-  grid.querySelectorAll(".portfolio-card").forEach(card => {
-    card.addEventListener("click", () => openModal(items[Number(card.dataset.index)]));
-  });
-}
-
-const modal = document.getElementById("imageModal");
-function openModal(item) {
-  document.getElementById("modalImage").src = item.image;
-  document.getElementById("modalImage").alt = item.title;
-  document.getElementById("modalCategory").textContent = `${item.category} • ${item.store}`;
-  document.getElementById("modalTitle").textContent = item.title;
-  document.getElementById("modalDescription").textContent = item.description;
-  const link = document.getElementById("modalLink");
-  link.href = item.link;
-  link.textContent = item.store === "Picfair" ? "Buy this photo on Picfair" : "View this design on TeePublic";
-  modal.classList.add("open");
-  modal.setAttribute("aria-hidden", "false");
-}
-function closeModal() {
-  modal.classList.remove("open");
-  modal.setAttribute("aria-hidden", "true");
-}
-document.getElementById("modalClose").addEventListener("click", closeModal);
-modal.addEventListener("click", event => {
-  if (event.target === modal) closeModal();
-});
-document.addEventListener("keydown", event => {
-  if (event.key === "Escape") closeModal();
-});
-
-fetch("data/gallery.json")
-  .then(response => response.json())
-  .then(data => {
-    items = data;
-    renderFilters();
-    renderPortfolio();
-  })
-  .catch(error => {
-    document.getElementById("portfolioGrid").innerHTML = "<p>The gallery could not be loaded.</p>";
-    console.error(error);
-  });
-
-document.getElementById("searchBox").addEventListener("input", renderPortfolio);
+let items=[];let activeCategory="All";
+const menuButton=document.querySelector(".menu-button");const navigation=document.querySelector(".main-nav");
+if(menuButton&&navigation){menuButton.addEventListener("click",()=>navigation.classList.toggle("open"));navigation.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>navigation.classList.remove("open")))}
+function escapeHtml(value){return String(value).replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[char]))}
+function renderFilters(){const filters=document.getElementById("filters");const categories=["All",...new Set(items.map(item=>item.category))];filters.innerHTML=categories.map(category=>`<button class="filter-button ${category===activeCategory?"active":""}" data-category="${escapeHtml(category)}">${escapeHtml(category)}</button>`).join("");filters.querySelectorAll("button").forEach(button=>{button.addEventListener("click",()=>{activeCategory=button.dataset.category;renderFilters();renderPortfolio()})})}
+function renderPortfolio(){const grid=document.getElementById("portfolioGrid");const search=document.getElementById("searchBox").value.trim().toLowerCase();const filtered=items.filter(item=>{const categoryMatch=activeCategory==="All"||item.category===activeCategory;const text=`${item.title} ${item.category} ${item.description} ${item.store}`.toLowerCase();return categoryMatch&&text.includes(search)});grid.innerHTML=filtered.map(item=>`<article class="portfolio-card" data-index="${items.indexOf(item)}"><img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy"><div class="portfolio-copy"><span class="card-category">${escapeHtml(item.category)} • ${escapeHtml(item.store)}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p></div></article>`).join("");grid.querySelectorAll(".portfolio-card").forEach(card=>{card.addEventListener("click",()=>openModal(items[Number(card.dataset.index)]))})}
+const modal=document.getElementById("imageModal");
+function openModal(item){document.getElementById("modalImage").src=item.image;document.getElementById("modalImage").alt=item.title;document.getElementById("modalCategory").textContent=`${item.category} • ${item.store}`;document.getElementById("modalTitle").textContent=item.title;document.getElementById("modalDescription").textContent=item.description;const link=document.getElementById("modalLink");link.href=item.link;link.textContent=item.store==="Picfair"?"Buy this photo on Picfair":"View this design on TeePublic";modal.classList.add("open");modal.setAttribute("aria-hidden","false")}
+function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true")}
+document.getElementById("modalClose").addEventListener("click",closeModal);modal.addEventListener("click",event=>{if(event.target===modal)closeModal()});document.addEventListener("keydown",event=>{if(event.key==="Escape")closeModal()});
+fetch("gallery.json").then(response=>response.json()).then(data=>{items=data;renderFilters();renderPortfolio()}).catch(error=>{document.getElementById("portfolioGrid").innerHTML="<p>The gallery could not be loaded.</p>";console.error(error)});
+document.getElementById("searchBox").addEventListener("input",renderPortfolio);

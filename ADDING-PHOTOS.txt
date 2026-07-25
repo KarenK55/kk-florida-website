@@ -1,44 +1,41 @@
 HOW TO ADD YOUR OWN PHOTOS
 
+This version uses NO folders. All website files and photos may remain in the main GitHub folder.
+
 1. Prepare a web copy:
-   - Resize to about 1800–2200 pixels wide.
-   - Use JPEG quality around 80–88%.
-   - Add your watermark before uploading.
-   - Keep the full-resolution unwatermarked original for Picfair.
+- Resize to about 1800–2200 pixels wide.
+- Save as JPEG.
+- Add your watermark before uploading.
+- Keep the unwatermarked original for Picfair.
 
-2. Upload the photo to the correct GitHub folder:
-   images/birds/
-   images/butterflies/
-   images/dragonflies/
-   images/flowers/
-   images/everglades/
-   images/sunsets/
-   images/reptiles/
-   images/insects/
-   images/tshirts/
+2. Rename the photo clearly:
+roseate-spoonbill.jpg
+everglades-sunset.jpg
+green-dragonfly.jpg
 
-3. Open data/gallery.json in GitHub and click the pencil icon.
+3. Upload the photo to the main level of the GitHub repository.
 
-4. Copy an existing item and change it. Example:
+4. Open gallery.json and click the pencil icon.
+
+5. Add an item like this:
 
 {
   "title": "Roseate Spoonbill",
   "category": "Birds",
   "description": "Photographed in the Florida Everglades.",
-  "image": "images/birds/roseate-spoonbill.jpg",
-  "link": "https://YOUR-EXACT-PICFAIR-PHOTO-LINK",
+  "image": "roseate-spoonbill.jpg",
+  "link": "https://YOUR-EXACT-PICFAIR-LINK",
   "store": "Picfair"
 }
 
-5. Add a comma between items, commit the change, and Cloudflare will redeploy automatically.
+6. Put a comma between entries.
+7. Commit changes.
+8. Cloudflare redeploys automatically.
 
-WATERMARKING
-Add the watermark before uploading the website copy.
+WATERMARK
+Add it before uploading.
 Recommended:
-- Text: KK Florida Photography
+- KK Florida Photography
 - White or light gray
 - 35–45% opacity
 - Lower-right corner
-- Keep it readable but not distracting
-
-Use unwatermarked originals only on Picfair.
