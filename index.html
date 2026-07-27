@@ -3,92 +3,130 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="KK Florida wildlife photography, Florida nature art, apparel, and gifts inspired by South Florida and the Everglades.">
+<meta name="description" content="KK Florida showcases original South Florida wildlife photography, Everglades landscapes, nature art, apparel, and gifts.">
 <title>KK Florida | Florida Wildlife Photography & Art</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="site-header">
-<a class="brand" href="#home"><img src="images/logos/kkflorida-logo.png" alt="KK Florida"></a>
-<button class="menu-button" aria-label="Open navigation">☰</button>
-<nav class="main-nav">
-<a href="#home">Home</a>
-<a href="#portfolio">Photography</a>
-<a href="#tshirts">T-Shirts & Art</a>
-<a href="guides.html">Wildlife Guides</a>
-<a href="#about">About</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <a class="brand" href="#home" aria-label="KK Florida home"><img src="images/logos/kkflorida-logo.png" alt="KK Florida"></a>
+  <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#collections">Collections</a>
+    <a href="#featured">Featured</a>
+    <a href="#shop">Shop</a>
+    <a href="guides.html">Guides</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
 <main>
 <section class="hero" id="home">
-<div id="heroSlides" class="hero-slides"></div>
-<div class="hero-overlay"></div>
-<div class="hero-content">
-<p class="eyebrow">South Florida • Everglades • Nature</p>
-<h1>Florida, naturally.</h1>
-<p class="hero-intro">Original wildlife photography and Florida-inspired artwork by KK Florida.</p>
-<div class="button-row">
-<a class="button primary" href="#portfolio">Browse Photography</a>
-<a class="button secondary" href="#tshirts">Shop T-Shirts & Art</a>
-</div>
-</div>
+  <div id="heroSlides" class="hero-slides" aria-hidden="true"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow light">South Florida • Everglades • Nature</p>
+    <h1>Wild Florida,<br>beautifully captured.</h1>
+    <p class="hero-intro">Original wildlife photography, Florida landscapes, and nature-inspired artwork from Broward County and the Everglades.</p>
+    <div class="button-row">
+      <a class="button primary" href="#collections">Explore Collections</a>
+      <a class="button glass" href="#shop">Shop Photography & Art</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#collections" aria-label="Scroll to collections">↓</a>
 </section>
 
-<section class="section white" id="portfolio">
-<div class="section-heading compact-heading">
-<p class="eyebrow">Photography collections</p>
-<h2>Explore by category</h2>
-<p>A cleaner way to browse: choose a collection to open its full gallery.</p>
-</div>
-<div id="categoryGrid" class="category-grid"></div>
+<section class="intro-strip" aria-label="KK Florida highlights">
+  <div><strong>Original</strong><span>Florida photography</span></div>
+  <div><strong>Local</strong><span>South Florida & Everglades</span></div>
+  <div><strong>Creative</strong><span>Prints, apparel & gifts</span></div>
 </section>
 
-<section class="section tint" id="tshirts">
-<div class="section-heading compact-heading">
-<p class="eyebrow">TeePublic collection</p>
-<h2>T-Shirts, art, and gifts</h2>
-<p>Your uploaded TeePublic designs are now shown in their own dedicated section.</p>
-</div>
-<div id="tshirtGrid" class="tshirt-grid"></div>
-<div class="centered-action"><a class="button primary" href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener">Visit the full TeePublic store</a></div>
+<section class="section collections-section" id="collections">
+  <div class="section-heading left-heading">
+    <div><p class="eyebrow">Browse by collection</p><h2>Choose what you would like to see.</h2></div>
+    <p>Each collection opens only when selected, keeping the homepage clean and easy to browse.</p>
+  </div>
+  <div id="categoryGrid" class="category-grid" aria-live="polite"></div>
 </section>
 
-<section class="store-strip">
-<article><span>Photography prints</span><h2>Shop original photography</h2><p>Browse prints and downloads through Picfair.</p><a href="https://flwildlife.picfair.com/" target="_blank" rel="noopener">Open Picfair →</a></article>
-<article><span>Wearable artwork</span><h2>Shop Florida-inspired designs</h2><p>Find shirts, stickers, mugs, and gifts through TeePublic.</p><a href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener">Open TeePublic →</a></article>
+<section class="section featured-section" id="featured">
+  <div class="section-heading">
+    <p class="eyebrow">A closer look</p>
+    <h2>Featured from the collection</h2>
+    <p>A rotating selection of Florida wildlife, flowers, landscapes, and original designs.</p>
+  </div>
+  <div id="featuredGrid" class="featured-grid"></div>
 </section>
 
-<section class="section white about-section" id="about">
-<div><p class="eyebrow">About KK Florida</p><h2>Inspired by the wild side of Florida</h2></div>
-<p>KK Florida celebrates the beauty, color, and personality of Florida wildlife through original photography and nature-inspired artwork. From birds and butterflies to sunsets and Florida-themed designs, each collection reflects a love of South Florida and the Everglades.</p>
+<section class="shop-section" id="shop">
+  <div class="shop-card photo-shop">
+    <div class="shop-shade"></div>
+    <div class="shop-copy">
+      <p class="eyebrow light">Photography</p>
+      <h2>Bring Florida home.</h2>
+      <p>Shop original photographs, wall art, prints, and digital downloads through Picfair.</p>
+      <a class="button white-button" href="https://flwildlife.picfair.com/" target="_blank" rel="noopener">Shop Picfair</a>
+    </div>
+  </div>
+  <div class="shop-card art-shop">
+    <div class="shop-shade"></div>
+    <div class="shop-copy">
+      <p class="eyebrow light">Apparel & gifts</p>
+      <h2>Wear the wild side.</h2>
+      <p>Explore original Florida-inspired T-shirts, stickers, mugs, and gifts on TeePublic.</p>
+      <a class="button white-button" href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener">Shop TeePublic</a>
+    </div>
+  </div>
+</section>
+
+<section class="section about-section" id="about">
+  <div class="about-logo"><img src="images/logos/kkflorida-logo.png" alt="KK Florida logo"></div>
+  <div class="about-copy">
+    <p class="eyebrow">About KK Florida</p>
+    <h2>Inspired by the color and character of Florida.</h2>
+    <p>KK Florida celebrates native wildlife, flowers, sunsets, and scenery through original photography and artwork. The images are created in South Florida and inspired by the Everglades, Broward County, and the everyday beauty found throughout the state.</p>
+    <a class="text-link" href="contact.html">Contact KK Florida →</a>
+  </div>
 </section>
 </main>
 
-<div id="galleryModal" class="modal" aria-hidden="true">
-<button id="modalClose" class="modal-close" aria-label="Close gallery">×</button>
-<div class="gallery-dialog">
-<div class="gallery-modal-head"><div><span id="galleryEyebrow" class="eyebrow"></span><h2 id="galleryTitle"></h2></div><input id="gallerySearch" type="search" placeholder="Search this collection…"></div>
-<div id="galleryGrid" class="gallery-grid"></div>
-</div>
-</div>
+<section id="galleryPanel" class="gallery-panel" aria-hidden="true">
+  <div class="gallery-toolbar">
+    <div><p class="eyebrow">Collection</p><h2 id="galleryTitle">Gallery</h2><p id="galleryCount"></p></div>
+    <button id="galleryClose" class="close-button" aria-label="Close collection">×</button>
+  </div>
+  <div class="gallery-controls">
+    <label class="search-field"><span class="sr-only">Search this collection</span><input id="searchBox" type="search" placeholder="Search this collection"></label>
+  </div>
+  <div id="portfolioGrid" class="portfolio-grid"></div>
+</section>
 
-<div id="imageModal" class="modal image-modal" aria-hidden="true">
-<button id="imageModalClose" class="modal-close" aria-label="Close preview">×</button>
-<div class="image-dialog">
-<img id="modalImage" alt="">
-<div class="image-actions"><span id="modalCategory" class="card-category"></span><a id="modalLink" class="button primary" target="_blank" rel="noopener"></a></div>
-</div>
+<div id="imageModal" class="modal" aria-hidden="true">
+  <button id="modalClose" class="modal-close" aria-label="Close preview">×</button>
+  <div class="modal-dialog">
+    <img id="modalImage" alt="">
+    <div class="modal-copy">
+      <span id="modalCategory" class="card-category"></span>
+      <h2 id="modalTitle" class="visually-hidden-title"></h2>
+      <p id="modalDescription"></p>
+      <a id="modalLink" class="button primary" target="_blank" rel="noopener"></a>
+    </div>
+  </div>
 </div>
 
 <footer class="site-footer">
-<img src="images/logos/kkflorida-logo.png" alt="KK Florida">
-<p>Florida Wildlife Photography • Nature Art • Apparel</p>
-<div class="footer-links"><a href="#portfolio">Photography</a><a href="#tshirts">T-Shirts</a><a href="guides.html">Guides</a><a href="contact.html">Contact</a></div>
+  <img src="images/logos/kkflorida-logo.png" alt="KK Florida">
+  <p>Florida Wildlife Photography • Nature Art • Apparel</p>
+  <div class="footer-links">
+    <a href="#collections">Collections</a><a href="guides.html">Guides</a><a href="contact.html">Contact</a>
+    <a href="https://flwildlife.picfair.com/" target="_blank" rel="noopener">Picfair</a>
+    <a href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener">TeePublic</a>
+  </div>
 </footer>
 <script src="js/app.js"></script>
 </body>

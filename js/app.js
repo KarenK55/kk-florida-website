@@ -1,68 +1,23 @@
 let items=[];
-const menuButton=document.querySelector('.menu-button');
-const navigation=document.querySelector('.main-nav');
-if(menuButton&&navigation){menuButton.addEventListener('click',()=>navigation.classList.toggle('open'));navigation.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navigation.classList.remove('open')))}
-const escapeHtml=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-const imageFor=item=>item.thumbnail||item.image;
-const isTshirt=item=>String(item.store).toLowerCase()==='teepublic'||String(item.category).toLowerCase().replace(/\s+/g,'').includes('tshirt');
-const photoItems=()=>items.filter(item=>!isTshirt(item));
-const tshirtItems=()=>items.filter(isTshirt);
-
-function groupedPhotos(){
- const groups=new Map();
- photoItems().forEach(item=>{if(!groups.has(item.category))groups.set(item.category,[]);groups.get(item.category).push(item)});
- return [...groups.entries()];
-}
-function renderCategories(){
- const host=document.getElementById('categoryGrid');
- host.innerHTML=groupedPhotos().map(([category,list])=>{
-   const cover=list[0];
-   return `<button class="category-card" data-category="${escapeHtml(category)}"><img src="${escapeHtml(imageFor(cover))}" alt="${escapeHtml(cover.alt||category)}" loading="lazy"><span class="category-overlay"></span><span class="category-copy"><small>${list.length} ${list.length===1?'photo':'photos'}</small><strong>${escapeHtml(category)}</strong><em>View collection →</em></span></button>`;
- }).join('');
- host.querySelectorAll('.category-card').forEach(button=>button.addEventListener('click',()=>openGallery(button.dataset.category,photoItems().filter(i=>i.category===button.dataset.category))));
-}
-function renderTshirts(){
- const list=tshirtItems();
- const host=document.getElementById('tshirtGrid');
- host.innerHTML=list.map(item=>`<button class="art-card" data-index="${items.indexOf(item)}"><img src="${escapeHtml(imageFor(item))}" alt="${escapeHtml(item.alt||'KK Florida TeePublic design')}" loading="lazy"><span>View on TeePublic</span></button>`).join('');
- host.querySelectorAll('.art-card').forEach(card=>card.addEventListener('click',()=>openImage(items[Number(card.dataset.index)])));
-}
-
-const galleryModal=document.getElementById('galleryModal');
-const galleryGrid=document.getElementById('galleryGrid');
-const gallerySearch=document.getElementById('gallerySearch');
-let currentGallery=[];
-function openGallery(category,list){
- currentGallery=list;
- document.getElementById('galleryEyebrow').textContent='Photography collection';
- document.getElementById('galleryTitle').textContent=category;
- gallerySearch.value='';
- renderGalleryItems();
- galleryModal.classList.add('open');galleryModal.setAttribute('aria-hidden','false');document.body.classList.add('no-scroll');
-}
-function renderGalleryItems(){
- const q=gallerySearch.value.trim().toLowerCase();
- const filtered=currentGallery.filter(item=>`${item.title||''} ${item.description||''} ${(item.keywords||[]).join(' ')}`.toLowerCase().includes(q));
- galleryGrid.innerHTML=filtered.map(item=>`<button class="gallery-item" data-index="${items.indexOf(item)}"><img src="${escapeHtml(imageFor(item))}" alt="${escapeHtml(item.alt||item.category||'KK Florida photograph')}" loading="lazy"><span class="view-label">View photo</span></button>`).join('');
- galleryGrid.querySelectorAll('.gallery-item').forEach(card=>card.addEventListener('click',()=>openImage(items[Number(card.dataset.index)])));
-}
-function closeGallery(){galleryModal.classList.remove('open');galleryModal.setAttribute('aria-hidden','true');if(!document.getElementById('imageModal').classList.contains('open'))document.body.classList.remove('no-scroll')}
-
-gallerySearch.addEventListener('input',renderGalleryItems);
-document.getElementById('modalClose').addEventListener('click',closeGallery);
-galleryModal.addEventListener('click',e=>{if(e.target===galleryModal)closeGallery()});
-
-const imageModal=document.getElementById('imageModal');
-function openImage(item){
- const img=document.getElementById('modalImage');img.src=item.image;img.alt=item.alt||item.category||'KK Florida image';
- document.getElementById('modalCategory').textContent=`${item.category} • ${item.store}`;
- const link=document.getElementById('modalLink');link.href=item.link||item.purchaseUrl||'#';link.textContent=isTshirt(item)?'View this design on TeePublic':'Buy this photo on Picfair';
- imageModal.classList.add('open');imageModal.setAttribute('aria-hidden','false');document.body.classList.add('no-scroll');
-}
-function closeImage(){imageModal.classList.remove('open');imageModal.setAttribute('aria-hidden','true');if(!galleryModal.classList.contains('open'))document.body.classList.remove('no-scroll')}
-document.getElementById('imageModalClose').addEventListener('click',closeImage);
-imageModal.addEventListener('click',e=>{if(e.target===imageModal)closeImage()});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(imageModal.classList.contains('open'))closeImage();else if(galleryModal.classList.contains('open'))closeGallery()}});
-
-fetch('data/gallery.json').then(r=>r.json()).then(data=>{items=Array.isArray(data)?data:(data.items||[]);renderCategories();renderTshirts()}).catch(err=>{document.getElementById('categoryGrid').innerHTML='<p>The gallery could not be loaded.</p>';console.error(err)});
-fetch('data/hero.json').then(r=>r.json()).then(slides=>{const host=document.getElementById('heroSlides');host.innerHTML=slides.map((s,i)=>`<div class="hero-slide ${i===0?'active':''}" style="background-image:url('${s.image}')" role="img" aria-label="${escapeHtml(s.alt)}"></div>`).join('');const els=[...host.children];if(els.length>1){let index=0;setInterval(()=>{els[index].classList.remove('active');index=(index+1)%els.length;els[index].classList.add('active')},6000)}});
+let activeCategory="";
+const $=selector=>document.querySelector(selector);
+const menuButton=$(".menu-button");
+const navigation=$(".main-nav");
+if(menuButton&&navigation){menuButton.addEventListener("click",()=>{const open=navigation.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(open))});navigation.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{navigation.classList.remove("open");menuButton.setAttribute("aria-expanded","false")}))}
+function escapeHtml(value){return String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[char]))}
+function imageFor(item){return item.thumbnail||item.image}
+function displayCategory(name){return name==="Tshirts"?"T-Shirts & Art":name}
+function categoryOrder(categories){const preferred=["Birds","Butterflies","Flowers","Sunsets","Insects","Landscapes","Mammals","Orchids","Tshirts"];return [...categories].sort((a,b)=>{const ai=preferred.indexOf(a),bi=preferred.indexOf(b);return (ai<0?99:ai)-(bi<0?99:bi)||a.localeCompare(b)})}
+function groupedItems(){return items.reduce((map,item)=>{(map[item.category]??=[]).push(item);return map},{})}
+function renderCategories(){const groups=groupedItems();const categories=categoryOrder(Object.keys(groups));const grid=$("#categoryGrid");grid.innerHTML=categories.map(category=>{const group=groups[category];const cover=group.find(i=>i.thumbnail)||group[0];return `<button class="category-card" data-category="${escapeHtml(category)}"><img src="${escapeHtml(imageFor(cover))}" alt="${escapeHtml(displayCategory(category))}" loading="lazy"><span class="category-shade"></span><span class="category-copy"><h3>${escapeHtml(displayCategory(category))}</h3><p>${group.length} ${group.length===1?"image":"images"}</p></span><span class="category-arrow">→</span></button>`}).join("");grid.querySelectorAll(".category-card").forEach(card=>card.addEventListener("click",()=>openGallery(card.dataset.category)))}
+function renderFeatured(){const groups=groupedItems();const categories=categoryOrder(Object.keys(groups));const picks=categories.slice(0,8).map((category,index)=>{const group=groups[category];return group[index%group.length]});const grid=$("#featuredGrid");grid.innerHTML=picks.map(item=>`<article class="featured-card" data-index="${items.indexOf(item)}"><img src="${escapeHtml(imageFor(item))}" alt="${escapeHtml(item.alt||displayCategory(item.category))}" loading="lazy"><span class="featured-badge">${escapeHtml(displayCategory(item.category))}</span></article>`).join("");grid.querySelectorAll(".featured-card").forEach(card=>card.addEventListener("click",()=>openModal(items[Number(card.dataset.index)])))}
+function openGallery(category){activeCategory=category;$("#galleryTitle").textContent=displayCategory(category);$("#searchBox").value="";renderPortfolio();const panel=$("#galleryPanel");panel.classList.add("open");panel.setAttribute("aria-hidden","false");document.body.classList.add("no-scroll");panel.scrollTop=0}
+function closeGallery(){const panel=$("#galleryPanel");panel.classList.remove("open");panel.setAttribute("aria-hidden","true");document.body.classList.remove("no-scroll")}
+function renderPortfolio(){const search=$("#searchBox").value.trim().toLowerCase();const filtered=items.filter(item=>item.category===activeCategory).filter(item=>`${item.title||""} ${item.description||""} ${(item.keywords||[]).join(" ")} ${item.location||""}`.toLowerCase().includes(search));$("#galleryCount").textContent=`${filtered.length} ${filtered.length===1?"image":"images"}`;const grid=$("#portfolioGrid");grid.innerHTML=filtered.length?filtered.map(item=>`<article class="portfolio-card" data-index="${items.indexOf(item)}"><img src="${escapeHtml(imageFor(item))}" alt="${escapeHtml(item.alt||displayCategory(item.category))}" loading="lazy"><span class="portfolio-overlay"></span><span class="portfolio-meta">View image →</span></article>`).join(""):`<p class="empty-state">No images matched your search.</p>`;grid.querySelectorAll(".portfolio-card").forEach(card=>card.addEventListener("click",()=>openModal(items[Number(card.dataset.index)])))}
+const modal=$("#imageModal");
+function cleanTitle(item){const title=String(item.title||"").trim();if(!title||/^(bee|bird|card|img|image|photo|sunset|flower|butterfly)[\s_\-]*(\(?\d+\)?)?$/i.test(title))return "";return title}
+function openModal(item){$("#modalImage").src=item.image;$("#modalImage").alt=item.alt||displayCategory(item.category);$("#modalCategory").textContent=`${displayCategory(item.category)} • ${item.store||"KK Florida"}`;const title=cleanTitle(item);$("#modalTitle").textContent=title;$("#modalTitle").classList.toggle("visually-hidden-title",!title);const description=item.description||`Original ${displayCategory(item.category).toLowerCase()} photography and artwork from KK Florida.`;$("#modalDescription").textContent=description;const link=$("#modalLink");link.href=item.link||item.purchaseUrl||"#";link.textContent=item.store==="TeePublic"?"View this design on TeePublic":"Shop this photo on Picfair";modal.classList.add("open");modal.setAttribute("aria-hidden","false")}
+function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true")}
+$("#galleryClose").addEventListener("click",closeGallery);$("#searchBox").addEventListener("input",renderPortfolio);$("#modalClose").addEventListener("click",closeModal);modal.addEventListener("click",event=>{if(event.target===modal)closeModal()});document.addEventListener("keydown",event=>{if(event.key==="Escape"){if(modal.classList.contains("open"))closeModal();else if($("#galleryPanel").classList.contains("open"))closeGallery()}});
+fetch("data/gallery.json").then(response=>response.json()).then(data=>{items=Array.isArray(data)?data:(data.items||[]);renderCategories();renderFeatured()}).catch(error=>{$("#categoryGrid").innerHTML="<p>The gallery could not be loaded.</p>";console.error(error)});
+fetch("data/hero.json").then(r=>r.json()).then(slides=>{const host=$("#heroSlides");host.innerHTML=slides.map((s,i)=>`<div class="hero-slide ${i===0?"active":""}" style="background-image:url('${s.image}')" role="img" aria-label="${escapeHtml(s.alt)}"></div>`).join("");const els=[...host.children];if(els.length>1){let index=0;setInterval(()=>{els[index].classList.remove("active");index=(index+1)%els.length;els[index].classList.add("active")},6500)}});
