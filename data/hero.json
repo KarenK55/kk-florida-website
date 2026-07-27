@@ -1,18 +1,26 @@
 [
   {
-    "image": "https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=2200&q=90",
-    "alt": "Florida coastal landscape"
+    "image": "images/birds/web/spoonbill.jpg",
+    "alt": "Roseate spoonbill photographed by KK Florida"
   },
   {
-    "image": "https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=2200&q=90",
-    "alt": "Florida bird"
+    "image": "images/sunsets/web/sunset3.jpg",
+    "alt": "Florida sunset photographed by KK Florida"
   },
   {
-    "image": "https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=2200&q=90",
-    "alt": "Butterfly"
+    "image": "images/butterflies/web/zebra.jpg",
+    "alt": "Zebra longwing butterfly photographed by KK Florida"
   },
   {
-    "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2200&q=90",
-    "alt": "Florida sunset"
+    "image": "images/flowers/web/poinciana.jpg",
+    "alt": "Poinciana flowers photographed by KK Florida"
+  },
+  {
+    "image": "images/insects/web/bee.jpg",
+    "alt": "Bee photographed by KK Florida"
+  },
+  {
+    "image": "images/landscapes/web/rainbow.jpg",
+    "alt": "Florida rainbow landscape photographed by KK Florida"
   }
 ]
