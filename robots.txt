@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kkflorida.com/sitemap.xml
+
+Sitemap: https://kkflorida.com/image-sitemap.xml
