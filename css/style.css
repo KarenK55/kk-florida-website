@@ -41,3 +41,51 @@
 .form-success.show{display:block}
 .honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important}
 @media(max-width:800px){.contact-layout{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.contact-form,.contact-intro{padding:26px}}
+
+
+/* KK Florida footer and contact refinements - v2 */
+.site-footer .footer-logo-panel{
+  width:min(260px,75vw);
+  margin:0 auto 18px;
+  padding:14px 18px;
+  border-radius:20px;
+  background:#ffffff;
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+.site-footer .footer-logo-panel img{
+  display:block!important;
+  width:100%!important;
+  max-width:230px!important;
+  height:auto!important;
+  margin:0 auto!important;
+  opacity:1!important;
+  visibility:visible!important;
+  filter:none!important;
+}
+
+.contact-page{padding-top:80px;padding-bottom:90px}
+.contact-layout{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:48px;align-items:start}
+.contact-intro{padding:42px}
+.contact-intro .button-row{margin-top:26px}
+.contact-form{display:block;padding:38px 40px}
+.contact-form .form-success{margin:0 0 24px}
+.contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-form .form-field{display:flex;flex-direction:column;gap:9px;margin:0 0 22px}
+.contact-form .form-field label{display:block;font-weight:700;line-height:1.35;color:var(--navy)}
+.contact-form .form-field input,
+.contact-form .form-field select,
+.contact-form .form-field textarea{
+  display:block;width:100%;box-sizing:border-box;min-height:52px;padding:14px 16px;
+  border:1px solid #b8c8d1;border-radius:12px;background:#fff;color:#172b3a;
+  font:inherit;line-height:1.4
+}
+.contact-form .form-field textarea{min-height:210px;resize:vertical}
+.contact-form button[type="submit"]{min-width:180px;margin-top:2px}
+.contact-form .form-privacy{margin:20px 0 0;color:var(--muted);font-size:.92rem;line-height:1.6}
+.contact-form .honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:800px){
+  .contact-page{padding-top:55px}
+  .contact-layout{grid-template-columns:1fr;gap:28px}
+  .contact-form,.contact-intro{padding:28px}
+  .contact-form .form-row{grid-template-columns:1fr;gap:0}
+}
