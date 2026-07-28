@@ -1,13 +1,90 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Contact KK Florida and visit the Picfair and TeePublic stores.">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Contact KK Florida about Florida wildlife photography, prints, art, and apparel.">
 <title>Contact | KK Florida</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"></head>
+<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<header class="site-header inner-header"><a class="brand" href="index.html"><img src="images/logos/kkflorida-logo.png" alt="KK Florida"></a><nav class="main-nav"><a href="index.html">Home</a><a href="index.html#portfolio">Portfolio</a><a href="guides.html">Guides</a></nav></header>
-<main><section class="section white contact-page"><div class="section-heading"><p class="eyebrow">Contact KK Florida</p><h2>Photography, art, and apparel</h2><p>Use the store links below for product questions, orders, and availability.</p><div class="button-row"><a class="button primary" href="https://flwildlife.picfair.com/" target="_blank" rel="noopener">Visit Picfair</a><a class="button primary" href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener">Visit TeePublic</a></div></div></section></main>
-<footer class="site-footer"><strong>KK Florida</strong></footer>
-</body></html>
+<header class="site-header inner-header">
+  <a class="brand" href="index.html"><img src="images/logos/kkflorida-logo.png" alt="KK Florida"></a>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#portfolio">Portfolio</a>
+    <a href="guides.html">Guides</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="section white contact-page">
+  <div class="contact-layout">
+    <div class="contact-intro">
+      <p class="eyebrow light">Contact KK Florida</p>
+      <h1>Questions, comments, or photo inquiries?</h1>
+      <p>Use the form to send a message about KK Florida photography, wildlife identification, prints, artwork, or apparel.</p>
+      <p>You may also email <a href="mailto:puggybw@hotmail.com"><strong>puggybw@hotmail.com</strong></a>.</p>
+      <div class="button-row">
+        <a class="button primary" href="https://flwildlife.picfair.com/" target="_blank" rel="noopener">Visit Picfair</a>
+        <a class="button primary" href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener">Visit TeePublic</a>
+      </div>
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/puggybw@hotmail.com" method="POST">
+      <div id="formSuccess" class="form-success" role="status">Thank you. Your message was submitted successfully.</div>
+      <input type="hidden" name="_subject" value="New message from KKFlorida.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://kkflorida.com/contact.html?sent=1">
+      <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="subject">What is your message about?</label>
+        <select id="subject" name="topic">
+          <option>General question</option>
+          <option>Photography or print</option>
+          <option>T-shirt or artwork</option>
+          <option>Florida wildlife guide</option>
+          <option>Website issue</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button class="button primary" type="submit">Send Message</button>
+      <p class="form-note">The first submission will send an activation email to puggybw@hotmail.com. Open that email and click the activation link once; messages submitted afterward will arrive normally.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <img src="images/logos/kkflorida-logo.png" alt="KK Florida">
+  <p>Florida wildlife, landscapes, photography, and art.</p>
+  <div class="footer-links"><a href="index.html">Home</a><a href="guides.html">Wildlife Guides</a><a href="contact.html">Contact</a></div>
+</footer>
+<script>
+if (new URLSearchParams(window.location.search).get('sent') === '1') {
+  document.getElementById('formSuccess').classList.add('show');
+}
+</script>
+</body>
+</html>
