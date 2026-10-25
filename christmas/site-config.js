@@ -10,9 +10,10 @@ window.SITE_CONFIG = {
     name: "KKFlorida",
     shortName: "T-shirts, photos, artwork for all occasions.",
     tagline: "Looking for that ugly sweater that's just perfect for Christmas gatherings? We have it.",
-    domain: "https://kkflorida.com/",
+    domain: "https://kkflorida.com/christmas/",
     shopUrl: "https://www.teepublic.com/user/kk-florida",
     logo: "assets/logo.png",
+    footerLogo: "assets/kk-florida-wild-logo.png",
     favicon: "assets/favicon.ico",
     socialImage: "assets/social-share.svg"
   },
@@ -44,7 +45,7 @@ window.SITE_CONFIG = {
     eyebrow: "KK FLORIDA HOLIDAY COLLECTION",
     title: "It's Christmas!",
     highlight: "A Little Wild, A Little Wacky, and Never Boring!",
-    description: "From original Florida wildlife photography and breathtaking Everglades sunsets to colorful artwork, quirky cartoons, and downright crazy creations, KK Florida has something for everyone! Explore unique photography prints, art prints, apparel, gifts, and fun products featuring our original designs. We love nature, creativity, and thinking outside the box. You never know what you'll find at KK Florida—and that's exactly how we like it!.",
+    description: "From original Florida wildlife photography and breathtaking Everglades sunsets to colorful artwork, quirky cartoons, and downright crazy creations, KK Florida has something for everyone! Explore unique photography prints, art prints, apparel, gifts, and fun products featuring our original designs. We love nature, creativity, and thinking outside the box. You never know what you'll find at KK Florida—and that's exactly how we like it!",
     primaryButton: { label: "View featured items", url: "#featured" },
     secondaryButton: { label: "Learn more", url: "#about" },
     points: ["Original KK Florida designs", "Festive fun and unique gifts", "Holiday apparel made to order"],
@@ -138,9 +139,17 @@ window.SITE_CONFIG = {
   },
 
   collections: [
-    { label: "COLLECTION", title: "Collection One", action: "View now →", image: "assets/mudtires.png", url: "https://shop.example.com/collection-one" },
-    { label: "COLLECTION", title: "Collection Two", action: "View now →", image: "assets/porkbutt.png", url: "https://shop.example.com/collection-two" },
-    { label: "COLLECTION", title: "Collection Three", action: "View now →", image: "assets/iguana.jpg", url: "https://shop.example.com/collection-three" }
+    { label: "Collection One", title: "Photography", action: "View now →", image: "../images/sunsets/web/sunset.jpg", url: "https://kkflorida.com/" },
+    { label: "Collection Two", title: "Spy State", action: "View now →", image: "assets/flock-privacy.svg", url: "https://www.teepublic.com/user/kk-florida/albums/546797-flock" },
+    {
+      label: "Collection Three",
+      title: "Kaleidoscope Flowers",
+      action: "Shop kaleidoscope art →",
+      image: "../images/kaleidoscope-flowers/web/kaleidoscope-flower-01.png",
+      url: "https://www.teepublic.com/user/kk-florida/albums/529896-kaleidoscope-flowers",
+      description: "Discover colorful flower kaleidoscopes inspired by original KK Florida photography, then print our free black-and-white designs to color your own way.",
+      secondaryLink: { label: "Download free coloring pages →", url: "https://kkflorida.com/coloring-pages" }
+    }
   ],
 
   finalCallToAction: {
@@ -157,7 +166,7 @@ window.SITE_CONFIG = {
       {
         heading: "Explore",
         links: [
-          { label: "All products", url: "https://shop.example.com" },
+          { label: "All products", url: "https://www.teepublic.com/user/kk-florida" },
           { label: "Featured", url: "#featured" },
           { label: "Collections", url: "#collections" }
         ]
@@ -166,10 +175,103 @@ window.SITE_CONFIG = {
         heading: "Information",
         links: [
           { label: "About", url: "#about" },
-          { label: "Terms", url: "https://shop.example.com/terms" },
-          { label: "Privacy policy", url: "https://shop.example.com/privacy" }
+          { label: "Shipping", url: "https://teepublic.zendesk.com/hc/en-us/articles/360012762073-What-shipping-methods-are-available" },
+          { label: "Returns", url: "https://teepublic.zendesk.com/hc/en-us/sections/115003815328-Refunds-Returns" }
         ]
       }
     ]
   }
 };
+
+
+/* ============================================================
+   KK FLORIDA SITE ENHANCEMENTS
+   The main site script reads SITE_CONFIG above. This small addition
+   supports a separate colorful footer logo and Collection 3's extra
+   description/link, without changing the existing website scripts.
+   ============================================================ */
+(() => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const cfg = window.SITE_CONFIG || {};
+
+    // Keep the existing header logo, but use the new logo in the footer.
+    const footerLogo = document.getElementById("footer-logo");
+    if (footerLogo && cfg.business) {
+      footerLogo.src = cfg.business.footerLogo || cfg.business.logo || "assets/logo.png";
+      footerLogo.alt = `${cfg.business.name || "KK Florida"} colorful logo`;
+    }
+
+    const customStyles = document.createElement("style");
+    customStyles.textContent = `
+      .site-footer .footer-brand img {
+        display: block; width: 285px; max-width: 100%; height: auto;
+        max-height: 255px; object-fit: contain; object-position: left center;
+        filter: none !important; opacity: 1; visibility: visible;
+      }
+      .collection-card-enhanced > img {
+        position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+      }
+      .collection-card-enhanced .collection-content { z-index: 2; }
+      .collection-description {
+        display: block; margin: 8px 0 15px; max-width: 430px;
+        color: #fff9ed; font-size: .93rem; line-height: 1.52;
+        font-weight: 500; text-shadow: 0 1px 3px rgba(0,0,0,.3);
+      }
+      .collection-primary-link, .collection-secondary-link {
+        display: inline-flex; align-items: center; align-self: flex-start;
+        border-radius: 999px; padding: 9px 13px; margin-top: 7px;
+        text-decoration: none; font-size: .88rem; font-weight: 800;
+        transition: transform .15s ease, background .15s ease;
+      }
+      .collection-primary-link { background: #fff0c7; color: #164a32; }
+      .collection-secondary-link { background: #fff; color: #a51d2d; }
+      .collection-primary-link:hover, .collection-secondary-link:hover {
+        transform: translateY(-2px); background: #ffe0a1;
+      }
+      .collection-primary-link:focus-visible, .collection-secondary-link:focus-visible {
+        outline: 3px solid #fff; outline-offset: 3px;
+      }
+      @media (max-width: 760px) {
+        .collection-card-enhanced { min-height: 470px; }
+        .collection-description { font-size: .87rem; }
+      }
+    `;
+    document.head.appendChild(customStyles);
+
+    // Collection 3: retain the original shop link and add coloring pages.
+    const collection = (cfg.collections || [])[2];
+    const originalCard = document.querySelector("#collection-grid .collection-3");
+    if (!collection || !originalCard || !collection.secondaryLink) return;
+
+    // The original card is an <a>; switch to a card container so that
+    // the shop and coloring pages can each have their own valid link.
+    const card = document.createElement("article");
+    card.className = `${originalCard.className} collection-card-enhanced`;
+    while (originalCard.firstChild) card.appendChild(originalCard.firstChild);
+    originalCard.replaceWith(card);
+
+    const content = card.querySelector(".collection-content");
+    if (!content) return;
+    const oldAction = content.querySelector("em");
+    if (collection.description) {
+      const desc = document.createElement("span");
+      desc.className = "collection-description";
+      desc.textContent = collection.description;
+      if (oldAction) content.insertBefore(desc, oldAction);
+      else content.appendChild(desc);
+    }
+
+    const shop = document.createElement("a");
+    shop.className = "collection-primary-link";
+    shop.href = collection.url || "#";
+    shop.textContent = collection.action || "Shop the artwork →";
+    if (oldAction) oldAction.replaceWith(shop);
+    else content.appendChild(shop);
+
+    const coloring = document.createElement("a");
+    coloring.className = "collection-secondary-link";
+    coloring.href = collection.secondaryLink.url;
+    coloring.textContent = collection.secondaryLink.label || "Free Coloring Pages →";
+    content.appendChild(coloring);
+  });
+})();

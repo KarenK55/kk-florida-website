@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 950" role="img" aria-label="Spy State and Flock surveillance artwork">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#173447"/><stop offset=".55" stop-color="#366b78"/><stop offset="1" stop-color="#172735"/></linearGradient><radialGradient id="glow"><stop stop-color="#c62536" stop-opacity=".8"/><stop offset="1" stop-color="#c62536" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="950" fill="url(#bg)"/>
+<path d="M0 180h1200M0 360h1200M0 540h1200M0 720h1200M180 0v950M360 0v950M540 0v950M720 0v950M900 0v950" stroke="#a6c4c5" stroke-opacity=".14" stroke-width="4"/>
+<circle cx="640" cy="400" r="380" fill="url(#glow)"/>
+<g transform="translate(255 208)" fill="none" stroke="#fcf3d9" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+<path d="M108 170l300-103 77 218-299 104z" fill="#ded8c4"/><path d="M410 89l146-51 87 249-149 49" fill="#1e3444"/><circle cx="320" cy="250" r="90" fill="#c62536"/><circle cx="320" cy="250" r="34" fill="#f4dec7"/><path d="M220 390l-30 135M330 410l20 115M155 528h250"/>
+</g>
+<g font-family="Arial, sans-serif" text-anchor="middle" font-weight="900"><text x="600" y="125" font-size="83" letter-spacing="6" fill="#fef2d8">SPY STATE</text><text x="600" y="810" font-size="60" fill="#fff5e4">STOP THE FLOCK</text><text x="600" y="871" font-size="31" letter-spacing="2" fill="#fff3da">PROTECT OUR PRIVACY</text></g>
+</svg>
