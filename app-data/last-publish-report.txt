@@ -1,17 +1,24 @@
 KK Florida Batch Publishing Report
-Generated: 2026-10-25 01:38 PM
+Generated: 2026-10-25 05:27 PM
 
-Published: 6
-Skipped duplicates: 0
+Published: 0
+Skipped duplicates: 10
 Errors: 0
 
 Published titles:
-- Christmasnutty (Tshirts)
-- Christmasstork (Tshirts)
-- Iguana (Tshirts)
-- Mudtires (Tshirts)
-- Porkbutt (Tshirts)
-- Whiskers (Tshirts)
+- None
+
+Skipped:
+- flock1.png
+- flock2.png
+- flock3.png
+- flock4.png
+- flock5.png
+- flock6.png
+- flock7.png
+- flockbird.png
+- flockbird1.png
+- stoptheflock.png
 
 Git Result:
 Git commit/push skipped.
