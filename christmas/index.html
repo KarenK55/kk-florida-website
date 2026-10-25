@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT the fallbacks below too; site-config.js updates them for visitors. -->
+  <title>YOUR BUSINESS NAME | Short Description</title>
+  <meta name="description" content="Describe your website here.">
+  <meta name="keywords" content="your business, products, services">
+  <meta name="theme-color" content="#101216">
+  <meta property="og:title" content="YOUR BUSINESS NAME">
+  <meta property="og:description" content="Describe your website here.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/">
+  <meta property="og:image" content="https://www.example.com/assets/social-share.svg">
+  <link id="site-favicon" rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="site-config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement" id="announcement"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" id="brand-link" aria-label="Home">
+        <img id="header-logo" src="assets/logo.svg" alt="Website logo">
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation"></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow" id="hero-eyebrow"></p>
+          <h1><span id="hero-title"></span><br><span class="highlight" id="hero-highlight"></span></h1>
+          <p class="hero-text" id="hero-description"></p>
+          <div class="hero-actions">
+            <a class="button button-primary" id="hero-primary"></a>
+            <a class="button button-secondary" id="hero-secondary"></a>
+          </div>
+          <div class="hero-points" id="hero-points" aria-label="Highlights"></div>
+        </div>
+        <div class="hero-art" id="hero-art" aria-label="Featured images">
+          <div class="orbit" aria-hidden="true"></div>
+          <div class="product-float product-float-one"><img id="hero-image-1" alt=""></div>
+          <div class="product-float product-float-two"><img id="hero-image-2" alt=""></div>
+          <div class="warning-tag" id="hero-badge"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Highlights">
+      <div class="ticker-track" id="ticker-track"></div>
+    </section>
+
+    <section class="products-section section" id="featured">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div><p class="eyebrow" id="featured-eyebrow"></p><h2 id="featured-heading"></h2></div>
+          <div class="filter-buttons" id="filter-buttons" aria-label="Filter items"></div>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="center-action"><a class="button button-dark" id="view-all"></a></div>
+      </div>
+    </section>
+
+    <section class="mission section" id="about">
+      <div class="container mission-grid">
+        <div class="mission-visual">
+          <div class="message-frame">
+            <span class="frame-label">FEATURE</span>
+            <span class="corner top-left"></span><span class="corner top-right"></span>
+            <span class="corner bottom-left"></span><span class="corner bottom-right"></span>
+            <div class="mission-quote"><span id="visual-top"></span><br><span id="visual-middle"></span><br><strong id="visual-highlight"></strong></div>
+          </div>
+        </div>
+        <div class="mission-copy">
+          <p class="eyebrow" id="about-eyebrow"></p>
+          <h2 id="about-heading"></h2>
+          <div id="about-paragraphs"></div>
+          <a class="text-link" id="about-link"><span id="about-link-label"></span> <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="values section">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow" id="values-eyebrow"></p><h2 id="values-heading"></h2>
+        </div>
+        <div class="value-grid" id="value-grid"></div>
+      </div>
+    </section>
+
+    <section class="collections section" id="collections">
+      <div class="container">
+        <div class="section-heading heading-row"><div><p class="eyebrow" id="collections-eyebrow"></p><h2 id="collections-heading"></h2></div></div>
+        <div class="collection-grid" id="collection-grid"></div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <div><p class="eyebrow" id="cta-eyebrow"></p><h2 id="cta-heading"></h2></div>
+        <a class="button button-light" id="cta-button"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img id="footer-logo" src="assets/logo.svg" alt="Website logo"><p id="footer-description"></p></div>
+      <div class="footer-links" id="footer-links"></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> <span id="footer-name"></span></span><span id="footer-closing"></span></div>
+  </footer>
+</body>
+</html>
