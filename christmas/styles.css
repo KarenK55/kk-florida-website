@@ -311,3 +311,108 @@ button, input { font: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* KK FLORIDA CHRISTMAS THEME — festive palette and compact headings */
+:root {
+  --ink: #194c34;
+  --ink-soft: #226445;
+  --paper: #fff9ed;
+  --white: #ffffff;
+  --muted: #586c5d;
+  --line: #e4d5bc;
+  --primary: #c62536;
+  --primary-dark: #921a2b;
+  --accent: #d6a536;
+  --shadow: 0 22px 50px rgba(28,76,52,.15);
+}
+body { background: var(--paper); color: var(--ink); }
+.site-header {
+  background: rgba(255,249,237,.97);
+  border-bottom: 3px solid #c62536;
+}
+.site-nav a:hover { color: #b51f33; }
+.nav-shop, .button-dark { background: #1c693f; }
+.nav-shop:hover, .button-dark:hover { background: #c62536; }
+.hero {
+  color: #fff9e9;
+  background:
+    radial-gradient(circle at 82% 22%, rgba(249,217,130,.19), transparent 32%),
+    radial-gradient(circle at 10% 80%, rgba(224,67,76,.25), transparent 37%),
+    linear-gradient(140deg, #145331 0%, #237043 52%, #125138 100%);
+}
+.hero::before {
+  opacity: .24;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.7) 1px, transparent 2px),
+    radial-gradient(circle, rgba(255,234,182,.5) 1px, transparent 2px);
+  background-size: 70px 70px, 110px 110px;
+  background-position: 10px 20px, 45px 45px;
+  mask-image: none;
+}
+.hero h1 { font-size: clamp(2.7rem, 5vw, 4.5rem); line-height: 1.07; }
+.hero h1 span:not(.highlight) { color: #fff8e7; }
+.hero h1 .highlight {
+  display: block;
+  margin-top: 18px;
+  color: #ffe6a0;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(1.15rem, 2.1vw, 1.75rem);
+  font-weight: 750;
+  line-height: 1.4;
+  letter-spacing: .01em;
+  text-transform: none;
+}
+.hero h1 br { display: none; }
+.hero .eyebrow { color: #ffd47e; }
+.hero-text { color: #f7f0e5; }
+.hero-points { color: #f7edd7; }
+.hero-points span::before { color: #ffe194; }
+.button-secondary { border-color: rgba(255,246,223,.6); color: #fffaf0; }
+.warning-tag { color: #fff8e9; border-color: #f5d57f; background: rgba(121,28,40,.88); }
+.product-card { border: 1px solid #e3d4b6; box-shadow: 0 12px 24px rgba(32,89,53,.08); }
+.product-image-wrap { background: #f9f3e6; }
+.filter-button:hover, .filter-button.active {
+  color: #ffffff;
+  background: #1c693f;
+  border-color: #1c693f;
+}
+.mission {
+  color: #194c34;
+  background: linear-gradient(135deg, #fff1da 0%, #fffaf0 55%, #f7e8d2 100%);
+  border-top: 5px solid #c62536;
+  border-bottom: 5px solid #1c693f;
+}
+.mission .eyebrow { color: #bb2639; }
+.mission h2 {
+  max-width: 700px;
+  color: #215438;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(1.65rem, 2.7vw, 2.5rem);
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.23;
+}
+.mission-copy p:not(.eyebrow) { color: #3e6048; }
+.mission .text-link { color: #a61d2c; border-color: #a61d2c; }
+.collections { background: #fff9ed; }
+.collection-overlay {
+  background: linear-gradient(to top, rgba(20,77,46,.9), rgba(20,77,46,.07) 68%);
+}
+.collection-content small { color: #ffe29a; }
+.final-cta { background: linear-gradient(110deg, #ab2030, #d23140); color: #fff9ef; }
+.final-cta .eyebrow { color: #ffe19b; }
+.final-cta h2 { font-size: clamp(2rem, 3.8vw, 3.8rem); }
+.button-light { color: #194c34; background: #fff3d5; }
+.button-light:hover { color: #fff; background: #1d6b42; }
+.site-footer { color: #e6f1e4; background: #174d32; }
+.footer-brand p, .footer-links a, .footer-bottom { color: #d1dfcf; }
+.footer-links h3 { color: #fff2cf; }
+.footer-links a:hover { color: #ffe49d; }
+@media (max-width: 760px) {
+  .hero h1 { font-size: clamp(2.5rem, 10vw, 3.6rem); }
+  .hero h1 .highlight { font-size: clamp(1.05rem, 4.8vw, 1.35rem); }
+  .hero-grid { padding-top: 55px; }
+  .hero-art { min-height: 360px; }
+  .mission h2 { font-size: clamp(1.55rem, 6vw, 2rem); }
+}

@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
     shortName: "T-shirts, photos, artwork for all occasions.",
     tagline: "Looking for that ugly sweater that's just perfect for Christmas gatherings? We have it.",
     domain: "https://kkflorida.com/",
-    shopUrl: "https://kkflorida.com/",
+    shopUrl: "https://www.teepublic.com/user/kk-florida",
     logo: "assets/logo.png",
     favicon: "assets/favicon.ico",
     socialImage: "assets/social-share.svg"
@@ -23,15 +23,15 @@ window.SITE_CONFIG = {
   },
 
   colors: {
-    ink: "#101216",
-    inkSoft: "#181b21",
-    paper: "#f5f2eb",
+    ink: "#194c34",
+    inkSoft: "#226445",
+    paper: "#fff9ed",
     white: "#ffffff",
-    muted: "#6f7278",
-    line: "#d9d5cc",
-    primary: "#e32b2f",
-    primaryDark: "#a8131b",
-    accent: "#3157e0"
+    muted: "#586c5d",
+    line: "#e4d5bc",
+    primary: "#c62536",
+    primaryDark: "#921a2b",
+    accent: "#d6a536"
   },
 
   navigation: [
@@ -41,13 +41,13 @@ window.SITE_CONFIG = {
   ],
 
   hero: {
-    eyebrow: "WHAT YOU OFFER",
-    title: "It's Christmas",
-    highlight: "KK Florida – A Little Wild, A Little Wacky, and Never Boring!.",
+    eyebrow: "KK FLORIDA HOLIDAY COLLECTION",
+    title: "It's Christmas!",
+    highlight: "A Little Wild, A Little Wacky, and Never Boring!",
     description: "From original Florida wildlife photography and breathtaking Everglades sunsets to colorful artwork, quirky cartoons, and downright crazy creations, KK Florida has something for everyone! Explore unique photography prints, art prints, apparel, gifts, and fun products featuring our original designs. We love nature, creativity, and thinking outside the box. You never know what you'll find at KK Florida—and that's exactly how we like it!.",
     primaryButton: { label: "View featured items", url: "#featured" },
     secondaryButton: { label: "Learn more", url: "#about" },
-    points: ["First benefit", "Second benefit", "Third benefit"],
+    points: ["Original KK Florida designs", "Festive fun and unique gifts", "Holiday apparel made to order"],
     image1: "assets/whiskers.png",
     image1Alt: "Featured image one",
     image2: "assets/christmasnutty.png",
@@ -56,16 +56,11 @@ window.SITE_CONFIG = {
   },
 
   featured: {
-    eyebrow: "FEATURED",
-    heading: "Showcase your best products or services.",
+    eyebrow: "HOLIDAY FAVORITES",
+    heading: "Christmas Designs That Make You Smile",
     viewAllLabel: "View everything",
-    viewAllUrl: "https://kkflorida.com",
-    filters: [
-      { key: "all", label: "All" },
-      { key: "category-one", label: "Category One" },
-      { key: "category-two", label: "Category Two" },
-      { key: "category-three", label: "Category Three" }
-    ]
+    viewAllUrl: "https://www.teepublic.com/user/kk-florida",
+    filters: [{ key: "all", label: "All Designs" }]
   },
 
   products: [
@@ -139,7 +134,7 @@ window.SITE_CONFIG = {
 
   collectionsSection: {
     eyebrow: "EXPLORE",
-    heading: "Choose a collection or category."
+    heading: "Holiday Favorites"
   },
 
   collections: [
@@ -150,14 +145,14 @@ window.SITE_CONFIG = {
 
   finalCallToAction: {
     eyebrow: "READY TO BEGIN?",
-    heading: "Give visitors one clear next step.",
+    heading: "Find Your Holiday Favorite!",
     buttonLabel: "Visit our shop",
-    buttonUrl: "https://shop.example.com"
+    buttonUrl: "https://www.teepublic.com/user/kk-florida"
   },
 
   footer: {
-    description: "A short footer description of your business, organization, products, or services.",
-    closingLine: "YOUR SHORT TAGLINE",
+    description: "Original Florida photography, whimsical artwork, and holiday creations by KK Florida.",
+    closingLine: "A Little Wild, A Little Wacky, and Never Boring!",
     columns: [
       {
         heading: "Explore",
