@@ -34,12 +34,6 @@ window.SITE_CONFIG = {
     accent: "#3157e0"
   },
 
-  announcement: [
-    "YOUR FIRST SHORT MESSAGE",
-    "YOUR SECOND SHORT MESSAGE",
-    "YOUR THIRD SHORT MESSAGE"
-  ],
-
   navigation: [
     { label: "Featured", url: "#featured" },
     { label: "About", url: "#about" },
@@ -60,13 +54,6 @@ window.SITE_CONFIG = {
     image2Alt: "Featured image two",
     badge: "All of our t-shirts are made to order."
   },
-
-  ticker: [
-    "MESSAGE ONE",
-    "MESSAGE TWO",
-    "MESSAGE THREE",
-    "MESSAGE FOUR"
-  ],
 
   featured: {
     eyebrow: "FEATURED",
@@ -141,28 +128,14 @@ window.SITE_CONFIG = {
 
   about: {
     eyebrow: "ABOUT",
-    heading: "Tell visitors why your business matters.",
+    heading: "A Little Wild, A Little Wacky, and Never Boring!",
     paragraphs: [
       "KK Florida is more than just a photography and art website. It's a collection of things that catch my eye, spark my imagination, or simply make me smile.\n\nFrom my original Florida wildlife photography and beautiful Everglades sunsets to whimsical artwork, funny cartoons, unique apparel, and one-of-a-kind gifts, there's a little something for everyone.\n\nI believe art doesn't have to be serious, photography can tell a story, and sometimes the silliest ideas make the best creations.",
       "When you shop KK Florida, you're supporting an independent photographer and artist—not a big corporation.\n\nCome explore, have a laugh, find something you love, and check back often. You never know what I'll come up with next!"
     ],
     linkLabel: "Explore featured items",
-    linkUrl: "#featured",
-    visualTop: "YOUR",
-    visualMiddle: "BIG",
-    visualHighlight: "MESSAGE"
+    linkUrl: "#featured"
   },
-
-  valuesSection: {
-    eyebrow: "WHY CHOOSE US",
-    heading: "Three reasons people remember you."
-  },
-
-  values: [
-    { number: "01", title: "First advantage", text: "Explain an important benefit in one or two short sentences." },
-    { number: "02", title: "Second advantage", text: "Explain another reason a visitor should choose, trust, or remember you." },
-    { number: "03", title: "Third advantage", text: "Use this card for service, quality, selection, experience, or another strength." }
-  ],
 
   collectionsSection: {
     eyebrow: "EXPLORE",

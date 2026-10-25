@@ -27,10 +27,6 @@
   meta('meta[property="og:image"]', C.business?.socialImage && C.business?.domain ? new URL(C.business.socialImage, C.business.domain).href : C.business?.socialImage);
   if (C.business?.favicon) $('#site-favicon').href = C.business.favicon;
 
-  // Announcement
-  const announcement = $('#announcement');
-  announcement.innerHTML = (C.announcement || []).map((x, i) => `${i ? '<span aria-hidden="true">•</span>' : ''}<span>${escapeHTML(x)}</span>`).join('');
-
   // Brand and navigation
   [$('#header-logo'), $('#footer-logo')].forEach(img => { if (img) { img.src = C.business.logo; img.alt = C.business.name; } });
   $('#brand-link').setAttribute('aria-label', `${C.business.name} home`);
@@ -49,11 +45,6 @@
   $('#hero-image-2').src = C.hero?.image2 || '';
   $('#hero-image-2').alt = C.hero?.image2Alt || '';
   setText('#hero-badge', C.hero?.badge);
-
-  // Ticker duplicated for seamless marquee
-  const tickerItems = C.ticker || [];
-  const tickerHTML = tickerItems.map(x => `<span>${escapeHTML(x)}</span><span>•</span>`).join('');
-  $('#ticker-track').innerHTML = tickerHTML + tickerHTML;
 
   // Featured items
   setText('#featured-eyebrow', C.featured?.eyebrow);
@@ -94,15 +85,6 @@
   $('#about-paragraphs').innerHTML = (C.about?.paragraphs || []).map(x => `<p>${escapeHTML(x)}</p>`).join('');
   setText('#about-link-label', C.about?.linkLabel);
   $('#about-link').href = C.about?.linkUrl || '#';
-  setText('#visual-top', C.about?.visualTop);
-  setText('#visual-middle', C.about?.visualMiddle);
-  setText('#visual-highlight', C.about?.visualHighlight);
-
-  // Values
-  setText('#values-eyebrow', C.valuesSection?.eyebrow);
-  setText('#values-heading', C.valuesSection?.heading);
-  $('#value-grid').innerHTML = (C.values || []).map(v => `<article class="value-card"><span class="value-number">${escapeHTML(v.number)}</span><h3>${escapeHTML(v.title)}</h3><p>${escapeHTML(v.text)}</p></article>`).join('');
-
   // Collections
   setText('#collections-eyebrow', C.collectionsSection?.eyebrow);
   setText('#collections-heading', C.collectionsSection?.heading);
