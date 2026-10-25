@@ -54,9 +54,9 @@ window.SITE_CONFIG = {
     primaryButton: { label: "View featured items", url: "#featured" },
     secondaryButton: { label: "Learn more", url: "#about" },
     points: ["First benefit", "Second benefit", "Third benefit"],
-    image1: "assets/hero-one.svg",
+    image1: "assets/whiskers.png",
     image1Alt: "Featured image one",
-    image2: "assets/hero-two.svg",
+    image2: "assets/christmasnutty.png",
     image2Alt: "Featured image two",
     badge: "All of our t-shirts are made to order."
   },
@@ -143,14 +143,8 @@ window.SITE_CONFIG = {
     eyebrow: "ABOUT",
     heading: "Tell visitors why your business matters.",
     paragraphs: [
-      "KK Florida is more than just a photography and art website. It's a collection of things that catch my eye, spark my imagination, or simply make me smile.
-
-From my original Florida wildlife photography and beautiful Everglades sunsets to whimsical artwork, funny cartoons, unique apparel, and one-of-a-kind gifts, there's a little something for everyone.
-
-I believe art doesn't have to be serious, photography can tell a story, and sometimes the silliest ideas make the best creations.",
-      "When you shop KK Florida, you're supporting an independent photographer and artist—not a big corporation.
-
-Come explore, have a laugh, find something you love, and check back often. You never know what I'll come up with next!"
+      "KK Florida is more than just a photography and art website. It's a collection of things that catch my eye, spark my imagination, or simply make me smile.\n\nFrom my original Florida wildlife photography and beautiful Everglades sunsets to whimsical artwork, funny cartoons, unique apparel, and one-of-a-kind gifts, there's a little something for everyone.\n\nI believe art doesn't have to be serious, photography can tell a story, and sometimes the silliest ideas make the best creations.",
+      "When you shop KK Florida, you're supporting an independent photographer and artist—not a big corporation.\n\nCome explore, have a laugh, find something you love, and check back often. You never know what I'll come up with next!"
     ],
     linkLabel: "Explore featured items",
     linkUrl: "#featured",
@@ -176,9 +170,9 @@ Come explore, have a laugh, find something you love, and check back often. You n
   },
 
   collections: [
-    { label: "COLLECTION", title: "Collection One", action: "View now →", image: "assets/collection-one.svg", url: "https://shop.example.com/collection-one" },
-    { label: "COLLECTION", title: "Collection Two", action: "View now →", image: "assets/collection-two.svg", url: "https://shop.example.com/collection-two" },
-    { label: "COLLECTION", title: "Collection Three", action: "View now →", image: "assets/collection-three.svg", url: "https://shop.example.com/collection-three" }
+    { label: "COLLECTION", title: "Collection One", action: "View now →", image: "assets/mudtires.png", url: "https://shop.example.com/collection-one" },
+    { label: "COLLECTION", title: "Collection Two", action: "View now →", image: "assets/porkbutt.png", url: "https://shop.example.com/collection-two" },
+    { label: "COLLECTION", title: "Collection Three", action: "View now →", image: "assets/iguana.jpg", url: "https://shop.example.com/collection-three" }
   ],
 
   finalCallToAction: {
