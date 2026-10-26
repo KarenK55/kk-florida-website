@@ -51,7 +51,7 @@ window.SITE_CONFIG = {
     points: ["Original KK Florida designs", "Festive fun and unique gifts", "Holiday apparel made to order"],
     image1: "assets/whiskers.png",
     image1Alt: "Featured image one",
-    image2: "assets/christmasnuttysm.png",
+    image2: "assets/ChristmasNuttysm..png",
     image2Alt: "Featured image two",
     badge: "All of our t-shirts are made to order."
   },
@@ -97,7 +97,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/christmasstorksm1.png",
+      image: "assets/ChristmasStorksm1.png",
       url: "https://www.teepublic.com/t-shirt/100880557-three-wise-storks?store_id=4510655"
     },
 
@@ -106,7 +106,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/christmasnuttysm.png",
+      image: "assets/ChristmasNuttysm..png",
       url: "https://www.teepublic.com/t-shirt/100880552-nutty-squirrel-christmas?store_id=4510655"
     },
 
@@ -115,7 +115,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/sleighridesm.png",
+      image: "assets/sleighrides1..png",
       url: "https://www.teepublic.com/t-shirt/100920633-sleigh-ride-monster-truck-christmas?store_id=4510655"
     },
 
