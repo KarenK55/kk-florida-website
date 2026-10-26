@@ -49,7 +49,6 @@
   // Featured items
   setText('#featured-eyebrow', C.featured?.eyebrow);
   setText('#featured-heading', C.featured?.heading);
-  setLink('#view-all', {label: C.featured?.viewAllLabel, url: C.featured?.viewAllUrl});
   const filterButtons = $('#filter-buttons');
   filterButtons.innerHTML = (C.featured?.filters || [{key:'all',label:'All'}]).map((f, i) => `<button class="filter-button ${i === 0 ? 'active' : ''}" data-filter="${escapeHTML(f.key)}" type="button">${escapeHTML(f.label)}</button>`).join('');
 
