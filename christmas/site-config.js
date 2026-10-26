@@ -106,7 +106,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/ChristmasNuttysm..png",
+      image: "assets/ChristmasNuttysm.png",
       url: "https://www.teepublic.com/t-shirt/100880552-nutty-squirrel-christmas?store_id=4510655"
     },
 
@@ -115,8 +115,16 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/sleighrides1..png",
+      image: "assets/sleighrides1.png",
       url: "https://www.teepublic.com/t-shirt/100920633-sleigh-ride-monster-truck-christmas?store_id=4510655"
+    },
+{
+      title: "Pepperhead Christmas T-Shirt",
+      type: "Christmas Ugly Sweater",
+      price: "$24.99",
+      category: "Christmas Ugly Sweater",
+      image: "assets/spicypeppersm.png",
+      url: "https://www.teepublic.com/t-shirt/100934682-have-a-spicy-christmas-for-the-true-pepperhead?store_id=4510655"
     },
 
     {
