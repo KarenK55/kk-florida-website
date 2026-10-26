@@ -141,6 +141,15 @@ window.SITE_CONFIG = {
       image: "assets/dachshund.png",
       url: "https://www.teepublic.com/t-shirt/100944663-dachshund-through-the-snow"
     },
+{
+      title: "Bowtie Christmas T-Shirt",
+      type: "Christmas Ugly Sweater",
+      price: "$24.99",
+      category: "Christmas Ugly Sweater",
+      image: "assets/bowtie.png",
+      url: "https://www.teepublic.com/t-shirt/100945405-all-i-want-for-christmas-is-a-new-bowtie"
+    },
+
 
     {
       title: "A Florida Christmas ugly sweater T-Shirt",
