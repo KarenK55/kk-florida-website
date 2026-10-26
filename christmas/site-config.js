@@ -59,8 +59,6 @@ window.SITE_CONFIG = {
   featured: {
     eyebrow: "HOLIDAY FAVORITES",
     heading: "Christmas Designs That Make You Smile",
-    viewAllLabel: "View everything",
-    viewAllUrl: "https://www.teepublic.com/user/kk-florida",
     filters: [{ key: "all", label: "All Designs" }]
   },
 
