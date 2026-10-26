@@ -79,7 +79,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/porkbutt.png",
+      image: "assets/porkbuttsm.png",
       url: "https://www.teepublic.com/t-shirt/100880573-forget-the-chestnuts-we-want-pork-butts?store_id=4510655",
       badge: "Featured"
 
