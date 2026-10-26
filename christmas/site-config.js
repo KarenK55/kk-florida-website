@@ -51,7 +51,7 @@ window.SITE_CONFIG = {
     points: ["Original KK Florida designs", "Festive fun and unique gifts", "Holiday apparel made to order"],
     image1: "assets/whiskers.png",
     image1Alt: "Featured image one",
-    image2: "assets/christmasnutty.png",
+    image2: "assets/christmasnuttysm.png",
     image2Alt: "Featured image two",
     badge: "All of our t-shirts are made to order."
   },
@@ -79,7 +79,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/porkbuttsm.png",
+      image: "assets/porkbuttsm1.png",
       url: "https://www.teepublic.com/t-shirt/100880573-forget-the-chestnuts-we-want-pork-butts?store_id=4510655",
       badge: "Featured"
 
@@ -97,7 +97,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/christmasstorksm.png",
+      image: "assets/christmasstorksm1.png",
       url: "https://www.teepublic.com/t-shirt/100880557-three-wise-storks?store_id=4510655"
     },
 
