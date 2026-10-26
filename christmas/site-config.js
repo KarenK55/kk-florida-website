@@ -110,6 +110,14 @@ window.SITE_CONFIG = {
       url: "https://www.teepublic.com/t-shirt/100880552-nutty-squirrel-christmas?store_id=4510655"
     },
 
+{
+      title: "Sleigh Ride Christmas T-Shirt",
+      type: "Christmas Ugly Sweater",
+      price: "$24.99",
+      category: "Christmas Ugly Sweater",
+      image: "assets/sleighride.png",
+      url: "https://www.teepublic.com/t-shirt/100920633-sleigh-ride-monster-truck-christmas?store_id=4510655"
+    },
 
     {
       title: "A Florida Christmas ugly sweater T-Shirt",
