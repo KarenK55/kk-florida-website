@@ -97,7 +97,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/christmasstork.png",
+      image: "assets/christmasstorksm.png",
       url: "https://www.teepublic.com/t-shirt/100880557-three-wise-storks?store_id=4510655"
     },
 
@@ -106,7 +106,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/christmasnutty.png",
+      image: "assets/christmasnuttysm.png",
       url: "https://www.teepublic.com/t-shirt/100880552-nutty-squirrel-christmas?store_id=4510655"
     },
 
@@ -115,7 +115,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/sleighride.png",
+      image: "assets/sleighridesm.png",
       url: "https://www.teepublic.com/t-shirt/100920633-sleigh-ride-monster-truck-christmas?store_id=4510655"
     },
 
