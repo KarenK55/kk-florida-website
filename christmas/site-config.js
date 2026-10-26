@@ -89,7 +89,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/mudtires.png",
+      image: "assets/mudtiresSM.png",
       url: "https://www.teepublic.com/t-shirt/100880567-christmas-sweater-for-your-southern-trucker-friend?store_id=4510655"
     },
 {
@@ -126,13 +126,22 @@ window.SITE_CONFIG = {
       image: "assets/spicypeppersm.png",
       url: "https://www.teepublic.com/t-shirt/100934682-have-a-spicy-christmas-for-the-true-pepperhead?store_id=4510655"
     },
+{
+      title: "Boating Christmas T-Shirt",
+      type: "Christmas Ugly Sweater",
+      price: "$24.99",
+      category: "Christmas Ugly Sweater",
+      image: "assets/fishingsm.png",
+      url: "https://www.teepublic.com/t-shirt/100942749-dashing-through-the-sea-a-reel-merry-christmas"
+    },
+
 
     {
       title: "A Florida Christmas ugly sweater T-Shirt",
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/iguana.jpg",
+      image: "assets/Iguana.png",
       url: "https://www.teepublic.com/t-shirt/100880563-a-florida-christmas-ugly-sweater?store_id=4510655"
 
     }
