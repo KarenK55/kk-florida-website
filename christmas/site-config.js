@@ -129,7 +129,7 @@ window.SITE_CONFIG = {
       type: "Christmas Ugly Sweater",
       price: "$24.99",
       category: "Christmas Ugly Sweater",
-      image: "assets/fishingsm.png",
+      image: "assets/Fishingsm.png",
       url: "https://www.teepublic.com/t-shirt/100942749-dashing-through-the-sea-a-reel-merry-christmas"
     },
 
