@@ -133,6 +133,14 @@ window.SITE_CONFIG = {
       url: "https://www.teepublic.com/t-shirt/100942749-dashing-through-the-sea-a-reel-merry-christmas"
     },
 
+{
+      title: "Dachshund Dog Christmas T-Shirt",
+      type: "Christmas Ugly Sweater",
+      price: "$24.99",
+      category: "Christmas Ugly Sweater",
+      image: "assets/dachshund.png",
+      url: "https://www.teepublic.com/t-shirt/100944663-dachshund-through-the-snow"
+    },
 
     {
       title: "A Florida Christmas ugly sweater T-Shirt",
