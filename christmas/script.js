@@ -30,7 +30,7 @@
   // Brand and navigation
   [$('#header-logo'), $('#footer-logo')].forEach(img => { if (img) { img.src = C.business.logo; img.alt = C.business.name; } });
   $('#brand-link').setAttribute('aria-label', `${C.business.name} home`);
-  $('#site-nav').innerHTML = (C.navigation || []).map(item => `<a href="${escapeHTML(item.url)}">${escapeHTML(item.label)}</a>`).join('') + `<a class="nav-shop" href="${escapeHTML(C.business.shopUrl || '#')}">Visit shop</a>`;
+  $('#site-nav').innerHTML = (C.navigation || []).map(item => `<a href="${escapeHTML(item.url)}">${escapeHTML(item.label)}</a>`).join('') + `<a class="nav-shop" href="https://kkflorida.com/">Visit shop</a>`;
 
   // Hero
   setText('#hero-eyebrow', C.hero?.eyebrow);
