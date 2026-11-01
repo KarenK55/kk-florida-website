@@ -274,13 +274,15 @@
     "store": "Picfair"
   },
   {
-    "title": "Squirrel Pe",
+    "title": "Hello!",
     "category": "Mammals",
-    "description": "",
+    "description": "A joyful squirrel danced nimbly in a sunny Florida tree, chattering happily as gentle breezes rustled the bright green leaves above.",
     "image": "images/mammals/web/squirrel-pe.jpg",
     "thumbnail": "images/mammals/thumbs/squirrel-pe-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024470473-hello",
+    "store": "Picfair",
+    "picfair_id": "024470473",
+    "alt": "Squirrel perched on a cut branch in a sunny Florida tree — original KK Florida photograph"
   },
   {
     "title": "Sunset (2)",
