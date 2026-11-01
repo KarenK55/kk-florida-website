@@ -44,13 +44,15 @@
     "alt": "Honeybee flying above orange cape honeysuckle flowers against a blue sky — KK Florida photograph"
   },
   {
-    "title": "Blackeye",
+    "title": "Black eyed Susans",
     "category": "Flowers",
-    "description": "",
+    "description": "Yellow Black-eyed Susans (Rudbeckia hirta) are cheerful wildflowers native to North America, known for their bright yellow petals surrounding a dark brown or black central cone. These vibrant blooms often symbolize encouragement and positive energy, making them popular in gardens and natural landscapes.",
     "image": "images/flowers/web/blackeye.jpg",
     "thumbnail": "images/flowers/thumbs/blackeye-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024476112-black-eyed-susans",
+    "store": "Picfair",
+    "picfair_id": "024476112",
+    "alt": "Yellow black-eyed Susan wildflowers with dark centers among green foliage — KK Florida"
   },
   {
     "title": "Blackswallowtail",
@@ -62,13 +64,15 @@
     "store": "Picfair"
   },
   {
-    "title": "Cannna",
+    "title": "Yellow Canna Blooms",
     "category": "Flowers",
-    "description": "",
+    "description": "Bright yellow canna flowers with delicate petals bloom among lush green foliage in a soft-focus garden setting.",
     "image": "images/flowers/web/cannna.jpg",
     "thumbnail": "images/flowers/thumbs/cannna-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024943187-yellow-canna-blooms",
+    "store": "Picfair",
+    "picfair_id": "024943187",
+    "alt": "Yellow canna blossoms with green leaves — KK Florida"
   },
   {
     "title": "Bright red male cardinal",
@@ -246,13 +250,15 @@
     "store": "Picfair"
   },
   {
-    "title": "Poinciana",
+    "title": "Tropical Flame Blossoms",
     "category": "Flowers",
-    "description": "",
+    "description": "Vivid red flame tree blossoms cluster among delicate green feathery foliage against a bright blue sky, capturing tropical botanical beauty.",
     "image": "images/flowers/web/poinciana.jpg",
     "thumbnail": "images/flowers/thumbs/poinciana-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024943188-tropical-flame-blossoms",
+    "store": "Picfair",
+    "picfair_id": "024943188",
+    "alt": "Red poinciana flame tree blossoms among green foliage and bright blue sky — KK Florida"
   },
   {
     "title": "Rainbow",
@@ -264,13 +270,15 @@
     "store": "Picfair"
   },
   {
-    "title": "Rainlillies",
+    "title": "White Rain Lilies Spring",
     "category": "Flowers",
-    "description": "",
+    "description": "Delicate white rain lilies with yellow stamens bloom among lush green foliage in a spring garden setting.",
     "image": "images/flowers/web/rainlillies.jpg",
     "thumbnail": "images/flowers/thumbs/rainlillies-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024943186-white-rain-lilies-spring",
+    "store": "Picfair",
+    "picfair_id": "024943186",
+    "alt": "Group of pale white rain lilies with yellow stamens amid green foliage — KK Florida"
   },
   {
     "title": "Spoonbill",
