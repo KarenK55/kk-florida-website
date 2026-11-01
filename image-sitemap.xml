@@ -1,271 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/insects/web/bee-2.jpg</image:loc>
-      <image:title>Bee (2)</image:title>
-      <image:caption>Bee (2)</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/insects/web/bee-3.jpg</image:loc>
-      <image:title>Bee (3)</image:title>
-      <image:caption>Bee (3)</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/insects/web/bee.jpg</image:loc>
-      <image:title>Bee</image:title>
-      <image:caption>Bee</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/insects/web/bee1.jpg</image:loc>
-      <image:title>Bee1</image:title>
-      <image:caption>Bee1</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/flowers/web/blackeye.jpg</image:loc>
-      <image:title>Blackeye</image:title>
-      <image:caption>Blackeye</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/butterflies/web/blackswallowtail.jpg</image:loc>
-      <image:title>Blackswallowtail</image:title>
-      <image:caption>Blackswallowtail</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/flowers/web/cannna.jpg</image:loc>
-      <image:title>Cannna</image:title>
-      <image:caption>Cannna</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
+    <loc>https://kkflorida.com/birds/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/card1.jpg</image:loc>
-      <image:title>Card1</image:title>
-      <image:caption>Card1</image:caption>
+      <image:title>Bright red male cardinal</image:title>
+      <image:caption>Recognizable by its vibrant red plumage and distinctive crest on its head, cardinals stand out in leafy green backgrounds.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/card-pe.jpg</image:loc>
-      <image:title>Card Pe</image:title>
-      <image:caption>Card Pe</image:caption>
+      <image:title>Cardinal in a tree</image:title>
+      <image:caption>A bright red male cardinal perched proudly in the tree, its cheerful song filling the sunny morning with joyful melodies. What a happy sight!</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/flowers/web/cassia.jpg</image:loc>
-      <image:title>Cassia</image:title>
-      <image:caption>Cassia</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/crow.jpg</image:loc>
-      <image:title>Crow</image:title>
-      <image:caption>Crow</image:caption>
+      <image:title>Crow portrait</image:title>
+      <image:caption>A portrait of a crow often highlights its sharp, observant eyes and strong, curved beak—features that reflect its keen intelligence and adaptability.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/dove.jpg</image:loc>
-      <image:title>Dove</image:title>
-      <image:caption>Dove</image:caption>
+      <image:title>On the wings of a dove</image:title>
+      <image:caption>Sunlight captures the beauty of a Eurasian collared dove as he takes flight.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/egret.jpg</image:loc>
-      <image:title>Egret</image:title>
-      <image:caption>Egret</image:caption>
+      <image:title>Great egret among the lilies</image:title>
+      <image:caption>A graceful great egret stands tall among blooming waterlilies in the serene Florida Everglades, basking in gentle sunlight.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/egret1.jpg</image:loc>
-      <image:title>Egret1</image:title>
-      <image:caption>Egret1</image:caption>
+      <image:title>Great egret in the grass</image:title>
+      <image:caption>A graceful great egret stands tall in the Florida Everglades, its white feathers shimmering gently among the lush green grass.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/egret2.jpg</image:loc>
-      <image:title>Egret2</image:title>
-      <image:caption>Egret2</image:caption>
+      <image:title>Great egret in the Florida Everglades</image:title>
+      <image:caption>The great egret is a striking bird often seen wading gracefully through the shallow waters of the Florida Everglades. Known for its long legs, slender neck, and brilliant white feathers, this elegant bird is a symbol of wetland health and beauty.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/egret2a.jpg</image:loc>
-      <image:title>Egret2A</image:title>
-      <image:caption>Egret2A</image:caption>
+      <image:title>Great egret in the sunset</image:title>
+      <image:caption>These birds often stand still near water, waiting patiently to catch fish, their favorite food. The peaceful moment of a great egret at sunset captures both the grace of this magnificent bird and the serene beauty of nature’s evening light.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/butterflies/web/fulvoushairstreak.jpg</image:loc>
-      <image:title>Fulvoushairstreak</image:title>
-      <image:caption>Fulvoushairstreak</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/butterflies/web/giantswallowtail.jpg</image:loc>
-      <image:title>Giantswallowtail</image:title>
-      <image:caption>Giantswallowtail</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/heron.jpg</image:loc>
-      <image:title>Heron</image:title>
-      <image:caption>Heron</image:caption>
+      <image:title>Heron on Driftwood</image:title>
+      <image:caption>Great blue heron perched on weathered driftwood in shallow wetland water, surrounded by marsh grass and moss-covered rocks.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/ibis.jpg</image:loc>
       <image:title>Ibis</image:title>
       <image:caption>Ibis</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/jay.jpg</image:loc>
-      <image:title>Jay</image:title>
-      <image:caption>Jay</image:caption>
+      <image:title>Bluejay on branch</image:title>
+      <image:caption>Watching a Bluejay on a branch can be a delightful sight, as it often displays curious behavior—like mimicking calls of other birds or flitting energetically from one perch to another.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/flowers/web/marigold1.jpg</image:loc>
-      <image:title>Vibrant Orange Marigold</image:title>
-      <image:caption>Vibrant orange marigold blooming among green garden foliage</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/orchids/web/orchid.jpg</image:loc>
-      <image:title>Orchid</image:title>
-      <image:caption>Orchid</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/flowers/web/poinciana.jpg</image:loc>
-      <image:title>Poinciana</image:title>
-      <image:caption>Poinciana</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/landscapes/web/rainbow.jpg</image:loc>
-      <image:title>Rainbow</image:title>
-      <image:caption>Rainbow</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/flowers/web/rainlillies.jpg</image:loc>
-      <image:title>Rainlillies</image:title>
-      <image:caption>Rainlillies</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/birds/web/spoonbill.jpg</image:loc>
       <image:title>Spoonbill</image:title>
       <image:caption>Spoonbill</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
-      <image:loc>https://kkflorida.com/images/mammals/web/squirrel-pe.jpg</image:loc>
-      <image:title>Squirrel Pe</image:title>
-      <image:caption>Squirrel Pe</image:caption>
+      <image:loc>https://kkflorida.com/images/birds/web/thrasher.jpg</image:loc>
+      <image:title>Brown thrasher</image:title>
+      <image:caption>The brown thrasher is a striking bird native to eastern and central North America, easily recognized by its warm reddish-brown back, bright yellow eyes, and bold streaked chest.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://kkflorida.com/</loc>
+    <loc>https://kkflorida.com/butterflies/</loc>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/butterflies/web/blackswallowtail.jpg</image:loc>
+      <image:title>Swallowtail Butterfly on Yellow</image:title>
+      <image:caption>A striking black and white striped butterfly with red accents perches delicately on a vibrant yellow flower, captured in a lush garden setting.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/butterflies/web/fulvoushairstreak.jpg</image:loc>
+      <image:title>Fulvous Hairstreak Butterfly on Yellow</image:title>
+      <image:caption>Dark brown butterfly with distinctive horned antennae perched on bright yellow petals, capturing intricate details of natural pollination.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/butterflies/web/giantswallowtail.jpg</image:loc>
+      <image:title>Giant Swallowtail on Red</image:title>
+      <image:caption>A vibrant giant swallowtail butterfly lands on bright red tubular flowers against a clear blue sky, showcasing natureundefineds delicate pollinator in action.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/butterflies/web/zebra-2.jpg</image:loc>
+      <image:title>Zebra longwing on firebush</image:title>
+      <image:caption>This graceful butterfly often visits the firebush (Hamelia patens), a vibrant shrub with clusters of bright orange-red flowers.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/butterflies/web/zebra.jpg</image:loc>
+      <image:title>Zebra longwing butterfly on marigold</image:title>
+      <image:caption>Watching a Zebra Longwing fluttering around marigolds is a charming reminder of the beauty and balance in garden ecosystems.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kkflorida.com/flowers/</loc>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/flowers/web/blackeye.jpg</image:loc>
+      <image:title>Black eyed Susans</image:title>
+      <image:caption>Yellow Black-eyed Susans (Rudbeckia hirta) are cheerful wildflowers native to North America, known for their bright yellow petals surrounding a dark brown or black central cone. These vibrant blooms often symbolize encouragement and positive energy, making them popular in gardens and natural landscapes.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/flowers/web/cannna.jpg</image:loc>
+      <image:title>Yellow Canna Blooms</image:title>
+      <image:caption>Bright yellow canna flowers with delicate petals bloom among lush green foliage in a soft-focus garden setting.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/flowers/web/cassia.jpg</image:loc>
+      <image:title>Spring Blossom Cassia Branch</image:title>
+      <image:caption>Delicate pink and white blossoms cluster along dark branches in springtime bloom, with soft green foliage blurred in the background.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/flowers/web/marigold1.jpg</image:loc>
+      <image:title>Vibrant Orange Marigold</image:title>
+      <image:caption>Beyond their beauty, marigolds have practical benefits. Their natural scent helps repel pests, making them a favorite companion plant in vegetable gardens. They thrive in full sun and well-drained soil, requiring minimal watering once established.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/flowers/web/poinciana.jpg</image:loc>
+      <image:title>Tropical Flame Blossoms</image:title>
+      <image:caption>Vivid red flame tree blossoms cluster among delicate green feathery foliage against a bright blue sky, capturing tropical botanical beauty.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/flowers/web/rainlillies.jpg</image:loc>
+      <image:title>White Rain Lilies Spring</image:title>
+      <image:caption>Delicate white rain lilies with yellow stamens bloom among lush green foliage in a spring garden setting.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kkflorida.com/kaleidoscope-flowers/</loc>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-01.png</image:loc>
+      <image:title>Kaleidoscope Flower 01</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-02.png</image:loc>
+      <image:title>Kaleidoscope Flower 02</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-03.png</image:loc>
+      <image:title>Kaleidoscope Flower 03</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-04.png</image:loc>
+      <image:title>Kaleidoscope Flower 04</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-05.png</image:loc>
+      <image:title>Kaleidoscope Flower 05</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-06.png</image:loc>
+      <image:title>Kaleidoscope Flower 06</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-07.png</image:loc>
+      <image:title>Kaleidoscope Flower 07</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-08.png</image:loc>
+      <image:title>Kaleidoscope Flower 08</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-09.png</image:loc>
+      <image:title>Kaleidoscope Flower 09</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-10.png</image:loc>
+      <image:title>Kaleidoscope Flower 10</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-11.png</image:loc>
+      <image:title>Kaleidoscope Flower 11</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-12.png</image:loc>
+      <image:title>Kaleidoscope Flower 12</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-13.png</image:loc>
+      <image:title>Kaleidoscope Flower 13</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-14.png</image:loc>
+      <image:title>Kaleidoscope Flower 14</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-15.png</image:loc>
+      <image:title>Kaleidoscope Flower 15</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-16.png</image:loc>
+      <image:title>Kaleidoscope Flower 16</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-17.png</image:loc>
+      <image:title>Kaleidoscope Flower 17</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-18.png</image:loc>
+      <image:title>Kaleidoscope Flower 18</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-19.png</image:loc>
+      <image:title>Kaleidoscope Flower 19</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-20.png</image:loc>
+      <image:title>Kaleidoscope Flower 20</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-21.png</image:loc>
+      <image:title>Kaleidoscope Flower 21</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-22.png</image:loc>
+      <image:title>Kaleidoscope Flower 22</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-23.png</image:loc>
+      <image:title>Kaleidoscope Flower 23</image:title>
+      <image:caption>Original flower photography turned into colorful kaleidoscope artwork.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kkflorida.com/sunsets/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/sunsets/web/sunset-2.jpg</image:loc>
       <image:title>Sunset (2)</image:title>
       <image:caption>Sunset (2)</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/sunsets/web/sunset.jpg</image:loc>
-      <image:title>Sunset</image:title>
-      <image:caption>Sunset</image:caption>
+      <image:title>Sunset in the Everglades</image:title>
+      <image:caption>Watching the sunset in the Everglades is a breathtaking experience that showcases the unique beauty of this vast wetland.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/sunsets/web/sunset1-2.jpg</image:loc>
-      <image:title>Sunset1 (2)</image:title>
-      <image:caption>Sunset1 (2)</image:caption>
+      <image:title>Golden Sunset Sky</image:title>
+      <image:caption>Dramatic golden sunset sky with vibrant orange and amber clouds burning across the horizon as the sun dips below the silhouetted landscape.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/sunsets/web/sunset1.jpg</image:loc>
-      <image:title>Sunset1</image:title>
-      <image:caption>Sunset1</image:caption>
+      <image:title>Everglades sunset</image:title>
+      <image:caption>Sunsets here not only create stunning visuals but also bring a peaceful calm to the area.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/sunsets/web/sunset2.jpg</image:loc>
-      <image:title>Sunset2</image:title>
-      <image:caption>Sunset2</image:caption>
+      <image:title>Tropical Sunset Glow</image:title>
+      <image:caption>Silhouetted palm trees frame a dramatic golden sunset with billowing clouds and vibrant amber skies.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/sunsets/web/sunset3.jpg</image:loc>
       <image:title>Sunset3</image:title>
@@ -273,531 +281,253 @@
     </image:image>
   </url>
   <url>
-    <loc>https://kkflorida.com/</loc>
+    <loc>https://kkflorida.com/insects/</loc>
     <image:image>
-      <image:loc>https://kkflorida.com/images/birds/web/thrasher.jpg</image:loc>
-      <image:title>Thrasher</image:title>
-      <image:caption>Thrasher</image:caption>
+      <image:loc>https://kkflorida.com/images/insects/web/bee-2.jpg</image:loc>
+      <image:title>Honey bee on cape honeysuckle</image:title>
+      <image:caption>Cape honeysuckle thrives in warm climates and is a popular choice for gardens because of its dazzling flowers and ability to support local wildlife. The relationship between honeybees and cape honeysuckle highlights the importance of flowering plants in sustaining pollinator populations.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/insects/web/bee-3.jpg</image:loc>
+      <image:title>Bee on Yellow Bloom</image:title>
+      <image:caption>Metallic green bee pollinating a bright yellow flower with iridescent body and pollen-laden legs in natural sunlight.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/insects/web/bee.jpg</image:loc>
+      <image:title>Bee in a sea of green</image:title>
+      <image:caption>A honey bee on a bright flower, surrounded by a vast, vibrant sea of green leaves and gentle sunlight.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/insects/web/bee1.jpg</image:loc>
+      <image:title>Honeybee on cape honeysuckle</image:title>
+      <image:caption>Watching a honeybee working among these brilliant blooms offers a delightful glimpse into nature’s busy teamwork that supports ecosystems and agriculture alike.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://kkflorida.com/</loc>
+    <loc>https://kkflorida.com/landscapes/</loc>
     <image:image>
-      <image:loc>https://kkflorida.com/images/butterflies/web/zebra-2.jpg</image:loc>
-      <image:title>Zebra (2)</image:title>
-      <image:caption>Zebra (2)</image:caption>
+      <image:loc>https://kkflorida.com/images/landscapes/web/rainbow.jpg</image:loc>
+      <image:title>Rainbow Over Palms</image:title>
+      <image:caption>A vibrant rainbow stretches across a tropical sky framed by palm trees, with a bird in flight capturing the moment of natural beauty after a storm.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://kkflorida.com/</loc>
+    <loc>https://kkflorida.com/mammals/</loc>
     <image:image>
-      <image:loc>https://kkflorida.com/images/butterflies/web/zebra.jpg</image:loc>
-      <image:title>Zebra</image:title>
-      <image:caption>Zebra</image:caption>
+      <image:loc>https://kkflorida.com/images/mammals/web/squirrel-pe.jpg</image:loc>
+      <image:title>Hello!</image:title>
+      <image:caption>A joyful squirrel danced nimbly in a sunny Florida tree, chattering happily as gentle breezes rustled the bright green leaves above.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://kkflorida.com/</loc>
+    <loc>https://kkflorida.com/orchids/</loc>
+    <image:image>
+      <image:loc>https://kkflorida.com/images/orchids/web/orchid.jpg</image:loc>
+      <image:title>Orchid</image:title>
+      <image:caption>Orchid</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kkflorida.com/tshirts/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/buglife.jpg</image:loc>
       <image:title>Buglife</image:title>
       <image:caption>Buglife — tshirts — Ft. Lauderdale, FL</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/butterflies.jpg</image:loc>
       <image:title>Butterflies</image:title>
       <image:caption>Butterflies — tshirts — Ft. Lauderdale, FL</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/butterflies1.jpg</image:loc>
       <image:title>Butterflies1</image:title>
       <image:caption>Butterflies1 — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/dove.jpg</image:loc>
       <image:title>Dove</image:title>
       <image:caption>Dove — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/dragonfly-monarch.jpg</image:loc>
       <image:title>Dragonfly&amp;Monarch</image:title>
       <image:caption>Dragonfly&amp;Monarch — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/dragonwagon.jpg</image:loc>
       <image:title>Dragonwagon</image:title>
       <image:caption>Dragonwagon — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/drpepper.jpg</image:loc>
       <image:title>Drpepper</image:title>
       <image:caption>Drpepper — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/drpepperology.jpg</image:loc>
       <image:title>Drpepperology</image:title>
       <image:caption>Drpepperology — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/florida250a.jpg</image:loc>
       <image:title>Florida250A</image:title>
       <image:caption>Florida250A — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flowerpower.jpg</image:loc>
       <image:title>Flowerpower</image:title>
       <image:caption>Flowerpower — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/gorilla.jpg</image:loc>
       <image:title>Gorilla</image:title>
       <image:caption>Gorilla — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/honeybadger1.jpg</image:loc>
       <image:title>Honeybadger1</image:title>
       <image:caption>Honeybadger1 — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/keepontruckin.jpg</image:loc>
       <image:title>Keepontruckin</image:title>
       <image:caption>Keepontruckin — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/liar.jpg</image:loc>
       <image:title>Liar</image:title>
       <image:caption>Liar — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/lordsprayer.jpg</image:loc>
       <image:title>Lordsprayer</image:title>
       <image:caption>Lordsprayer — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/monarchdreams.jpg</image:loc>
       <image:title>Monarchdreams</image:title>
       <image:caption>Monarchdreams — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/mugwump.jpg</image:loc>
       <image:title>Mugwump</image:title>
       <image:caption>Mugwump — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/nobowties.jpg</image:loc>
       <image:title>Nobowties</image:title>
       <image:caption>Nobowties — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/nobowties1.jpg</image:loc>
       <image:title>Nobowties1</image:title>
       <image:caption>Nobowties1 — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/plumeria.jpg</image:loc>
       <image:title>Plumeria</image:title>
       <image:caption>Plumeria — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/proudamerican.jpg</image:loc>
       <image:title>Proudamerican</image:title>
       <image:caption>Proudamerican — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/psalm914.jpg</image:loc>
       <image:title>Psalm914</image:title>
       <image:caption>Psalm914 — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/withgod.jpg</image:loc>
       <image:title>Withgod</image:title>
       <image:caption>Withgod — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/withgod1.jpg</image:loc>
       <image:title>Withgod1</image:title>
       <image:caption>Withgod1 — tshirts — Ft. Lauderdale</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-01.png</image:loc>
-      <image:title>Kaleidoscope Flower 01</image:title>
-      <image:caption>Kaleidoscope Flower 01, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-02.png</image:loc>
-      <image:title>Kaleidoscope Flower 02</image:title>
-      <image:caption>Kaleidoscope Flower 02, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-03.png</image:loc>
-      <image:title>Kaleidoscope Flower 03</image:title>
-      <image:caption>Kaleidoscope Flower 03, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-04.png</image:loc>
-      <image:title>Kaleidoscope Flower 04</image:title>
-      <image:caption>Kaleidoscope Flower 04, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-05.png</image:loc>
-      <image:title>Kaleidoscope Flower 05</image:title>
-      <image:caption>Kaleidoscope Flower 05, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-06.png</image:loc>
-      <image:title>Kaleidoscope Flower 06</image:title>
-      <image:caption>Kaleidoscope Flower 06, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-07.png</image:loc>
-      <image:title>Kaleidoscope Flower 07</image:title>
-      <image:caption>Kaleidoscope Flower 07, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-08.png</image:loc>
-      <image:title>Kaleidoscope Flower 08</image:title>
-      <image:caption>Kaleidoscope Flower 08, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-09.png</image:loc>
-      <image:title>Kaleidoscope Flower 09</image:title>
-      <image:caption>Kaleidoscope Flower 09, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-10.png</image:loc>
-      <image:title>Kaleidoscope Flower 10</image:title>
-      <image:caption>Kaleidoscope Flower 10, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-11.png</image:loc>
-      <image:title>Kaleidoscope Flower 11</image:title>
-      <image:caption>Kaleidoscope Flower 11, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-12.png</image:loc>
-      <image:title>Kaleidoscope Flower 12</image:title>
-      <image:caption>Kaleidoscope Flower 12, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-13.png</image:loc>
-      <image:title>Kaleidoscope Flower 13</image:title>
-      <image:caption>Kaleidoscope Flower 13, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-14.png</image:loc>
-      <image:title>Kaleidoscope Flower 14</image:title>
-      <image:caption>Kaleidoscope Flower 14, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-15.png</image:loc>
-      <image:title>Kaleidoscope Flower 15</image:title>
-      <image:caption>Kaleidoscope Flower 15, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-16.png</image:loc>
-      <image:title>Kaleidoscope Flower 16</image:title>
-      <image:caption>Kaleidoscope Flower 16, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-17.png</image:loc>
-      <image:title>Kaleidoscope Flower 17</image:title>
-      <image:caption>Kaleidoscope Flower 17, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-18.png</image:loc>
-      <image:title>Kaleidoscope Flower 18</image:title>
-      <image:caption>Kaleidoscope Flower 18, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-19.png</image:loc>
-      <image:title>Kaleidoscope Flower 19</image:title>
-      <image:caption>Kaleidoscope Flower 19, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-20.png</image:loc>
-      <image:title>Kaleidoscope Flower 20</image:title>
-      <image:caption>Kaleidoscope Flower 20, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-21.png</image:loc>
-      <image:title>Kaleidoscope Flower 21</image:title>
-      <image:caption>Kaleidoscope Flower 21, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-22.png</image:loc>
-      <image:title>Kaleidoscope Flower 22</image:title>
-      <image:caption>Kaleidoscope Flower 22, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
-      <image:loc>https://kkflorida.com/images/kaleidoscope-flowers/web/kaleidoscope-flower-23.png</image:loc>
-      <image:title>Kaleidoscope Flower 23</image:title>
-      <image:caption>Kaleidoscope Flower 23, kaleidoscope flowers from KK Florida</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/christmasnutty.png</image:loc>
       <image:title>Christmasnutty</image:title>
-      <image:caption>Christmasnutty, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/christmasstork.png</image:loc>
       <image:title>Christmasstork</image:title>
-      <image:caption>Christmasstork, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/iguana.jpg</image:loc>
       <image:title>Iguana</image:title>
-      <image:caption>Iguana, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/mudtires.png</image:loc>
       <image:title>Mudtires</image:title>
-      <image:caption>Mudtires, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/porkbutt.png</image:loc>
       <image:title>Porkbutt</image:title>
-      <image:caption>Porkbutt, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/whiskers.png</image:loc>
       <image:title>Whiskers</image:title>
-      <image:caption>Whiskers, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flock1.png</image:loc>
       <image:title>Flock1</image:title>
-      <image:caption>Flock1, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flock2.png</image:loc>
       <image:title>Flock2</image:title>
-      <image:caption>Flock2, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flock3.png</image:loc>
       <image:title>Flock3</image:title>
-      <image:caption>Flock3, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flock4.png</image:loc>
       <image:title>Flock4</image:title>
-      <image:caption>Flock4, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flock5.png</image:loc>
       <image:title>Flock5</image:title>
-      <image:caption>Flock5, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flock6.png</image:loc>
       <image:title>Flock6</image:title>
-      <image:caption>Flock6, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flock7.png</image:loc>
       <image:title>Flock7</image:title>
-      <image:caption>Flock7, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flockbird.png</image:loc>
       <image:title>Flockbird</image:title>
-      <image:caption>Flockbird, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/flockbird1.png</image:loc>
       <image:title>Flockbird1</image:title>
-      <image:caption>Flockbird1, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
     <image:image>
       <image:loc>https://kkflorida.com/images/tshirts/web/stoptheflock.png</image:loc>
       <image:title>Stoptheflock</image:title>
-      <image:caption>Stoptheflock, tshirts from KK Florida</image:caption>
+      <image:caption>Original KK Florida artwork available on apparel, stickers, gifts, and more.</image:caption>
     </image:image>
   </url>
 </urlset>
