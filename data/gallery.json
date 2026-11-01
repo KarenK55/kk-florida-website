@@ -55,13 +55,15 @@
     "alt": "Yellow black-eyed Susan wildflowers with dark centers among green foliage — KK Florida"
   },
   {
-    "title": "Blackswallowtail",
+    "title": "Swallowtail Butterfly on Yellow",
     "category": "Butterflies",
-    "description": "",
+    "description": "A striking black and white striped butterfly with red accents perches delicately on a vibrant yellow flower, captured in a lush garden setting.",
     "image": "images/butterflies/web/blackswallowtail.jpg",
     "thumbnail": "images/butterflies/thumbs/blackswallowtail-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/025172201-swallowtail-butterfly-on-yellow",
+    "store": "Picfair",
+    "picfair_id": "025172201",
+    "alt": "Black swallowtail butterfly with cream spots and red accents on bright yellow flower — KK Florida photograph"
   },
   {
     "title": "Yellow Canna Blooms",
@@ -174,22 +176,26 @@
     "alt": "Great egret in the sunset — original photograph by KK Florida"
   },
   {
-    "title": "Fulvoushairstreak",
+    "title": "Fulvous Hairstreak Butterfly on Yellow",
     "category": "Butterflies",
-    "description": "",
+    "description": "Dark brown butterfly with distinctive horned antennae perched on bright yellow petals, capturing intricate details of natural pollination.",
     "image": "images/butterflies/web/fulvoushairstreak.jpg",
     "thumbnail": "images/butterflies/thumbs/fulvoushairstreak-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/025172199-fulvous-hairstreak-butterfly-on-yellow",
+    "store": "Picfair",
+    "picfair_id": "025172199",
+    "alt": "Brown fulvous hairstreak butterfly with small tail projections on a yellow flower — KK Florida photograph"
   },
   {
-    "title": "Giantswallowtail",
+    "title": "Giant Swallowtail on Red",
     "category": "Butterflies",
-    "description": "",
+    "description": "A vibrant giant swallowtail butterfly lands on bright red tubular flowers against a clear blue sky, showcasing nature's delicate pollinator in action.",
     "image": "images/butterflies/web/giantswallowtail.jpg",
     "thumbnail": "images/butterflies/thumbs/giantswallowtail-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/025172200-giant-swallowtail-on-red",
+    "store": "Picfair",
+    "picfair_id": "025172200",
+    "alt": "Giant swallowtail butterfly at red tubular flowers against blue sky — KK Florida photograph"
   },
   {
     "title": "Heron on Driftwood",
@@ -359,22 +365,26 @@
     "alt": "Brown thrasher — original photograph by KK Florida"
   },
   {
-    "title": "Zebra (2)",
+    "title": "Zebra longwing on firebush",
     "category": "Butterflies",
-    "description": "",
+    "description": "This graceful butterfly often visits the firebush (Hamelia patens), a vibrant shrub with clusters of bright orange-red flowers.",
     "image": "images/butterflies/web/zebra-2.jpg",
     "thumbnail": "images/butterflies/thumbs/zebra-2-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024478576-zebra-longwing-on-firebush",
+    "store": "Picfair",
+    "picfair_id": "024478576",
+    "alt": "Zebra longwing butterfly visiting red orange firebush flowers — KK Florida photograph"
   },
   {
-    "title": "Zebra",
+    "title": "Zebra longwing butterfly on marigold",
     "category": "Butterflies",
-    "description": "",
+    "description": "Watching a Zebra Longwing fluttering around marigolds is a charming reminder of the beauty and balance in garden ecosystems.",
     "image": "images/butterflies/web/zebra.jpg",
     "thumbnail": "images/butterflies/thumbs/zebra-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024476111-zebra-longwing-butterfly-on-marigold",
+    "store": "Picfair",
+    "picfair_id": "024476111",
+    "alt": "Zebra longwing butterfly on orange marigold flower — KK Florida photograph"
   },
   {
     "title": "Buglife",
