@@ -223,22 +223,15 @@
     "alt": "Bluejay on branch — original photograph by KK Florida"
   },
   {
-    "title": "Marigold",
+    "title": "Vibrant Orange Marigold",
     "category": "Flowers",
-    "description": "",
-    "image": "images/flowers/web/marigold.jpg",
-    "thumbnail": "images/flowers/thumbs/marigold-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
-  },
-  {
-    "title": "Marigold1",
-    "category": "Flowers",
-    "description": "",
+    "description": "Beyond their beauty, marigolds have practical benefits. Their natural scent helps repel pests, making them a favorite companion plant in vegetable gardens. They thrive in full sun and well-drained soil, requiring minimal watering once established.",
     "image": "images/flowers/web/marigold1.jpg",
     "thumbnail": "images/flowers/thumbs/marigold1-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024487613-vibrant-orange-marogild",
+    "store": "Picfair",
+    "picfair_id": "024487613",
+    "alt": "Vibrant orange marigold flower blooming among green garden foliage — original KK Florida photograph"
   },
   {
     "title": "Orchid",

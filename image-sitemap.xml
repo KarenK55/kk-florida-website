@@ -171,17 +171,9 @@
   <url>
     <loc>https://kkflorida.com/</loc>
     <image:image>
-      <image:loc>https://kkflorida.com/images/flowers/web/marigold.jpg</image:loc>
-      <image:title>Marigold</image:title>
-      <image:caption>Marigold</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://kkflorida.com/</loc>
-    <image:image>
       <image:loc>https://kkflorida.com/images/flowers/web/marigold1.jpg</image:loc>
-      <image:title>Marigold1</image:title>
-      <image:caption>Marigold1</image:caption>
+      <image:title>Vibrant Orange Marigold</image:title>
+      <image:caption>Vibrant orange marigold blooming among green garden foliage</image:caption>
     </image:image>
   </url>
   <url>
