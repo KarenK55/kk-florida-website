@@ -63,85 +63,103 @@
     "store": "Picfair"
   },
   {
-    "title": "Card1",
+    "title": "Bright red male cardinal",
     "category": "Birds",
-    "description": "",
+    "description": "Recognizable by its vibrant red plumage and distinctive crest on its head, cardinals stand out in leafy green backgrounds.",
     "image": "images/birds/web/card1.jpg",
     "thumbnail": "images/birds/thumbs/card1-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024478704-bright-red-male-cardinal",
+    "store": "Picfair",
+    "picfair_id": "024478704",
+    "alt": "Bright red male cardinal — original photograph by KK Florida"
   },
   {
-    "title": "Card Pe",
+    "title": "Cardinal in a tree",
     "category": "Birds",
-    "description": "",
+    "description": "A bright red male cardinal perched proudly in the tree, its cheerful song filling the sunny morning with joyful melodies. What a happy sight!",
     "image": "images/birds/web/card-pe.jpg",
     "thumbnail": "images/birds/thumbs/card-pe-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024473249-cardinal-in-a-tree",
+    "store": "Picfair",
+    "picfair_id": "024473249",
+    "alt": "Cardinal in a tree — original photograph by KK Florida"
   },
   {
-    "title": "Cassia",
+    "title": "Spring Blossom Cassia Branch",
     "category": "Flowers",
-    "description": "",
+    "description": "Delicate pink and white blossoms cluster along dark branches in springtime bloom, with soft green foliage blurred in the background.",
     "image": "images/flowers/web/cassia.jpg",
     "thumbnail": "images/flowers/thumbs/cassia-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024943182-spring-blossom-cassia-branch",
+    "store": "Picfair",
+    "picfair_id": "024943182",
+    "alt": "Spring Blossom Cassia Branch — original photograph by KK Florida"
   },
   {
-    "title": "Crow",
+    "title": "Crow portrait",
     "category": "Birds",
-    "description": "",
+    "description": "A portrait of a crow often highlights its sharp, observant eyes and strong, curved beak—features that reflect its keen intelligence and adaptability.",
     "image": "images/birds/web/crow.jpg",
     "thumbnail": "images/birds/thumbs/crow-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024473737-crow-portrait",
+    "store": "Picfair",
+    "picfair_id": "024473737",
+    "alt": "Crow portrait — original photograph by KK Florida"
   },
   {
-    "title": "Dove",
+    "title": "On the wings of a dove",
     "category": "Birds",
-    "description": "",
+    "description": "Sunlight captures the beauty of a Eurasian collared dove as he takes flight.",
     "image": "images/birds/web/dove.jpg",
     "thumbnail": "images/birds/thumbs/dove-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024469444-on-the-wings-of-a-dove",
+    "store": "Picfair",
+    "picfair_id": "024469444",
+    "alt": "On the wings of a dove — original photograph by KK Florida"
   },
   {
-    "title": "Egret",
+    "title": "Great egret among the lilies",
     "category": "Birds",
-    "description": "",
+    "description": "A graceful great egret stands tall among blooming waterlilies in the serene Florida Everglades, basking in gentle sunlight.",
     "image": "images/birds/web/egret.jpg",
     "thumbnail": "images/birds/thumbs/egret-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024473410-great-egret-among-the-lilies",
+    "store": "Picfair",
+    "picfair_id": "024473410",
+    "alt": "Great egret among the lilies — original photograph by KK Florida"
   },
   {
-    "title": "Egret1",
+    "title": "Great egret in the grass",
     "category": "Birds",
-    "description": "",
+    "description": "A graceful great egret stands tall in the Florida Everglades, its white feathers shimmering gently among the lush green grass.",
     "image": "images/birds/web/egret1.jpg",
     "thumbnail": "images/birds/thumbs/egret1-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024473717-great-egret-in-the-grass",
+    "store": "Picfair",
+    "picfair_id": "024473717",
+    "alt": "Great egret in the grass — original photograph by KK Florida"
   },
   {
-    "title": "Egret2",
+    "title": "Great egret in the Florida Everglades",
     "category": "Birds",
-    "description": "",
+    "description": "The great egret is a striking bird often seen wading gracefully through the shallow waters of the Florida Everglades. Known for its long legs, slender neck, and brilliant white feathers, this elegant bird is a symbol of wetland health and beauty.",
     "image": "images/birds/web/egret2.jpg",
     "thumbnail": "images/birds/thumbs/egret2-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024478705-great-egret-in-the-florida-everglades",
+    "store": "Picfair",
+    "picfair_id": "024478705",
+    "alt": "Great egret in the Florida Everglades — original photograph by KK Florida"
   },
   {
-    "title": "Egret2A",
+    "title": "Great egret in the sunset",
     "category": "Birds",
-    "description": "",
+    "description": "These birds often stand still near water, waiting patiently to catch fish, their favorite food. The peaceful moment of a great egret at sunset captures both the grace of this magnificent bird and the serene beauty of nature’s evening light.",
     "image": "images/birds/web/egret2a.jpg",
     "thumbnail": "images/birds/thumbs/egret2a-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024478706-great-egret-in-the-sunset",
+    "store": "Picfair",
+    "picfair_id": "024478706",
+    "alt": "Great egret in the sunset — original photograph by KK Florida"
   },
   {
     "title": "Fulvoushairstreak",
@@ -162,13 +180,15 @@
     "store": "Picfair"
   },
   {
-    "title": "Heron",
+    "title": "Heron on Driftwood",
     "category": "Birds",
-    "description": "",
+    "description": "Great blue heron perched on weathered driftwood in shallow wetland water, surrounded by marsh grass and moss-covered rocks.",
     "image": "images/birds/web/heron.jpg",
     "thumbnail": "images/birds/thumbs/heron-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/025316796-heron-on-driftwood",
+    "store": "Picfair",
+    "picfair_id": "025316796",
+    "alt": "Heron on Driftwood — original photograph by KK Florida"
   },
   {
     "title": "Ibis",
@@ -180,13 +200,15 @@
     "store": "Picfair"
   },
   {
-    "title": "Jay",
+    "title": "Bluejay on branch",
     "category": "Birds",
-    "description": "",
+    "description": "Watching a Bluejay on a branch can be a delightful sight, as it often displays curious behavior—like mimicking calls of other birds or flitting energetically from one perch to another.",
     "image": "images/birds/web/jay.jpg",
     "thumbnail": "images/birds/thumbs/jay-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024478577-bluejay-on-branch",
+    "store": "Picfair",
+    "picfair_id": "024478577",
+    "alt": "Bluejay on branch — original photograph by KK Florida"
   },
   {
     "title": "Marigold",
@@ -315,13 +337,15 @@
     "store": "Picfair"
   },
   {
-    "title": "Thrasher",
+    "title": "Brown thrasher",
     "category": "Birds",
-    "description": "",
+    "description": "The brown thrasher is a striking bird native to eastern and central North America, easily recognized by its warm reddish-brown back, bright yellow eyes, and bold streaked chest.",
     "image": "images/birds/web/thrasher.jpg",
     "thumbnail": "images/birds/thumbs/thrasher-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024478575-brown-thrasher",
+    "store": "Picfair",
+    "picfair_id": "024478575",
+    "alt": "Brown thrasher — original photograph by KK Florida"
   },
   {
     "title": "Zebra (2)",
