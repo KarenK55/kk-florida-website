@@ -309,13 +309,15 @@
     "store": "Picfair"
   },
   {
-    "title": "Sunset",
+    "title": "Sunset in the Everglades",
     "category": "Sunsets",
-    "description": "",
+    "description": "Watching the sunset in the Everglades is a breathtaking experience that showcases the unique beauty of this vast wetland.",
     "image": "images/sunsets/web/sunset.jpg",
     "thumbnail": "images/sunsets/thumbs/sunset-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024476255-sunset-in-the-everglades",
+    "store": "Picfair",
+    "picfair_id": "024476255",
+    "alt": "Everglades sunset sky with palm silhouettes and birds — original KK Florida photograph"
   },
   {
     "title": "Golden Sunset Sky",
@@ -329,22 +331,26 @@
     "alt": "Golden sunset sky with vibrant orange and amber clouds above a dark silhouetted horizon — KK Florida photograph"
   },
   {
-    "title": "Sunset1",
+    "title": "Everglades sunset",
     "category": "Sunsets",
-    "description": "",
+    "description": "Sunsets here not only create stunning visuals but also bring a peaceful calm to the area.",
     "image": "images/sunsets/web/sunset1.jpg",
     "thumbnail": "images/sunsets/thumbs/sunset1-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024476335-everglades-sunset",
+    "store": "Picfair",
+    "picfair_id": "024476335",
+    "alt": "Warm Everglades sunset light filtering through clouds and palm tree silhouettes — KK Florida photograph"
   },
   {
-    "title": "Sunset2",
+    "title": "Tropical Sunset Glow",
     "category": "Sunsets",
-    "description": "",
+    "description": "Silhouetted palm trees frame a dramatic golden sunset with billowing clouds and vibrant amber skies.",
     "image": "images/sunsets/web/sunset2.jpg",
     "thumbnail": "images/sunsets/thumbs/sunset2-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024943185-tropical-sunset-glow",
+    "store": "Picfair",
+    "picfair_id": "024943185",
+    "alt": "Silhouetted palms beneath a golden tropical sunset and amber clouds — KK Florida photograph"
   },
   {
     "title": "Sunset3",
