@@ -140,3 +140,33 @@ const data=JSON.parse(fs.readFileSync(path.join(root,"data/gallery.json"),"utf8"
 if(!Array.isArray(data))throw new Error("data/gallery.json must be an array");
 for(const c of cats){const group=data.filter(x=>x.category===c.key);fs.mkdirSync(path.join(root,c.slug),{recursive:true});fs.writeFileSync(path.join(root,c.slug,"index.html"),render(c,group),"utf8");console.log(c.slug+": "+group.length+" images");}
 const p=path.join(root,"sitemap.xml");fs.writeFileSync(p,sitemap(fs.readFileSync(p,"utf8")),"utf8");
+
+
+function buildImageSitemap(rows){
+ const groups=new Map();
+ for(const item of rows){
+  if(!item || !item.image || !/^images\/[a-z0-9_\-./]+\.(?:jpe?g|png|webp)$/i.test(item.image))continue;
+  const c=cats.find(cat=>cat.key===item.category);if(!c)continue;
+  const list=groups.get(c.slug)||[];list.push(item);groups.set(c.slug,list);
+ }
+ let result='<?xml version="1.0" encoding="UTF-8"?>\n';
+ result+='<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
+ for(const c of cats){
+  const items=groups.get(c.slug)||[];if(!items.length)continue;
+  result+='  <url>\n    <loc>https://kkflorida.com/'+c.slug+'/</loc>\n';
+  for(const item of items){
+   const title=String(item.title||c.label).trim();
+   const caption=String(item.description||item.alt||title).trim();
+   result+='    <image:image>\n';
+   result+='      <image:loc>https://kkflorida.com/'+h(item.image)+'</image:loc>\n';
+   result+='      <image:title>'+h(title)+'</image:title>\n';
+   result+='      <image:caption>'+h(caption)+'</image:caption>\n';
+   result+='    </image:image>\n';
+  }
+  result+='  </url>\n';
+ }
+ return result+'</urlset>\n';
+}
+const imageSitemapPath=path.join(root,"image-sitemap.xml");
+fs.writeFileSync(imageSitemapPath,buildImageSitemap(data),"utf8");
+console.log("Updated image-sitemap.xml");

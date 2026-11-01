@@ -1,44 +1,90 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>KK Florida Gallery Builder</title>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KK Florida Photo Publisher</title>
 <style>
-body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;background:#f7f4ee;color:#17221b}
-h1{color:#0f3d2c}.panel{background:white;padding:24px;border-radius:16px;margin-bottom:20px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
-label{display:block;font-weight:bold;margin-top:14px}input,textarea,select{width:100%;padding:10px;margin-top:6px;border:1px solid #bbb;border-radius:8px}
-button{padding:12px 18px;border:0;border-radius:999px;background:#ed8b32;font-weight:bold;cursor:pointer;margin:10px 8px 0 0}
-pre{white-space:pre-wrap;background:#102f23;color:white;padding:16px;border-radius:12px;max-height:360px;overflow:auto}
-.small{color:#59635d}
-</style></head>
+:root{--ink:#143345;--deep:#073c54;--teal:#087d82;--paper:#f3f8f7;--line:#d7e4e5;--orange:#ffad3b;--warn:#925916}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);font:15px/1.55 system-ui,"Segoe UI",sans-serif;color:var(--ink)}header{background:linear-gradient(115deg,#073c54,#06888e);color:white;padding:36px max(22px,calc((100vw - 1100px)/2));}header h1{font-size:clamp(27px,4vw,40px);margin:0 0 5px;letter-spacing:-.025em}header p{margin:0;max-width:780px;color:#ecffff}main{max-width:1120px;margin:auto;padding:25px 18px 70px}.step{background:white;border:1px solid var(--line);box-shadow:0 5px 18px #10344c0b;border-radius:16px;padding:25px;margin:0 0 17px}h2{font-size:21px;margin:0 0 12px;color:var(--deep)}.step-num{background:#e4f5f1;color:#006872;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;width:31px;height:31px;margin-right:8px;font-size:15px}.subtle,.fine{color:#537077}.fine{font-size:13px}.file-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}.control{display:block;font-weight:700;margin:7px 0}.control input[type=file]{display:block;font-weight:400;margin-top:8px;width:100%;padding:10px;background:#f5fafb;border:1px dashed #aac2c7;border-radius:9px}input[type=text],input[type=url],select,textarea{font:inherit;color:var(--ink);width:100%;border:1px solid #c7d9dc;border-radius:8px;padding:9px;background:#fff;min-width:0}textarea{min-height:78px;resize:vertical}input:focus,select:focus,textarea:focus{outline:2px solid #4dacc0;outline-offset:1px}button{font:inherit;cursor:pointer;border:0;border-radius:9px;padding:11px 17px;font-weight:750;background:var(--teal);color:#fff}button:hover{filter:brightness(.94)}button:disabled{opacity:.45;cursor:not-allowed}.secondary{background:#e4f2f4;color:#124e62}.danger{background:#faeeee;color:#912f38}.status{font-size:14px;background:#eff8f7;color:#0b605e;border-radius:8px;margin:10px 0 0;padding:9px 12px}.warning{background:#fff6e6;color:#805116}.button-row{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:15px}.card-list{display:grid;gap:18px}.photo-card{border:1px solid #d7e4e5;padding:17px;border-radius:13px;background:#fcfefe;display:grid;grid-template-columns:155px minmax(0,1fr);gap:20px}.photo-card img{width:155px;height:148px;object-fit:contain;border-radius:10px;background:#e6eeee}.photo-card .filename{overflow-wrap:anywhere;font-size:13px;font-weight:700;margin:5px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 15px}.grid .wide{grid-column:1/-1}.grid label{font-size:13px;font-weight:700;display:block}.grid label input,.grid label textarea,.grid label select{margin-top:5px;font-size:14px;font-weight:400}.hint{font-size:12px;color:#557078;margin:5px 0}.inline-check{display:flex;gap:8px;align-items:center}.inline-check input{accent-color:#067d82}.settings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:12px 0}.settings label{font-weight:700;font-size:13px}.settings input{margin-top:6px}.settings input[type=range]{width:100%}.summary{font-size:15px;font-weight:750;margin-bottom:13px}.empty{padding:17px;border:1px dashed var(--line);border-radius:10px;color:#557078}.pill{display:inline-block;border-radius:20px;padding:3px 9px;font-size:12px;font-weight:750;background:#e9f6f2;color:#0a6b68}.attention{background:#fff3d9;color:#84510d}ol{padding-left:24px}ol li{margin-bottom:7px}code{font-size:13px;background:#e8f0f2;padding:2px 4px;border-radius:3px}#log{white-space:pre-wrap;margin-top:12px;color:#47636a;max-height:210px;overflow:auto}.footnote{font-size:12px;color:#58747b;text-align:center}.hidden{display:none!important}@media(max-width:720px){.file-row,.settings,.photo-card,.grid{grid-template-columns:1fr}.photo-card img{width:100%;height:200px}.grid .wide{grid-column:auto}header{padding:30px 18px}}
+</style>
+</head>
 <body>
-<h1>KK Florida Gallery Builder</h1>
-<p class="small">This tool runs in your browser. It does not upload anything. It creates a new <strong>gallery.json</strong> file for you to download and then upload to GitHub.</p>
-
-<div class="panel">
-<label>Load your current gallery.json</label>
-<input id="fileInput" type="file" accept=".json">
+<header>
+<h1>KK Florida · Photo Publisher</h1>
+<p>Prepare one photograph or a batch for your website. Import descriptions and categories from Picfair, apply your centered watermark, and export a GitHub-ready ZIP.</p>
+</header>
+<main>
+<section class="step">
+<h2><span class="step-num">1</span>Load your latest gallery and Picfair export</h2>
+<p class="subtle">First <b>Fetch origin → Pull origin</b> in GitHub Desktop. This prevents an old gallery file from overwriting newer entries.</p>
+<div class="file-row">
+<label class="control">Current <code>data/gallery.json</code>
+<input id="galleryFile" type="file" accept=".json,application/json">
+</label>
+<label class="control">Picfair JSON export(s) (optional)
+<input id="picfairFiles" type="file" accept=".json,application/json" multiple>
+</label>
 </div>
-
-<div class="panel">
-<h2>Add a new item</h2>
-<label>Title</label><input id="title">
-<label>Category</label><input id="category" placeholder="Birds">
-<label>Description</label><textarea id="description"></textarea>
-<label>Image path</label><input id="image" placeholder="images/birds/roseate-spoonbill.jpg">
-<label>Picfair or TeePublic link</label><input id="link" placeholder="https://...">
-<label>Store</label><select id="store"><option>Picfair</option><option>TeePublic</option></select>
-<button id="addBtn">Add Item</button>
-<button id="downloadBtn">Download gallery.json</button>
+<p class="fine">Accepts both the new combined multi-album export and your original single-album exports. Album categories carry through to each photograph.</p>
+<div class="status" id="importStatus" role="status">Load the latest gallery.json to begin.</div>
+</section>
+<section class="step">
+<h2><span class="step-num">2</span>Choose your photographs</h2>
+<label class="control">Select one or more original photographs from your computer
+<input id="photoFiles" type="file" accept="image/jpeg,image/png,image/webp" multiple>
+</label>
+<p class="fine">Your full-size originals stay on your computer. Only resized copies are exported. Each selected photo can use a different category.</p>
+<div class="button-row"><button class="secondary" id="clearPhotos" type="button">Clear selected photographs</button><span class="pill" id="photoCount">0 selected</span></div>
+</section>
+<section class="step">
+<h2><span class="step-num">3</span>Match each photo to Picfair</h2>
+<p class="subtle">Use the dropdown beside each photograph to find the corresponding Picfair listing. The title, description, shopping URL and album category will fill automatically. Please visually confirm each match—filenames often differ.</p>
+<div class="summary" id="summary">No photographs selected yet.</div>
+<div id="photoList" class="card-list"><div class="empty">Select your image files above to see the matching cards.</div></div>
+</section>
+<section class="step">
+<h2><span class="step-num">4</span>Prepare your website images</h2>
+<div class="settings">
+<label>Web image maximum dimension (px)
+<input id="webSize" type="text" inputmode="numeric" value="2000" aria-label="Web image maximum dimension">
+</label>
+<label>Thumbnail maximum dimension (px)
+<input id="thumbSize" type="text" inputmode="numeric" value="520" aria-label="Thumbnail maximum dimension">
+</label>
+<label>Centered watermark opacity
+<input id="opacity" type="range" min="0.12" max="0.5" step="0.02" value="0.30">
+<span id="opacityLabel" class="fine">30%</span>
+</label>
 </div>
-
-<div class="panel"><h2>Current gallery data</h2><pre id="preview">[]</pre></div>
-
-<script>
-let data=[];
-const preview=()=>document.getElementById("preview").textContent=JSON.stringify(data,null,2);
-document.getElementById("fileInput").addEventListener("change",async e=>{const f=e.target.files[0];if(!f)return;try{data=JSON.parse(await f.text());preview()}catch{alert("That file is not valid JSON.")}});
-document.getElementById("addBtn").addEventListener("click",()=>{const item={title:document.getElementById("title").value.trim(),category:document.getElementById("category").value.trim(),description:document.getElementById("description").value.trim(),image:document.getElementById("image").value.trim(),link:document.getElementById("link").value.trim(),store:document.getElementById("store").value};if(!item.title||!item.category||!item.image){alert("Title, category, and image path are required.");return}data.push(item);preview();["title","category","description","image","link"].forEach(id=>document.getElementById(id).value="")});
-document.getElementById("downloadBtn").addEventListener("click",()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="gallery.json";a.click();URL.revokeObjectURL(a.href)});
-preview();
-</script>
-</body></html>
+<div class="file-row">
+<label class="control">Optional custom transparent watermark logo (PNG)
+<input id="watermarkFile" type="file" accept="image/png,image/webp">
+</label>
+<label class="control">Or use watermark text
+<input id="watermarkText" type="text" value="© KK Florida Photography">
+</label>
+</div>
+<div class="button-row">
+<label class="inline-check"><input id="watermarkOn" type="checkbox" checked> Add centered watermark to web image</label>
+<label class="inline-check"><input id="allowTransparent" type="checkbox" checked> Keep PNG transparency</label>
+</div>
+<p class="fine">If an image is already watermarked, uncheck the watermark option to avoid a double watermark. The thumbnail is made from the prepared web image.</p>
+<div class="button-row"><button id="exportZip" type="button">Create GitHub-ready ZIP</button><span id="exportStatus" class="fine" role="status">No changes have been made to your website.</span></div>
+<pre id="log"></pre>
+</section>
+<section class="step">
+<h2><span class="step-num">5</span>Publish through GitHub Desktop</h2>
+<ol>
+<li>After downloading the ZIP, open it in Windows File Explorer and choose <b>Extract All</b> to a temporary folder.</li>
+<li>Copy the <code>data</code> and <code>images</code> folders from the extracted ZIP into your local <code>kk-florida-website</code> repository folder. Choose <b>Merge</b> folders and <b>Replace</b> the existing <code>data/gallery.json</code> when asked. Do not delete existing folders.</li>
+<li>Open GitHub Desktop. Review your changes, enter a commit message such as <b>Add new KK Florida photographs</b>, then click <b>Commit to main</b> and <b>Push origin</b>.</li>
+<li>Your GitHub workflow regenerates the category pages, main sitemap and image sitemap. Cloudflare Pages then deploys the published changes.</li>
+</ol>
+<p class="fine">This tool does not connect to your Picfair password, does not publish automatically, and never uploads your original full-resolution image files.</p>
+</section>
+<p class="footnote">KK Florida Content Manager · Local browser tool · Photos and metadata remain on your computer until you choose to publish.</p>
+</main>
+<script src="photo-publisher.js"></script>
+</body>
+</html>
