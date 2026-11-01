@@ -318,13 +318,15 @@
     "store": "Picfair"
   },
   {
-    "title": "Sunset1 (2)",
+    "title": "Golden Sunset Sky",
     "category": "Sunsets",
-    "description": "",
+    "description": "Dramatic golden sunset sky with vibrant orange and amber clouds burning across the horizon as the sun dips below the silhouetted landscape.",
     "image": "images/sunsets/web/sunset1-2.jpg",
     "thumbnail": "images/sunsets/thumbs/sunset1-2-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024936395-golden-sunset-sky",
+    "store": "Picfair",
+    "picfair_id": "024936395",
+    "alt": "Golden sunset sky with vibrant orange and amber clouds above a dark silhouetted horizon — KK Florida photograph"
   },
   {
     "title": "Sunset1",
