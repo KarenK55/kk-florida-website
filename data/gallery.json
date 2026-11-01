@@ -9,22 +9,26 @@
     "store": "Picfair"
   },
   {
-    "title": "Bee (3)",
+    "title": "Bee on Yellow Bloom",
     "category": "Insects",
-    "description": "",
+    "description": "Metallic green bee pollinating a bright yellow flower with iridescent body and pollen-laden legs in natural sunlight.",
     "image": "images/insects/web/bee-3.jpg",
     "thumbnail": "images/insects/thumbs/bee-3-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/025172198-bee-on-yellow-bloom",
+    "store": "Picfair",
+    "picfair_id": "025172198",
+    "alt": "Metallic green bee on yellow flower — KK Florida photography"
   },
   {
-    "title": "Bee",
+    "title": "Bee in a sea of green",
     "category": "Insects",
-    "description": "",
+    "description": "A honey bee on a bright flower, surrounded by a vast, vibrant sea of green leaves and gentle sunlight.",
     "image": "images/insects/web/bee.jpg",
     "thumbnail": "images/insects/thumbs/bee-thumb.jpg",
-    "link": "https://flwildlife.picfair.com/",
-    "store": "Picfair"
+    "link": "https://flwildlife.picfair.com/images/024473290-bee-in-a-sea-of-green",
+    "store": "Picfair",
+    "picfair_id": "024473290",
+    "alt": "Honey bee among green foliage and yellow flowers — KK Florida photography"
   },
   {
     "title": "Bee1",
