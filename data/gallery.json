@@ -4071,5 +4071,27 @@
     "purchaseUrl": "https://www.teepublic.com/user/kk-florida",
     "store": "TeePublic",
     "published": "2026-10-25T17:23:14-04:00"
+  },
+  {
+    "title": "Wood Storks Perched",
+    "category": "Birds",
+    "description": "Three wood storks stand alert on green shrubs at a nesting colony, with another bird resting in a nest beneath a pale blue sky.",
+    "image": "images/birds/web/picfair-026181558-wood-storks-perched.jpg",
+    "thumbnail": "images/birds/thumbs/picfair-026181558-wood-storks-perched-thumb.jpg",
+    "link": "https://flwildlife.picfair.com/images/026181558-wood-storks-perched",
+    "store": "Picfair",
+    "alt": "Wood Storks Perched — original photograph by KK Florida",
+    "picfair_id": "026181558"
+  },
+  {
+    "title": "Fiery Black Eyed Susan",
+    "category": "Flowers",
+    "description": "Close-up of a vibrant red and yellow Black eyed Susan with a textured brown center, set against a soft green background with a painterly finish.",
+    "image": "images/flowers/web/picfair-026181560-fiery-black-eyed-susan.jpg",
+    "thumbnail": "images/flowers/thumbs/picfair-026181560-fiery-black-eyed-susan-thumb.jpg",
+    "link": "https://flwildlife.picfair.com/images/026181560-fiery-black-eyed-susan",
+    "store": "Picfair",
+    "alt": "Fiery Black Eyed Susan — original photograph by KK Florida",
+    "picfair_id": "026181560"
   }
 ]
