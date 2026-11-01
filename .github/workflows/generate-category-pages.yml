@@ -1,0 +1,27 @@
+name: Regenerate searchable collection pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/gallery.json'
+      - 'tools/generate-category-pages.js'
+      - '.github/workflows/generate-category-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build category HTML and sitemap
+        run: node tools/generate-category-pages.js
+      - name: Commit generated updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add birds/index.html butterflies/index.html flowers/index.html kaleidoscope-flowers/index.html sunsets/index.html insects/index.html landscapes/index.html mammals/index.html orchids/index.html tshirts/index.html sitemap.xml
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh category collections"
+            git push
+          fi
