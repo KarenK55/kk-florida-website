@@ -8,6 +8,66 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/categories.css">
+
+<style>
+/* Enlarged T-shirt preview and matching TeePublic shopping link */
+.tshirt-lightbox {
+  width: min(92vw, 850px);
+  max-width: 92vw;
+  max-height: 92vh;
+  padding: 0;
+  margin: auto;
+  border: 0;
+  border-radius: 16px;
+  overflow: auto;
+  background: #ffffff;
+  color: #1f2937;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, .45);
+}
+.tshirt-lightbox::backdrop { background: rgba(0, 0, 0, .82); }
+.tshirt-lightbox-inner { position: relative; padding: 22px 26px 28px; text-align: center; }
+.tshirt-lightbox-close {
+  position: sticky;
+  top: 0;
+  display: block;
+  margin: 0 0 -6px auto;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: #1f2937;
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+.tshirt-lightbox-image {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 62vh;
+  margin: 8px auto 18px;
+  object-fit: contain;
+}
+.tshirt-lightbox-title { margin: 8px 0; color: #1f2937; font-size: clamp(1.2rem, 3vw, 1.65rem); }
+.tshirt-lightbox-description { max-width: 680px; margin: 0 auto 18px; line-height: 1.6; }
+.tshirt-lightbox-shop {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: #c45128;
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+.tshirt-lightbox-shop:hover, .tshirt-lightbox-shop:focus-visible { background: #913917; }
+@media (max-width: 520px) {
+  .tshirt-lightbox-inner { padding: 12px 16px 22px; }
+  .tshirt-lightbox-image { max-height: 58vh; }
+}
+</style>
 </head><body class="category-page">
 <a class="skip-to-gallery" href="#gallery">Skip to T-shirt designs</a>
 <header class="site-header inner-header"><a class="brand" href="../" aria-label="KK Florida homepage"><img src="../images/logos/kkflorida-logo.png" alt="KK Florida"></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="main-nav" aria-label="Main navigation"><a href="../">Home</a><a href="../#collections" class="active">Collections</a><a href="../guides.html">Wildlife Guides</a><a href="../coloring-pages.html">Free Coloring Pages</a><a href="../christmas/">Christmas</a><a href="../contact.html">Contact</a></nav></header>
@@ -63,6 +123,56 @@
 <a href="../mammals/">Florida Mammals</a>
 <a href="../orchids/">Orchids</a></nav></section>
 <section class="category-store"><div><p class="eyebrow light">Photography, artwork & gifts</p><h2>Bring a little Florida home</h2><p>Explore original KK Florida designs and photography available on TeePublic.</p></div><a class="button white-button" href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener noreferrer">Shop on TeePublic ↗</a></section>
-</main><footer class="site-footer"><div class="footer-logo-panel"><a href="../"><img src="../images/logos/kkflorida-logo.png" alt="KK Florida"></a></div><p>Original Florida wildlife photography, creative artwork and gifts.</p><div class="footer-links"><a href="../">Home</a><a href="../#collections">Collections</a><a href="../guides.html">Wildlife Guides</a><a href="../coloring-pages.html">Coloring Pages</a><a href="../contact.html">Contact</a></div></footer>
+</main>
+<dialog class="tshirt-lightbox" id="tshirt-lightbox" aria-labelledby="tshirt-lightbox-title">
+  <div class="tshirt-lightbox-inner">
+    <form method="dialog"><button class="tshirt-lightbox-close" type="submit" aria-label="Close enlarged image">&times;</button></form>
+    <img class="tshirt-lightbox-image" id="tshirt-lightbox-image" alt="">
+    <h2 class="tshirt-lightbox-title" id="tshirt-lightbox-title"></h2>
+    <p class="tshirt-lightbox-description" id="tshirt-lightbox-description"></p>
+    <a class="tshirt-lightbox-shop" id="tshirt-lightbox-shop" href="https://www.teepublic.com/user/kk-florida" target="_blank" rel="noopener noreferrer">Visit KK Florida on TeePublic ↗</a>
+  </div>
+</dialog>
+<footer class="site-footer"><div class="footer-logo-panel"><a href="../"><img src="../images/logos/kkflorida-logo.png" alt="KK Florida"></a></div><p>Original Florida wildlife photography, creative artwork and gifts.</p><div class="footer-links"><a href="../">Home</a><a href="../#collections">Collections</a><a href="../guides.html">Wildlife Guides</a><a href="../coloring-pages.html">Coloring Pages</a><a href="../contact.html">Contact</a></div></footer>
 <script>const b=document.querySelector(".menu-button"),n=document.querySelector(".main-nav");if(b&&n){b.addEventListener("click",()=>{const open=n.classList.toggle("open");b.setAttribute("aria-expanded",String(open));});n.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{n.classList.remove("open");b.setAttribute("aria-expanded","false");}));}</script>
+
+<script>
+(function () {
+  const lightbox = document.getElementById("tshirt-lightbox");
+  if (!lightbox || typeof lightbox.showModal !== "function") return;
+  const largeImage = document.getElementById("tshirt-lightbox-image");
+  const title = document.getElementById("tshirt-lightbox-title");
+  const description = document.getElementById("tshirt-lightbox-description");
+  const shopButton = document.getElementById("tshirt-lightbox-shop");
+  const storeURL = "https://www.teepublic.com/user/kk-florida";
+
+  document.querySelectorAll(".category-photos article.photo").forEach(function (card) {
+    const imageLink = card.querySelector("a.photo-img");
+    if (!imageLink) return;
+    imageLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      const cardTitle = card.querySelector(".photo-body h2");
+      const cardDescription = card.querySelector(".photo-body p");
+      const cardShop = card.querySelector(".photo-store");
+      const image = imageLink.querySelector("img");
+      const destination = cardShop && cardShop.href ? cardShop.href : storeURL;
+      const isProduct = /^https:\/\/(?:www\.)?teepublic\.com\/t-shirt\//i.test(destination);
+
+      largeImage.src = imageLink.href;
+      largeImage.alt = image && image.alt ? image.alt : (cardTitle ? cardTitle.textContent : "T-shirt artwork");
+      title.textContent = cardTitle ? cardTitle.textContent : "Original KK Florida T-Shirt";
+      description.textContent = cardDescription ? cardDescription.textContent : "";
+      shopButton.href = destination;
+      shopButton.textContent = isProduct ? "Shop This T-Shirt ↗" : "Visit KK Florida on TeePublic ↗";
+      lightbox.showModal();
+    });
+  });
+  lightbox.addEventListener("click", function (event) {
+    if (event.target === lightbox) lightbox.close();
+  });
+  lightbox.addEventListener("close", function () {
+    largeImage.removeAttribute("src");
+  });
+})();
+</script>
 </body></html>
