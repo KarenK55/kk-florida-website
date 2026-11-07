@@ -1,5 +1,4 @@
 let items=[];
-let activeCategory="";
 const $=selector=>document.querySelector(selector);
 const menuButton=$(".menu-button");
 const navigation=$(".main-nav");
@@ -13,23 +12,26 @@ const categoryDescriptions={
 function displayCategory(name){return name==="Tshirts"?"T-Shirts & Art":name}
 function categoryOrder(categories){const preferred=["Birds","Butterflies","Flowers","Kaleidoscope Flowers","Sunsets","Insects","Landscapes","Mammals","Orchids","Tshirts"];return [...categories].sort((a,b)=>{const ai=preferred.indexOf(a),bi=preferred.indexOf(b);return (ai<0?99:ai)-(bi<0?99:bi)||a.localeCompare(b)})}
 function groupedItems(){return items.reduce((map,item)=>{(map[item.category]??=[]).push(item);return map},{})}
-function renderCategories(){const groups=groupedItems();const categories=categoryOrder(Object.keys(groups));const grid=$("#categoryGrid");grid.innerHTML=categories.map(category=>{const group=groups[category];const cover=group.find(i=>i.thumbnail)||group[0];return `<button class="category-card" data-category="${escapeHtml(category)}"><img src="${escapeHtml(imageFor(cover))}" alt="${escapeHtml(displayCategory(category))}" loading="lazy"><span class="category-shade"></span><span class="category-copy"><h3>${escapeHtml(displayCategory(category))}</h3><p class="category-count">${group.length} ${group.length===1?"image":"images"}</p>${categoryDescriptions[category]?`<p class="category-description">${escapeHtml(categoryDescriptions[category])}</p>`:""}</span><span class="category-arrow">→</span></button>`}).join("");grid.querySelectorAll(".category-card").forEach(card=>card.addEventListener("click",()=>openGallery(card.dataset.category)))}
+function renderCategories(){
+  const groups=groupedItems();
+  const categories=categoryOrder(Object.keys(groups));
+  const grid=$("#categoryGrid");
+  grid.innerHTML=categories.map(category=>{
+    const group=groups[category];
+    const cover=group.find(i=>i.thumbnail)||group[0];
+    const path=categoryUrls[category];
+    if(!path)return "";
+    const countText=category==="Tshirts"?"Browse designs":`${group.length} ${group.length===1?"image":"images"}`;
+    return `<a class="category-card" href="${escapeHtml(path)}/" aria-label="View ${escapeHtml(displayCategory(category))} collection"><img src="${escapeHtml(imageFor(cover))}" alt="${escapeHtml(displayCategory(category))}" loading="lazy"><span class="category-shade"></span><span class="category-copy"><h3>${escapeHtml(displayCategory(category))}</h3><p class="category-count">${countText}</p>${categoryDescriptions[category]?`<p class="category-description">${escapeHtml(categoryDescriptions[category])}</p>`:""}</span><span class="category-arrow" aria-hidden="true">→</span></a>`;
+  }).join("");
+}
 function renderFeatured(){const groups=groupedItems();const categories=categoryOrder(Object.keys(groups));const picks=categories.slice(0,8).map((category,index)=>{const group=groups[category];return group[index%group.length]});const grid=$("#featuredGrid");grid.innerHTML=picks.map(item=>`<article class="featured-card" data-index="${items.indexOf(item)}"><img src="${escapeHtml(imageFor(item))}" alt="${escapeHtml(item.alt||displayCategory(item.category))}" loading="lazy"><span class="featured-badge">${escapeHtml(displayCategory(item.category))}</span></article>`).join("");grid.querySelectorAll(".featured-card").forEach(card=>card.addEventListener("click",()=>openModal(items[Number(card.dataset.index)])))}
 const categoryUrls={"Birds":"birds","Butterflies":"butterflies","Flowers":"flowers","Kaleidoscope Flowers":"kaleidoscope-flowers","Sunsets":"sunsets","Insects":"insects","Landscapes":"landscapes","Mammals":"mammals","Orchids":"orchids","Tshirts":"tshirts"};
-function openGallery(category){const pageLink=$("#categoryPageLink");if(pageLink){pageLink.href=(categoryUrls[category]||"birds")+"/";pageLink.textContent="View "+displayCategory(category)+" page";}activeCategory=category;$("#galleryTitle").textContent=displayCategory(category);$("#searchBox").value="";renderPortfolio();const panel=$("#galleryPanel");panel.classList.add("open");panel.setAttribute("aria-hidden","false");document.body.classList.add("no-scroll");panel.scrollTop=0}
-function closeGallery(){const panel=$("#galleryPanel");panel.classList.remove("open");panel.setAttribute("aria-hidden","true");document.body.classList.remove("no-scroll")}
-function renderPortfolio(){const search=$("#searchBox").value.trim().toLowerCase();const filtered=items.filter(item=>item.category===activeCategory).filter(item=>`${item.title||""} ${item.description||""} ${(item.keywords||[]).join(" ")} ${item.location||""}`.toLowerCase().includes(search));$("#galleryCount").textContent=`${filtered.length} ${filtered.length===1?"image":"images"}`;const grid=$("#portfolioGrid");grid.innerHTML=filtered.length?filtered.map(item=>`<article class="portfolio-card" data-index="${items.indexOf(item)}"><img src="${escapeHtml(imageFor(item))}" alt="${escapeHtml(item.alt||displayCategory(item.category))}" loading="lazy"><span class="portfolio-overlay"></span><span class="portfolio-meta">View image →</span></article>`).join(""):`<p class="empty-state">No images matched your search.</p>`;grid.querySelectorAll(".portfolio-card").forEach(card=>card.addEventListener("click",()=>openModal(items[Number(card.dataset.index)])))}
 const modal=$("#imageModal");
 function cleanTitle(item){const title=String(item.title||"").trim();if(!title||/^(bee|bird|card|img|image|photo|sunset|flower|butterfly)[\s_\-]*(\(?\d+\)?)?$/i.test(title))return "";return title}
 function openModal(item){$("#modalImage").src=item.image;$("#modalImage").alt=item.alt||displayCategory(item.category);$("#modalCategory").textContent=`${displayCategory(item.category)} • ${item.store||"KK Florida"}`;const title=cleanTitle(item);$("#modalTitle").textContent=title;$("#modalTitle").classList.toggle("visually-hidden-title",!title);const description=item.description||`Original ${displayCategory(item.category).toLowerCase()} photography and artwork from KK Florida.`;$("#modalDescription").textContent=description;const link=$("#modalLink");link.href=item.link||item.purchaseUrl||"#";link.textContent=item.store==="TeePublic"?"View this design on TeePublic":"Shop this photo on Picfair";modal.classList.add("open");modal.setAttribute("aria-hidden","false")}
 function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true")}
-$("#galleryClose").addEventListener("click",closeGallery);$("#searchBox").addEventListener("input",renderPortfolio);$("#modalClose").addEventListener("click",closeModal);modal.addEventListener("click",event=>{if(event.target===modal)closeModal()});document.addEventListener("keydown",event=>{if(event.key==="Escape"){if(modal.classList.contains("open"))closeModal();else if($("#galleryPanel").classList.contains("open"))closeGallery()}});
+$("#modalClose").addEventListener("click",closeModal);modal.addEventListener("click",event=>{if(event.target===modal)closeModal()});document.addEventListener("keydown",event=>{if(event.key==="Escape"&&modal.classList.contains("open"))closeModal()});
 fetch("data/gallery.json").then(response=>response.json()).then(data=>{items=Array.isArray(data)?data:(data.items||[]);renderCategories();renderFeatured()}).catch(error=>{$("#categoryGrid").innerHTML="<p>The gallery could not be loaded.</p>";console.error(error)});
 fetch("data/hero.json").then(r=>r.json()).then(slides=>{const host=$("#heroSlides");host.innerHTML=slides.map((s,i)=>`<div class="hero-slide ${i===0?"active":""}" style="background-image:url('${s.image}')" role="img" aria-label="${escapeHtml(s.alt)}"></div>`).join("");const els=[...host.children];if(els.length>1){let index=0;setInterval(()=>{els[index].classList.remove("active");index=(index+1)%els.length;els[index].classList.add("active")},6500)}});
 
-// Open a collection from promotional buttons after gallery data has loaded.
-document.querySelectorAll("[data-open-category]").forEach(button=>button.addEventListener("click",()=>{
-  const category=button.dataset.openCategory;
-  if(items.some(item=>item.category===category)) openGallery(category);
-  else window.location.href="https://www.teepublic.com/user/kk-florida";
-}));
