@@ -5,7 +5,32 @@ const CATS=["Birds","Butterflies","Flowers","Kaleidoscope Flowers","Sunsets","In
 const DIRS={"Birds":"birds","Butterflies":"butterflies","Flowers":"flowers","Kaleidoscope Flowers":"kaleidoscope-flowers","Sunsets":"sunsets","Insects":"insects","Landscapes":"landscapes","Mammals":"mammals","Orchids":"orchids","Tshirts":"tshirts"};
 const ALBUMS={"337633":"Birds","337651":"Mammals","337747":"Insects","337825":"Flowers","337827":"Butterflies","337836":"Sunsets","337756":"Landscapes"};
 const ALBUM_SLUGS={"birds-of-florida":"Birds","birds":"Birds","butterflies":"Butterflies","flowers":"Flowers","sunsets":"Sunsets","honey-bees":"Insects","bees":"Insects","insects":"Insects","landscapes":"Landscapes","squirrels":"Mammals","orchids":"Orchids","kaleidoscope-flowers":"Kaleidoscope Flowers"};
-let gallery=null;let imported=new Map();let selections=[];let logo=null;
+let gallery=null;let imported=new Map();let selections=[];let logo=null;let altEdits=new Map();
+// Use only supplied metadata, never guess species, colors or locations from a filename.
+function altFromTitle(title,category){
+ const clean=String(title||"").trim().replace(/[_]+/g," ").replace(/\s+/g," ").replace(/^(sunset|photo|image|bird|flower)\s*\(?\d+\)?$/i,"$1").trim();
+ if(!clean)return "";
+ return category==="Tshirts"?clean+" — T-shirt design":clean;
+}
+function suggestedAlt(item){return altFromTitle(item.title,item.category);}
+function effectiveAlt(item){return String(item.alt||"").trim()||suggestedAlt(item);}
+function galleryWithAltEdits(){return gallery.map((row,index)=>altEdits.has(index)&&altEdits.get(index).trim()?{...row,alt:altEdits.get(index).trim()}:{...row});}
+function renderAltReview(){
+ const host=$("altReview"),btn=$("exportMetadata");host.replaceChildren();btn.disabled=true;
+ if(!gallery){host.append(el("p",{class:"fine"},"Load your current gallery.json first."));return;}
+ const missing=gallery.map((row,index)=>({row,index})).filter(({row})=>!String(row.alt||"").trim());
+ if(!missing.length){host.append(el("p",{class:"fine"},"All existing entries already have ALT text. Existing text has been preserved."));return;}
+ host.append(el("p",{class:"fine"},missing.length+" entries have missing ALT text. Suggestions use existing titles only. Review against the actual photographs before saving; leave blank to skip."));
+ for(const {row,index} of missing){
+  const field=el("input",{type:"text"});
+  field.placeholder=suggestedAlt(row);field.value=altEdits.get(index)||"";
+  function saveField(){altEdits.set(index,field.value);btn.disabled=![...altEdits.values()].some(v=>v.trim());}
+  field.addEventListener("input",saveField);
+  const label=el("label",{class:"control"},row.title+" · "+row.category);label.append(field,el("span",{class:"fine"},row.image));host.append(label);
+  const use=el("button",{type:"button",class:"secondary"},"Use title suggestion");use.addEventListener("click",()=>{field.value=suggestedAlt(row);saveField();});host.append(use);
+ }
+ btn.disabled=![...altEdits.values()].some(v=>v.trim());
+}
 function el(tag,props,text){const e=document.createElement(tag);if(props)for(const [key,val] of Object.entries(props)){if(key==="class")e.className=val;else e.setAttribute(key,val);}if(text!==undefined)e.textContent=text;return e;}
 function stat(message,warn){$("importStatus").textContent=message;$("importStatus").classList.toggle("warning",!!warn);}
 function norm(v){return String(v||"").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"").replace(/\.[^.]*$/,"").replace(/[^a-z0-9]+/g,"");}
@@ -42,8 +67,8 @@ function refreshStats(){
 $("galleryFile").addEventListener("change",async e=>{
  const file=e.target.files[0];if(!file)return;
  try{const obj=await readJson(file);if(!Array.isArray(obj)||obj.some(x=>!x||typeof x!=="object"||!x.image||!x.category))throw Error("The gallery JSON must be an array of photo entries.");
- gallery=obj;refreshStats();renderCards();
- }catch(err){gallery=null;stat("Could not load gallery: "+err.message,true);}
+ gallery=obj;altEdits.clear();refreshStats();renderCards();renderAltReview();
+ }catch(err){gallery=null;altEdits.clear();renderAltReview();stat("Could not load gallery: "+err.message,true);}
 });
 $("picfairFiles").addEventListener("change",async e=>{
  let loaded=0;
@@ -80,7 +105,7 @@ function applyMatch(item,id){
  item.description=photo.description||"";
  item.link=photo.url||"";
  if(photo.category)item.category=photo.category;
- item.alt=photo.title ? photo.title+" — original photograph by KK Florida":"";
+ item.alt=""; // The title suggestion follows edits until custom ALT text is entered.
 }
 function makeField(label,control,wide){
  const wrap=el("label",{class:wide?"wide":""});
@@ -108,14 +133,21 @@ function renderCards(){
   pic.value=item.picfairId||"";
   pic.addEventListener("change",()=>{if(pic.value)applyMatch(item,pic.value);else item.picfairId="";renderCards();});
   details.append(makeField("Picfair photograph (review the match)",pic,true));
-  const title=el("input",{type:"text"});title.value=item.title;title.addEventListener("input",()=>{item.title=title.value;});
+  const title=el("input",{type:"text"});title.value=item.title;
   const category=el("select");
   category.append(el("option",{value:""},"Choose a website category"));
   for(const c of CATS)category.append(el("option",{value:c},c==="Tshirts"?"T-Shirts & Art":c));
-  category.value=item.category;category.addEventListener("change",()=>item.category=category.value);
+  category.value=item.category;
   details.append(makeField("Photograph title",title,false),makeField("Website category",category,false));
   const description=el("textarea");description.value=item.description;description.addEventListener("input",()=>item.description=description.value);
   details.append(makeField("Description (from Picfair or your own)",description,true));
+   const alt=el("input",{type:"text",placeholder:suggestedAlt(item)});alt.value=item.alt||"";
+   const altHint=el("div",{class:"hint wide"});
+   function refreshAltHint(){alt.placeholder=suggestedAlt(item);altHint.textContent="ALT text to export: "+(effectiveAlt(item)||"(enter a descriptive title)")+". Describe what is visible; include a species or location only if known.";}
+   title.addEventListener("input",()=>{item.title=title.value;refreshAltHint();});
+   category.addEventListener("change",()=>{item.category=category.value;refreshAltHint();});
+   alt.addEventListener("input",()=>{item.alt=alt.value;refreshAltHint();});
+   details.append(makeField("Image ALT text (editable; defaults to the title)",alt,true),altHint);refreshAltHint();
   const link=el("input",{type:"url",placeholder:"https://flwildlife.picfair.com/images/..."});link.value=item.link;link.addEventListener("input",()=>item.link=link.value);
   details.append(makeField("Individual Picfair shopping URL",link,true));
   const info=el("div",{class:"hint wide"});
@@ -195,7 +227,7 @@ $("exportZip").addEventListener("click",async()=>{
   validate();btn.disabled=true;$("log").textContent="";
   const webMax=maxSize($("webSize").value,500,5000,"Web image size"),thumbMax=maxSize($("thumbSize").value,120,1200,"Thumbnail size");
   const existing=new Set(gallery.map(x=>x.image));
-  const newGallery=gallery.map(x=>({...x}));const output=[];
+  const newGallery=galleryWithAltEdits();const output=[];
   let logoImage=null;if(logo&&$("watermarkOn").checked)logoImage=await imgFromFile(logo);
   for(let i=0;i<selections.length;i++){
    const item=selections[i];$("exportStatus").textContent="Preparing "+(i+1)+" of "+selections.length+": "+item.file.name;
@@ -209,7 +241,7 @@ $("exportZip").addEventListener("click",async()=>{
    const paths=zipName(item.file,item,ext,existing);
    output.push({name:paths.image,bytes:new Uint8Array(await webBlob.arrayBuffer())});
    output.push({name:paths.thumb,bytes:new Uint8Array(await thumbBlob.arrayBuffer())});
-   const row={title:item.title,category:item.category,description:item.description,image:paths.image,thumbnail:paths.thumb,link:item.link||(item.category==="Tshirts"?"https://www.teepublic.com/user/kk-florida":"https://flwildlife.picfair.com/"),store:item.category==="Tshirts"?"TeePublic":"Picfair",alt:item.alt||item.title+" — original KK Florida photograph"};
+   const row={title:item.title,category:item.category,description:item.description,image:paths.image,thumbnail:paths.thumb,link:item.link||(item.category==="Tshirts"?"https://www.teepublic.com/user/kk-florida":"https://flwildlife.picfair.com/"),store:item.category==="Tshirts"?"TeePublic":"Picfair",alt:effectiveAlt(item)};
    if(item.picfairId)row.picfair_id=item.picfairId;
    newGallery.push(row);
    $("log").textContent+="Prepared "+item.title+" → "+paths.image+"\n";
@@ -221,5 +253,13 @@ $("exportZip").addEventListener("click",async()=>{
   $("exportStatus").textContent="ZIP created: "+selections.length+" new photos; "+newGallery.length+" gallery entries. Extract into your repository, then Commit and Push.";
  }catch(err){$("exportStatus").textContent="Could not export: "+err.message;alert("Photo Publisher: "+err.message);}finally{btn.disabled=false;}
 });
-refreshStats();renderCards();
+$("exportMetadata").addEventListener("click",()=>{
+ if(!gallery)return;
+ const rows=galleryWithAltEdits();const count=rows.filter((row,index)=>row.alt!==gallery[index].alt).length;
+ if(!count)return;
+ const blob=zipStore([{name:"data/gallery.json",bytes:encoder.encode(JSON.stringify(rows,null,2)+"\n")}]);
+ const a=document.createElement("a"),url=URL.createObjectURL(blob);a.href=url;a.download="KKFlorida-ALT-Update-"+new Date().toISOString().slice(0,10)+".zip";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
+ $("metadataStatus").textContent="Exported "+count+" ALT updates. All "+rows.length+" existing entries retained. Copy only data/gallery.json from this ZIP into your repository.";
+});
+refreshStats();renderCards();renderAltReview();
 })();

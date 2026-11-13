@@ -28,6 +28,9 @@
 </div>
 <p class="fine">Accepts both the new combined multi-album export and your original single-album exports. Album categories carry through to each photograph.</p>
 <div class="status" id="importStatus" role="status">Load the latest gallery.json to begin.</div>
+<details style="margin-top:14px"><summary style="cursor:pointer;font-weight:700">Optional: review missing image ALT text in the existing gallery</summary>
+<div id="altReview"></div><div class="button-row"><button type="button" class="secondary" id="exportMetadata" disabled>Export ALT updates only (ZIP)</button></div>
+<p id="metadataStatus" class="fine" role="status">No changes have been made to your website. Review suggested text against your photographs. These edits are also included if you publish new photos below.</p></details>
 </section>
 <section class="step">
 <h2><span class="step-num">2</span>Choose your photographs</h2>
@@ -39,7 +42,7 @@
 </section>
 <section class="step">
 <h2><span class="step-num">3</span>Match each photo to Picfair</h2>
-<p class="subtle">Use the dropdown beside each photograph to find the corresponding Picfair listing. The title, description, shopping URL and album category will fill automatically. Please visually confirm each match—filenames often differ.</p>
+<p class="subtle">Use the dropdown beside each photograph to find the corresponding Picfair listing. The title, description, shopping URL and album category will fill automatically. Please visually confirm each match—filenames often differ. Review the image ALT text suggestion or enter a more specific description for Google Images and screen readers.</p>
 <div class="summary" id="summary">No photographs selected yet.</div>
 <div id="photoList" class="card-list"><div class="empty">Select your image files above to see the matching cards.</div></div>
 </section>
@@ -85,6 +88,6 @@
 </section>
 <p class="footnote">KK Florida Content Manager · Local browser tool · Photos and metadata remain on your computer until you choose to publish.</p>
 </main>
-<script src="photo-publisher.js"></script>
+<script src="photo-publisher.js?v=20261113-seo"></script>
 </body>
 </html>
