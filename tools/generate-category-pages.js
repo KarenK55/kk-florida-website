@@ -1,4 +1,5 @@
-// Generate all searchable KK Florida category pages from data/gallery.json.
+// Generate searchable photography pages; protect hand-edited artwork pages.
+// SEO metadata is refreshed on all ten collections. Manual pages retain their body HTML.
 // Run: node tools/generate-category-pages.js
 const fs=require("node:fs"),path=require("node:path");
 const root=path.resolve(__dirname,"..");
@@ -7,91 +8,93 @@ const cats=[
     "key": "Birds",
     "slug": "birds",
     "label": "Florida Birds",
-    "title": "Florida Bird Photography",
-    "description": "Browse original bird photographs from South Florida including egrets, herons, ibis and spoonbills, captured by KK Florida.",
-    "intro": "Discover the birds of South Florida through original photographs of wildlife around our wetlands, parks and neighborhoods.",
+    "title": "Florida Bird Photography | Everglades & South Florida",
+    "description": "Explore Florida bird photography featuring great egrets, herons, ibis, spoonbills, cardinals and other South Florida birds. Shop original wildlife prints.",
+    "intro": "Discover Florida birds through original wildlife photography. Explore great egrets, herons, ibis, spoonbills, cardinals and other birds found in South Florida wetlands, parks and neighborhoods.",
     "shop": "Picfair"
   },
   {
     "key": "Butterflies",
     "slug": "butterflies",
     "label": "Butterflies",
-    "title": "Florida Butterfly Photography",
-    "description": "Explore original butterfly photography by KK Florida, with colorful wings, delicate patterns and nature photographs from South Florida.",
-    "intro": "A close look at butterflies reveals remarkable colors and patterns. Browse our original photographs and discover nature-inspired prints.",
+    "title": "Florida Butterfly Photography | Swallowtails & More",
+    "description": "Discover Florida butterflies, including zebra longwings, giant swallowtails and hairstreaks, in original butterfly photographs and nature prints.",
+    "intro": "Explore the colorful wings and delicate patterns of Florida butterflies, including zebra longwings, swallowtails and hairstreaks. Discover original South Florida butterfly photography and nature prints.",
     "shop": "Picfair"
   },
   {
     "key": "Flowers",
     "slug": "flowers",
     "label": "Flowers & Plants",
-    "title": "Florida Flower & Plant Photography",
-    "description": "Explore original Florida flower and plant photographs by KK Florida, featuring colorful blossoms, tropical flowers and garden photography.",
-    "intro": "Flowers bring brilliant colors to South Florida. Browse the details of blooms, plants and gardens through KK Florida photography.",
+    "title": "Florida Flowers & Tropical Plant Photography",
+    "description": "Explore tropical flowers, colorful garden blooms, wildflowers and plants in original South Florida botanical photography and floral prints.",
+    "intro": "Discover tropical flowers, garden blossoms and plants through original Florida botanical photography. Explore colorful marigolds, rain lilies, cannas, black-eyed Susans and flowering trees.",
     "shop": "Picfair"
   },
   {
     "key": "Kaleidoscope Flowers",
     "slug": "kaleidoscope-flowers",
     "label": "Kaleidoscope Flowers",
-    "title": "Kaleidoscope Flower Artwork",
-    "description": "Discover kaleidoscope flower art made from original KK Florida photographs, with colorful symmetrical designs and nature-inspired artwork.",
-    "intro": "Original flower photography becomes bright, symmetrical artwork in this one-of-a-kind KK Florida collection. Explore the designs and our free coloring pages.",
-    "shop": "TeePublic"
+    "title": "Kaleidoscope Flower Art | Floral Mandalas & Designs",
+    "description": "Discover colorful kaleidoscope flower art, symmetrical floral designs and botanical artwork made from original flower photography. Explore free coloring pages.",
+    "intro": "Original flower photography becomes colorful symmetrical floral artwork. Explore kaleidoscope designs, botanical art and free printable coloring pages.",
+    "shop": "TeePublic",
+    "manual": true
   },
   {
     "key": "Sunsets",
     "slug": "sunsets",
     "label": "Florida Sunsets",
-    "title": "Florida Sunset Photography",
-    "description": "View original Florida sunset photographs by KK Florida, with colorful skies and natural landscape photographs from South Florida.",
-    "intro": "Florida evenings have their own remarkable colors. Explore original sunset photographs and beautiful skies in the KK Florida collection.",
+    "title": "Florida Sunset Photography | Everglades & Tropical Skies",
+    "description": "Explore Florida sunset photography, Everglades sunsets, golden clouds and tropical skies with palm tree silhouettes. Shop original nature prints.",
+    "intro": "Explore the colorful skies of South Florida, from golden Everglades sunsets to tropical evening light and palm tree silhouettes. Discover original sunset photography and scenic prints.",
     "shop": "Picfair"
   },
   {
     "key": "Insects",
     "slug": "insects",
     "label": "Insects & Bees",
-    "title": "Florida Insect & Bee Photography",
-    "description": "Explore close-up photographs of bees and insects by KK Florida, revealing the small details of South Florida nature.",
-    "intro": "The smallest creatures have fascinating details. Discover insects and bees in original KK Florida photographs.",
+    "title": "Florida Insects & Bee Photography | Pollinators",
+    "description": "Discover honeybees, metallic green bees and other pollinators in close-up South Florida insect photography and original nature prints.",
+    "intro": "Discover the small details of Florida nature through close-up photography of honeybees, metallic green bees and other insects. Explore flowers and pollinators in their natural surroundings.",
     "shop": "Picfair"
   },
   {
     "key": "Landscapes",
     "slug": "landscapes",
     "label": "Florida Landscapes",
-    "title": "Florida Landscape Photography",
-    "description": "See Florida nature and landscape photography by KK Florida, featuring South Florida scenery and memorable skies.",
-    "intro": "Browse the scenery of South Florida through original landscape photographs from KK Florida.",
+    "title": "Florida Landscape Photography | Tropical Nature & Scenery",
+    "description": "Explore South Florida landscape photography, tropical scenery, palm trees, colorful skies and original nature photographs for wall art and prints.",
+    "intro": "Discover the natural beauty of South Florida through original landscape photography, tropical palms, colorful skies and peaceful scenery.",
     "shop": "Picfair"
   },
   {
     "key": "Mammals",
     "slug": "mammals",
     "label": "Florida Mammals",
-    "title": "Florida Mammal Photography",
-    "description": "Browse original South Florida wildlife and mammal photographs in the KK Florida photography collection.",
-    "intro": "Wildlife is part of everyday life in Florida. Discover mammals and their surroundings through original KK Florida photographs.",
+    "title": "Florida Wildlife Photography | Squirrels & Mammals",
+    "description": "Explore original Florida mammal and wildlife photography, featuring squirrels and the everyday natural beauty of South Florida.",
+    "intro": "Discover Florida wildlife through original photographs of squirrels and other mammals in their natural surroundings. Enjoy the everyday beauty of South Florida nature.",
     "shop": "Picfair"
   },
   {
     "key": "Orchids",
     "slug": "orchids",
     "label": "Orchids",
-    "title": "Orchid Flower Photography",
-    "description": "Explore original orchid photographs by KK Florida, highlighting the colors, shapes and patterns of orchid blossoms.",
-    "intro": "Enjoy the intricate shapes and vivid details of orchid flowers through original KK Florida photographs.",
+    "title": "Orchid Photography | Florida Flowers & Botanical Art",
+    "description": "Discover original orchid flower photography, colorful blossoms and delicate floral details from KK Florida. Explore botanical photographs and prints.",
+    "intro": "Enjoy the intricate shapes, vivid colors and delicate details of orchid flowers through original Florida botanical photography.",
     "shop": "Picfair"
   },
   {
     "key": "Tshirts",
     "slug": "tshirts",
     "label": "T-Shirts & Art",
-    "title": "Original T-Shirts and Artwork | KK Florida",
-    "description": "Browse original KK Florida T-shirt designs, quirky wildlife artwork, creative graphics and gifts available on TeePublic.",
-    "intro": "A little wild, a little wacky, and never boring. Explore our original artwork, colorful designs, apparel and gifts.",
-    "shop": "TeePublic"
+    "title": "Funny Animal T-Shirts, Nature Art & Unique Gifts",
+    "description": "Shop original funny animal T-shirts, cat lover gifts, nature-inspired artwork and creative designs from KK Florida on TeePublic.",
+    "intro": "A little wild, a little wacky, and never boring. Explore funny animal shirts, nature-inspired designs, original artwork and creative gifts.",
+    "shop": "TeePublic",
+    "manual": true
   }
 ];
 function h(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
@@ -104,7 +107,7 @@ function render(c,items){
  const pic=imgpath(i.image),small=imgpath(i.thumbnail)||pic;if(!pic)return "";
  const title=String(i.title||"").trim().replace(/([a-z])([A-Z])/g,"$1 $2")||c.label;
  const desc=String(i.description||"").trim();
- const alt=String(i.alt||"").trim()||`${title} — ${c.label} at KK Florida`;
+ const alt=String(i.alt||"").trim()||title;
  const shop=href(i.link)||(c.shop==="TeePublic"?"https://www.teepublic.com/user/kk-florida":"https://flwildlife.picfair.com/");
  return `<article class="photo"><a class="photo-img" href="../${h(pic)}" target="_blank" rel="noopener" aria-label="View ${h(title)} larger"><img loading="${n<3?"eager":"lazy"}" decoding="async" src="../${h(small)}" alt="${h(alt)}"></a><div class="photo-body"><h2>${h(title)}</h2>${desc?`<p>${h(desc)}</p>`:""}<a class="photo-store" href="${h(shop)}" target="_blank" rel="noopener noreferrer">Explore on ${h(i.store||c.shop)} ↗</a></div></article>`;
  }).join("\n");
@@ -131,42 +134,79 @@ function render(c,items){
 <script>const b=document.querySelector(".menu-button"),n=document.querySelector(".main-nav");if(b&&n){b.addEventListener("click",()=>{const open=n.classList.toggle("open");b.setAttribute("aria-expanded",String(open));});n.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{n.classList.remove("open");b.setAttribute("aria-expanded","false");}));}</script>
 </body></html>\n`;
 }
-function sitemap(xml){
- const all=[...String(xml).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1].trim());
- for(const c of cats){const url="https://kkflorida.com/"+c.slug+"/";if(!all.includes(url))all.push(url);}
- return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${all.map(x=>`  <url><loc>${h(x)}</loc></url>`).join("\n")}\n</urlset>\n`;
-}
-const data=JSON.parse(fs.readFileSync(path.join(root,"data/gallery.json"),"utf8"));
-if(!Array.isArray(data))throw new Error("data/gallery.json must be an array");
-for(const c of cats){const group=data.filter(x=>x.category===c.key);fs.mkdirSync(path.join(root,c.slug),{recursive:true});fs.writeFileSync(path.join(root,c.slug,"index.html"),render(c,group),"utf8");console.log(c.slug+": "+group.length+" images");}
-const p=path.join(root,"sitemap.xml");fs.writeFileSync(p,sitemap(fs.readFileSync(p,"utf8")),"utf8");
-
-
-function buildImageSitemap(rows){
- const groups=new Map();
- for(const item of rows){
-  if(!item || !item.image || !/^images\/[a-z0-9_\-./]+\.(?:jpe?g|png|webp)$/i.test(item.image))continue;
-  const c=cats.find(cat=>cat.key===item.category);if(!c)continue;
-  const list=groups.get(c.slug)||[];list.push(item);groups.set(c.slug,list);
+// Read only local, category-specific image paths actually referenced by custom pages.
+// This avoids bringing removed T-shirts back into the image sitemap from old JSON.
+function customImagePaths(html,c){
+ const body=html.replace(/^[\s\S]*?<\/head\s*>/i,"");
+ const paths=new Set();
+ const pattern=/(?:https:\/\/(?:www\.)?kkflorida\.com\/|\.\.\/|\.\/|\/)?(images\/[a-z0-9_./%+-]+\.(?:jpe?g|png|webp|gif|avif))(?=["'\s,)<]|$)/gi;
+ for(const m of body.matchAll(pattern)){
+  const p=m[1];if(p.startsWith("images/"+c.slug+"/")&&!p.split("/").includes(".."))paths.add(p);
  }
+ // Prefer full-size paths first; retain thumbnails if they are the only references.
+ return [...paths].sort((a,b)=>Number(a.includes("/thumbs/"))-Number(b.includes("/thumbs/")));
+}
+function attr(tag,key){
+ const m=tag.match(new RegExp("(?:^|\\s)"+key+"\\s*=\\s*(?:\"([^\"]*)\"|'([^']*)'|([^\\s>]+))","i"));
+ return m?(m[1]??m[2]??m[3]):"";
+}
+function updateManualHead(html,c,images){
+ const url="https://kkflorida.com/"+c.slug+"/",title=c.title+" | KK Florida";
+ if(!/<head\b[^>]*>[\s\S]*?<\/head\s*>/i.test(html))throw Error("Missing HTML head in "+c.slug+"/index.html; not overwriting custom page.");
+ return html.replace(/(<head\b[^>]*>)([\s\S]*?)(<\/head\s*>)/i,(_,open,head,close)=>{
+  // Replace only these SEO tags. Everything outside the head remains byte-for-byte unchanged.
+  head=head.replace(/<title\b[^>]*>[\s\S]*?<\/title\s*>/gi,"");
+  const properties=new Set(["og:type","og:title","og:description","og:url"]);
+  if(images.length)properties.add("og:image");
+  head=head.replace(/<meta\b[^>]*>/gi,tag=>attr(tag,"name").toLowerCase()==="description"||properties.has(attr(tag,"property").toLowerCase())?"":tag);
+  head=head.replace(/<link\b[^>]*>/gi,tag=>attr(tag,"rel").toLowerCase().split(/\s+/).includes("canonical")?"":tag);
+  const tags=[`<title>${h(title)}</title>`,`<meta name="description" content="${h(c.description)}">`,`<link rel="canonical" href="${url}">`,`<meta property="og:type" content="website">`,`<meta property="og:title" content="${h(title)}">`,`<meta property="og:description" content="${h(c.description)}">`,`<meta property="og:url" content="${url}">`];
+  if(images.length)tags.push(`<meta property="og:image" content="https://kkflorida.com/${h(images[0])}">`);
+  // Normalize whitespace only around the generated SEO block for repeatable builds.
+  return open+head.trimEnd()+"\n"+tags.join("\n")+"\n"+close;
+ });
+}
+function sitemap(xml){
+ const all=new Set([...String(xml).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1].trim()));
+ const additions=cats.map(c=>"https://kkflorida.com/"+c.slug+"/").filter(url=>!all.has(url));
+ if(!additions.length)return xml;
+ if(!/<\/urlset\s*>/i.test(xml))throw Error("sitemap.xml has no closing urlset tag.");
+ return xml.replace(/<\/urlset\s*>/i,additions.map(url=>`  <url><loc>${h(url)}</loc></url>\n`).join("")+"</urlset>");
+}
+function buildImageSitemap(groups){
  let result='<?xml version="1.0" encoding="UTF-8"?>\n';
  result+='<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
  for(const c of cats){
-  const items=groups.get(c.slug)||[];if(!items.length)continue;
+  const images=[...new Set(groups.get(c.slug)||[])];if(!images.length)continue;
+  if(images.length>1000)throw Error("Image sitemap limit exceeded for "+c.slug);
   result+='  <url>\n    <loc>https://kkflorida.com/'+c.slug+'/</loc>\n';
-  for(const item of items){
-   const title=String(item.title||c.label).trim();
-   const caption=String(item.description||item.alt||title).trim();
-   result+='    <image:image>\n';
-   result+='      <image:loc>https://kkflorida.com/'+h(item.image)+'</image:loc>\n';
-   result+='      <image:title>'+h(title)+'</image:title>\n';
-   result+='      <image:caption>'+h(caption)+'</image:caption>\n';
-   result+='    </image:image>\n';
+  for(const image of images){
+   result+='    <image:image>\n      <image:loc>https://kkflorida.com/'+h(image)+'</image:loc>\n    </image:image>\n';
   }
   result+='  </url>\n';
  }
  return result+'</urlset>\n';
 }
-const imageSitemapPath=path.join(root,"image-sitemap.xml");
-fs.writeFileSync(imageSitemapPath,buildImageSitemap(data),"utf8");
-console.log("Updated image-sitemap.xml");
+const data=JSON.parse(fs.readFileSync(path.join(root,"data/gallery.json"),"utf8"));
+if(!Array.isArray(data))throw Error("data/gallery.json must be an array");
+const planned=[],imageGroups=new Map();
+for(const c of cats){
+ const group=data.filter(x=>x&&x.category===c.key),file=path.join(root,c.slug,"index.html");
+ if(c.manual){
+  if(!fs.existsSync(file))throw Error("Custom page missing: "+c.slug+"/index.html. Restore it before running this generator.");
+  const old=fs.readFileSync(file,"utf8"),images=customImagePaths(old,c);
+  planned.push({file,html:updateManualHead(old,c,images)});
+  imageGroups.set(c.slug,images);
+  console.log(c.slug+": custom layout preserved; "+images.length+" referenced image paths");
+ }else{
+  planned.push({file,html:render(c,group)});
+  imageGroups.set(c.slug,group.map(i=>imgpath(i.image)).filter(p=>p&&/\.(?:jpe?g|png|webp|gif|avif)$/i.test(p)));
+  console.log(c.slug+": "+group.length+" images");
+ }
+}
+const p=path.join(root,"sitemap.xml");
+planned.push({file:p,html:sitemap(fs.readFileSync(p,"utf8"))});
+planned.push({file:path.join(root,"image-sitemap.xml"),html:buildImageSitemap(imageGroups)});
+// Validate all inputs and build all outputs before writing any files.
+for(const {file,html} of planned){fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,html,"utf8");}
+console.log("Updated collection SEO and sitemaps; custom page bodies preserved.");
