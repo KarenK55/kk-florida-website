@@ -19,7 +19,7 @@ const categoryDescriptions={
   "Tshirts":"Original animal, floral and other T-shirt designs, stickers and gifts."
 };
 function displayCategory(name){return name==="Tshirts"?"T-Shirts & Art":name}
-function categoryOrder(categories){const preferred=["Birds","Butterflies","Flowers","Kaleidoscope Flowers","Sunsets","Insects","Landscapes","Mammals","Orchids","Tshirts"];return [...categories].sort((a,b)=>{const ai=preferred.indexOf(a),bi=preferred.indexOf(b);return (ai<0?99:ai)-(bi<0?99:bi)||a.localeCompare(b)})}
+function categoryOrder(categories){const preferred=["Tshirts","Birds","Butterflies","Flowers","Kaleidoscope Flowers","Sunsets","Insects","Landscapes","Mammals","Orchids"];return [...categories].sort((a,b)=>{const ai=preferred.indexOf(a),bi=preferred.indexOf(b);return (ai<0?99:ai)-(bi<0?99:bi)||a.localeCompare(b)})}
 function groupedItems(){return items.reduce((map,item)=>{(map[item.category]??=[]).push(item);return map},{})}
 function renderCategories(){
   const groups=groupedItems();
