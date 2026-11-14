@@ -122,7 +122,7 @@ function render(c,items){
 <meta property="og:type" content="website"><meta property="og:title" content="${h(c.title)} | KK Florida"><meta property="og:description" content="${h(c.description)}"><meta property="og:url" content="${url}"><meta property="og:image" content="https://kkflorida.com/${h(thumb)}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/categories.css">
+<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/categories.css?v=20261113-compact-headers">
 </head><body class="category-page">
 <a class="skip-to-gallery" href="#gallery">Skip to photographs</a>
 <header class="site-header inner-header"><a class="brand" href="../" aria-label="KK Florida homepage"><img src="../images/logos/kkflorida-logo.png" alt="KK Florida"></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="main-nav" aria-label="Main navigation"><a href="../">Home</a><a href="../#collections" class="active">Collections</a><a href="../guides.html">Wildlife Guides</a><a href="../coloring-pages.html">Free Coloring Pages</a><a href="../christmas/">Christmas</a><a href="../contact.html">Contact</a></nav></header>
