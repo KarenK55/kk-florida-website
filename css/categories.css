@@ -23,3 +23,96 @@
 .category-store h2{color:white}.category-store p{max-width:720px;line-height:1.7}
 @media(max-width:950px){.category-photos{grid-template-columns:repeat(2,minmax(0,1fr))}.category-intro{display:block}.category-store{flex-direction:column;align-items:start}}
 @media(max-width:620px){.category-hero{padding:60px 20px}.category-content{padding:52px 18px}.category-photos{grid-template-columns:1fr}}
+
+/* Compact collection headers, matching the Free Coloring Pages header.
+   Canonical URLs select a decorative image from each existing collection.
+   Shared styling is kept here so gallery regeneration retains the design. */
+.category-page .site-header.inner-header {
+  position:relative;
+  padding:8px clamp(14px,3vw,40px);
+  background:#eef6f5;
+  border-bottom:1px solid #cbdcdb;
+}
+.category-page .main-nav a { color:#073466; text-shadow:none; }
+.category-page .main-nav a.active,
+.category-page .main-nav a:hover,
+.category-page .main-nav a:focus-visible {
+  color:#075965; text-decoration:underline; text-underline-offset:4px;
+}
+.category-page .menu-button { color:#073466; background:#fff; border-color:#789597; }
+.category-page .category-hero {
+  display:grid;
+  grid-template-columns:minmax(180px,.65fr) minmax(0,1.35fr);
+  align-items:center;
+  gap:clamp(16px,3vw,40px);
+  padding:24px clamp(16px,4vw,55px);
+  min-height:0;
+  background:linear-gradient(135deg,#eef8f7,#fff8ed);
+  color:#142333;
+}
+.category-page .category-hero::before {
+  content:"";
+  display:block;
+  width:min(100%,270px);
+  height:270px;
+  justify-self:center;
+  background-image:var(--collection-header-image,none);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
+}
+.category-page .category-hero .hero-wrap { width:100%; max-width:760px; margin:0; }
+.category-page .category-hero h1 {
+  color:#073466; font-size:clamp(1.9rem,3.4vw,3.1rem);
+  line-height:1.12; margin:4px 0 10px;
+}
+.category-page .category-hero .eyebrow {
+  color:#075965; font-weight:700; margin:0 0 6px;
+}
+.category-page .category-hero .hero-wrap>p:not(.eyebrow) {
+  color:#26343d; font-size:1rem; line-height:1.55; margin:0 0 12px;
+}
+.category-page .category-hero .return-link {
+  display:inline-flex; align-items:center;
+  margin-top:2px; padding:10px 16px;
+  border:1px solid #456b7b; border-radius:999px;
+  background:#fff; color:#073466; text-decoration:none;
+  font-weight:700;
+}
+.category-page .category-hero .return-link:hover,
+.category-page .category-hero .return-link:focus-visible {
+  color:#075965; text-decoration:underline; text-underline-offset:3px;
+}
+.category-page .category-content { padding-top:24px; }
+html:has(link[rel="canonical"][href="https://kkflorida.com/birds/"]) { --collection-header-image:url("../images/birds/thumbs/card1-thumb.jpg"); }
+html:has(link[rel="canonical"][href="https://kkflorida.com/butterflies/"]) { --collection-header-image:url("../images/butterflies/thumbs/blackswallowtail-thumb.jpg"); }
+html:has(link[rel="canonical"][href="https://kkflorida.com/flowers/"]) { --collection-header-image:url("../images/flowers/thumbs/blackeye-thumb.jpg"); }
+html:has(link[rel="canonical"][href="https://kkflorida.com/kaleidoscope-flowers/"]) { --collection-header-image:url("../images/kaleidoscope-flowers/thumbs/waterlily.png"); }
+html:has(link[rel="canonical"][href="https://kkflorida.com/sunsets/"]) { --collection-header-image:url("../images/sunsets/thumbs/sunset-2-thumb.jpg"); }
+html:has(link[rel="canonical"][href="https://kkflorida.com/insects/"]) { --collection-header-image:url("../images/insects/thumbs/bee-2-thumb.jpg"); }
+html:has(link[rel="canonical"][href="https://kkflorida.com/landscapes/"]) { --collection-header-image:url("../images/landscapes/thumbs/rainbow-thumb.jpg"); }
+html:has(link[rel="canonical"][href="https://kkflorida.com/mammals/"]) { --collection-header-image:url("../images/mammals/thumbs/squirrel-pe-thumb.jpg"); }
+html:has(link[rel="canonical"][href="https://kkflorida.com/orchids/"]) { --collection-header-image:url("../images/orchids/thumbs/orchid-thumb.jpg"); }
+html:has(link[rel="canonical"][href="https://kkflorida.com/tshirts/"]) { --collection-header-image:url("../images/tshirts/thumbs/hairypurrter-thumb.png"); }
+@media(max-width:900px) {
+  .category-page .category-hero { grid-template-columns:1fr; gap:14px; }
+  .category-page .category-hero::before { height:200px; }
+  .category-page .category-hero .hero-wrap { max-width:760px; }
+  .category-page .menu-button { display:block; }
+  .category-page .main-nav {
+    display:none; position:absolute; top:100%; right:14px;
+    min-width:220px; padding:20px; border-radius:16px;
+    flex-direction:column; align-items:flex-start; gap:18px;
+    background:#fff; border:1px solid #cbdcdb; box-shadow:var(--shadow);
+  }
+  .category-page .main-nav.open { display:flex; }
+}
+@media(max-width:620px) {
+  .category-page .category-hero { padding:16px; }
+  .category-page .category-hero::before { height:160px; }
+  .category-page .category-content { padding-top:18px; }
+}
+@supports not selector(html:has(link)) {
+  .category-page .category-hero { grid-template-columns:1fr; }
+  .category-page .category-hero::before { display:none; }
+}
